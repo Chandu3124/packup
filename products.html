@@ -1,0 +1,2738 @@
+
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+        name="description"
+        content="Packup offers premium luggage, travel bags, backpacks and travel accessories designed for every journey."
+    />
+
+    <meta
+        name="keywords"
+        content="Packup, luggage, travel bags, backpacks, cabin bags, travel accessories"
+    />
+
+    <meta
+        name="author"
+        content="Packup"
+    />
+
+    <meta
+        name="theme-color"
+        content="#123f46"
+    />
+
+    <title>Packup | Travel Beyond Limits</title>
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="logo_light.png"
+    />
+
+    <link
+        rel="apple-touch-icon"
+        href="logo_light.png"
+    />
+
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"
+    />
+
+    <!-- Google Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    />
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    />
+
+    <!-- Lucide -->
+    <script
+        src="https://unpkg.com/lucide@0.542.0/dist/umd/lucide.min.js"
+        defer
+    ></script>
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="main.css"
+    />
+
+    <link
+        rel="stylesheet"
+        href="products.css"
+    />
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-container">
+
+
+        <!-- BRAND -->
+        <div class="logo">
+
+            <a
+                href="index.html"
+                class="logo-icon-link"
+                aria-label="Packup Home"
+            >
+
+                <img
+                    src="logo_light.png"
+                    data-light-logo="logo_light.png"
+                    data-dark-logo="logo_dark.png"
+                    alt="Packup Logo"
+                    class="brand-logo"
+                    id="headerLogo"
+                >
+
+            </a>
+
+
+            <a
+                href="index.html"
+                class="brand-content"
+            >
+
+                <h1 class="brand-name">
+
+                    <span class="pack">PACK</span><span class="up">UP</span>
+
+                </h1>
+
+                <span class="subtitle-text">
+                    TRAVEL BEYOND LIMITS
+                </span>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- NAVIGATION -->
+        <nav
+            class="navbar"
+            aria-label="Primary navigation"
+        >
+
+            <ul
+                class="nav-links"
+                id="navLinks"
+            >
+
+
+                <!-- HOME -->
+                <li class="dropdown">
+
+                    <a
+                        href="index.html"
+                        class="dropdown-trigger"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+
+                        <span>Home</span>
+
+                        <i data-lucide="chevron-down"></i>
+
+                    </a>
+
+
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a href="index.html">
+                                Home 1
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="home2.html">
+                                Home 2
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- ABOUT -->
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+
+                <!-- PRODUCTS -->
+                <li>
+                    <a href="products.html">
+                        Products
+                    </a>
+                </li>
+
+
+                <!-- WARRANTY -->
+                <li>
+                    <a href="warranty.html">
+                        Warranty &amp; Repair
+                    </a>
+                </li>
+
+
+                <!-- CONTACT -->
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- MOBILE CTA -->
+            <div class="mobile-action">
+
+                <a
+                    href="contact.html#contact-form"
+                    class="header-cta"
+                >
+
+                    <i data-lucide="shopping-bag"></i>
+
+                    <span>
+                        Explore Bags
+                    </span>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+
+        <!-- HEADER CONTROLS -->
+        <div class="header-controls">
+
+
+            <!-- RTL -->
+            <button
+                type="button"
+                class="icon-btn rtl-btn"
+                id="rtlToggle"
+                title="RTL Mode"
+                aria-label="Switch to right-to-left mode"
+                aria-pressed="false"
+            >
+
+                <i data-lucide="arrow-left-right"></i>
+
+            </button>
+
+
+            <!-- DARK MODE -->
+            <button
+                type="button"
+                class="icon-btn dark-btn"
+                id="darkToggle"
+                title="Dark Mode"
+                aria-label="Switch to dark mode"
+                aria-pressed="false"
+            >
+
+                <i data-lucide="moon"></i>
+
+            </button>
+
+
+            <!-- DESKTOP CTA -->
+            <a
+                href="contact.html#contact-form"
+                class="header-cta desktop-cta"
+            >
+
+                <i data-lucide="shopping-bag"></i>
+
+                <span>
+                    Explore Bags
+                </span>
+
+            </a>
+
+
+            <!-- MOBILE MENU -->
+            <button
+                type="button"
+                class="icon-btn menu-btn"
+                id="menuToggle"
+                title="Open Menu"
+                aria-label="Open menu"
+                aria-expanded="false"
+                aria-controls="navLinks"
+            >
+
+                <i data-lucide="menu"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+<main>
+
+    <!-- Page-specific content goes here -->
+<!-- =====================================================
+     PRODUCTS PAGE — HERO SECTION
+===================================================== -->
+
+<section class="packup-products-hero" id="products-hero">
+
+    <!-- BACKGROUND IMAGE -->
+    <div class="packup-products-hero-background"></div>
+
+    <!-- BACKGROUND OVERLAY -->
+    <div class="packup-products-hero-overlay"></div>
+
+    <div class="packup-products-hero-container">
+
+        <!-- LEFT CONTENT -->
+        <div class="packup-products-hero-content">
+
+            <!-- TAGLINE -->
+            <div class="packup-products-hero-eyebrow">
+                <span class="packup-products-hero-eyebrow-line"></span>
+                <span>PRODUCTS</span>
+            </div>
+
+            <!-- HEADING -->
+            <h1 class="packup-products-hero-heading">
+                Find the Bag That
+                <span>Goes Everywhere</span>
+                <span>with You</span>
+            </h1>
+
+            <!-- DESCRIPTION -->
+            <p class="packup-products-hero-description">
+                Explore the Packup collection of suitcases, backpacks,
+                duffel bags, and travel essentials. Compare styles and
+                product features to find a bag that matches your travel plans.
+            </p>
+
+            <!-- CTA BUTTON -->
+            <a href="#products-collection"
+               class="packup-products-hero-button">
+
+                <span>Explore Products</span>
+
+                <i data-lucide="arrow-right"></i>
+
+            </a>
+
+        </div>
+
+        <!-- RIGHT SIDE DECORATIVE LABEL -->
+        <div class="packup-products-hero-note">
+
+            <span class="packup-products-hero-note-icon">
+                <i data-lucide="luggage"></i>
+            </span>
+
+            <div class="packup-products-hero-note-content">
+                <span>BETTER BAGS</span>
+                <strong>Brighter Journeys</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     SECTION 2 — SHOP BY CATEGORY
+===================================================== -->
+
+<section class="packup-category-section" id="shop-by-category">
+
+    <div class="packup-category-container">
+
+        <!-- SECTION HEADER -->
+        <div class="packup-category-header">
+
+            <div class="packup-category-eyebrow">
+                <span class="packup-category-eyebrow-line"></span>
+                <span>SHOP BY CATEGORY</span>
+            </div>
+
+            <h2 class="packup-category-heading">
+                Explore Our
+                <span>Bag Collections</span>
+            </h2>
+
+            <p class="packup-category-description">
+                Browse luggage and bags by type to make your shopping
+                experience easier. Whether you need compact carry-on
+                luggage or a versatile everyday backpack, start with
+                the category that fits your needs.
+            </p>
+
+        </div>
+
+        <!-- CATEGORY GRID -->
+        <div class="packup-category-grid">
+
+            <!-- 1. SUITCASES -->
+            <a href="#suitcases"
+               class="packup-category-card">
+
+                <div class="packup-category-image">
+                    <img
+                        src="https://images.openai.com/static-rsc-4/F6zlHcL_KHXmwsQy6yU8x-TpWS52RsAPD5YwmwGjcWg6R2NBvtm3RQ6WRUKY6yrOXCfewaCCcz6nBR5zPyT3cK1bFFXL_0cL_f_994KCYlbpXy_U-ZfOgrL72R5VIepFV9OTPR_xBylc6Hdjju2-sYUwf_Td-89VC-sxRUlPhd9D9klAU1ziMetDtyLDdyig?purpose=fullsize"
+                        alt="Suitcases for travel"
+                        loading="lazy"
+                    >
+                    <span class="packup-category-image-number">01</span>
+                </div>
+
+                <div class="packup-category-card-content">
+
+                    <span class="packup-category-icon">
+                        <i data-lucide="luggage"></i>
+                    </span>
+
+                    <h3>Suitcases</h3>
+
+                    <span class="packup-category-arrow">
+                        <i data-lucide="arrow-right"></i>
+                    </span>
+
+                </div>
+
+            </a>
+
+            <!-- 2. LUGGAGE SETS -->
+            <a href="#luggage-sets"
+               class="packup-category-card">
+
+                <div class="packup-category-image">
+                    <img
+                        src="https://images.openai.com/static-rsc-4/agHNlibtJuq-24afJAKmubr9bFI5U2AZJMejM4YXGPIIwLCyU4esWCged7-Umi_gNHAPDWOnx1UD-LAdUtsj9BLqXfRxi8HIha-MWPUJZTbpUCNSgYxyiZtxVBh8TJnli6YuKehVXvU0NaeOcwMMKf8byHJR6ZeBp6-DYddyhx23VKx-go_Qa31lEswio44i?purpose=fullsize"
+                        alt="Travel luggage and bag collection"
+                        loading="lazy"
+                    >
+                    <span class="packup-category-image-number">02</span>
+                </div>
+
+                <div class="packup-category-card-content">
+
+                    <span class="packup-category-icon">
+                        <i data-lucide="package"></i>
+                    </span>
+
+                    <h3>Luggage Sets</h3>
+
+                    <span class="packup-category-arrow">
+                        <i data-lucide="arrow-right"></i>
+                    </span>
+
+                </div>
+
+            </a>
+
+            <!-- 3. BACKPACKS -->
+            <a href="#backpacks"
+               class="packup-category-card">
+
+                <div class="packup-category-image">
+                    <img
+                        src="https://images.openai.com/static-rsc-4/cn07ylORDWEL-7WA_anGWhypkdLy_7mVE6pAqYUtdwFnnNsXERxS9C-dzUXCMZfp7IbQamQBFMCgoFiBkpY_lmWcQo9lQSQ4Fbmp9Rb3mNSxILYBRJHJrFVZiRGk9IpEQsvWK6agICP7XRKFTOEqTj4s3EUiozZxp3YLQRQhBDf5r7jDG6V81CdlRtdZUjpO?purpose=fullsize"
+                        alt="Everyday travel backpacks"
+                        loading="lazy"
+                    >
+                    <span class="packup-category-image-number">03</span>
+                </div>
+
+                <div class="packup-category-card-content">
+
+                    <span class="packup-category-icon">
+                        <i data-lucide="backpack"></i>
+                    </span>
+
+                    <h3>Backpacks</h3>
+
+                    <span class="packup-category-arrow">
+                        <i data-lucide="arrow-right"></i>
+                    </span>
+
+                </div>
+
+            </a>
+
+            <!-- 4. DUFFEL BAGS -->
+            <a href="#duffel-bags"
+               class="packup-category-card">
+
+                <div class="packup-category-image">
+                    <img
+                        src="https://images.openai.com/static-rsc-4/NKhWS7MYiupCth9XNWaNtyZuOxTgBcBQidQGfI8BY9Bp_BtreiwJ67nRfIQ2zGx4IpfIc8VR5Vu-OXMqKBGiTJaGRePpY9evvjKAnAXuBB1CP2yhmYvlzelcD3090Grgcikywb7zVti5W4HcSbxI6qjqSZVd08cjo5aXhjALbrRwzioKxQzHor6isvEIrIOJ?purpose=fullsize"
+                        alt="Duffel bag for trips"
+                        loading="lazy"
+                    >
+                    <span class="packup-category-image-number">04</span>
+                </div>
+
+                <div class="packup-category-card-content">
+
+                    <span class="packup-category-icon">
+                        <i data-lucide="briefcase-business"></i>
+                    </span>
+
+                    <h3>Duffel Bags</h3>
+
+                    <span class="packup-category-arrow">
+                        <i data-lucide="arrow-right"></i>
+                    </span>
+
+                </div>
+
+            </a>
+
+            <!-- 5. LAPTOP BAGS -->
+            <a href="#laptop-bags"
+               class="packup-category-card">
+
+                <div class="packup-category-image">
+                    <img
+                        src="https://images.openai.com/static-rsc-4/3M8ZLvYkJw6UZ9sq0DXYvDS21s7nJu4ZT5CIEqhz2F9eHkpQV-6GM3RTjowBHBXLQykpwxtyuiap61spEBS5ZWuZxJjBffZDguQ5rODb5Ge2nz-ro7exUuMB8pWvtJte_TCyVv5K_D2TKy3XO59mCdWSdnwv0VuG_idMheMQ0DjFogHg_2nJ4Bvv_AFkeRy2?purpose=fullsize"
+                        alt="Laptop bags and work bags"
+                        loading="lazy"
+                    >
+                    <span class="packup-category-image-number">05</span>
+                </div>
+
+                <div class="packup-category-card-content">
+
+                    <span class="packup-category-icon">
+                        <i data-lucide="laptop"></i>
+                    </span>
+
+                    <h3>Laptop Bags</h3>
+
+                    <span class="packup-category-arrow">
+                        <i data-lucide="arrow-right"></i>
+                    </span>
+
+                </div>
+
+            </a>
+
+            <!-- 6. TRAVEL ACCESSORIES -->
+            <a href="#travel-accessories"
+               class="packup-category-card">
+
+                <div class="packup-category-image">
+                    <img
+                        src="https://images.openai.com/static-rsc-4/vBlU_clp0vSqvKQuMiI6kgf1oyfbPUIdlBYT7lSzL51hDmQPdWgizSYLCpecaCg5FzR0Z5sTjgDfZRoMfBM-L5vCDHIxfI8kGOy5yDjS0u8A2WHuA3Fmlb3kVhx7BZelOa2UDYLjq9NVrEMxNm3ywM1O3PP8HkZuFZOzG2BqizsilJKuj-zhQpcTYXVzJbDa?purpose=fullsize"
+                        alt="Travel essentials and accessories"
+                        loading="lazy"
+                    >
+                    <span class="packup-category-image-number">06</span>
+                </div>
+
+                <div class="packup-category-card-content">
+
+                    <span class="packup-category-icon">
+                        <i data-lucide="compass"></i>
+                    </span>
+
+                    <h3>Travel Accessories</h3>
+
+                    <span class="packup-category-arrow">
+                        <i data-lucide="arrow-right"></i>
+                    </span>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     SECTION 3 — PRODUCT COLLECTION
+===================================================== -->
+
+<section class="packup-products-section" id="products-collection">
+
+    <div class="packup-products-container">
+
+        <!-- SECTION HEADER -->
+        <div class="packup-products-header">
+
+            <div class="packup-products-eyebrow">
+                <span class="packup-products-eyebrow-line"></span>
+                <span>THE PACKUP COLLECTION</span>
+            </div>
+
+            <h2 class="packup-products-heading">
+                Find Your
+                <span>Travel Essential</span>
+            </h2>
+
+            <p class="packup-products-description">
+                Discover available products with images, prices, colours,
+                sizes, and important features. Compare the details of each
+                bag to understand its storage capacity, design, and
+                intended use before making your choice.
+            </p>
+
+        </div>
+
+        <!-- COLLECTION TOOLBAR -->
+        <div class="packup-products-toolbar">
+
+            <div class="packup-products-results">
+                <span class="packup-products-results-icon">
+                    <i data-lucide="shopping-bag"></i>
+                </span>
+
+                <div>
+                    <strong>Our Travel Collection</strong>
+                    <span>Explore bags for every journey</span>
+                </div>
+            </div>
+
+            <div class="packup-products-toolbar-actions">
+
+                <label class="packup-products-sort-label" for="packupProductSort">
+                    Sort by
+                </label>
+
+                <select class="packup-products-sort" id="packupProductSort">
+                    <option value="featured">Featured</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="name">Name: A to Z</option>
+                </select>
+
+                <button class="packup-products-cart-trigger"
+                        id="packupOpenCart"
+                        type="button"
+                        aria-label="Open shopping cart">
+
+                    <i data-lucide="shopping-cart"></i>
+                    <span>My Cart</span>
+                    <span class="packup-products-cart-count"
+                          id="packupCartCount">0</span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- PRODUCT GRID -->
+        <div class="packup-products-grid" id="packupProductsGrid">
+
+            <!-- PRODUCT 1 -->
+            <article class="packup-product-card"
+                     data-product-id="voyager-28"
+                     data-name="Voyager Hardcase Suitcase"
+                     data-price="6499"
+                     data-image="https://images.openai.com/static-rsc-4/MRYxgRGf1hsWAjQozDOumhlp-Wp4nlj-Mbnz7i0y59AA36mymlkbJj-t3C5a_M4MWNMDoiCZJjf5cuAIXThE4jM7ynNdM9Ut4JE3hdQez0w5XLQTpXl-rYgok-funAYBLXXg4bE_MEZ25fSRIz7B6gY23YsSRF6tMuK7f_z9vqz-U3DN68e4nMp274rZrSKR?purpose=fullsize"
+                     data-size="28 inch"
+                     data-colours="Navy,Teal,Cream"
+                     data-features="Hard shell exterior,360° spinner wheels,Adjustable trolley handle,Expandable storage">
+
+                <div class="packup-product-image-wrap">
+
+                    <img
+                        class="packup-product-image"
+                        src="https://images.openai.com/static-rsc-4/MRYxgRGf1hsWAjQozDOumhlp-Wp4nlj-Mbnz7i0y59AA36mymlkbJj-t3C5a_M4MWNMDoiCZJjf5cuAIXThE4jM7ynNdM9Ut4JE3hdQez0w5XLQTpXl-rYgok-funAYBLXXg4bE_MEZ25fSRIz7B6gY23YsSRF6tMuK7f_z9vqz-U3DN68e4nMp274rZrSKR?purpose=fullsize"
+                        alt="Hardcase travel suitcase"
+                        loading="lazy"
+                    >
+
+                    <span class="packup-product-badge">BESTSELLER</span>
+
+                    <button class="packup-product-view-image"
+                            type="button"
+                            data-view-product
+                            aria-label="View Voyager suitcase details">
+
+                        <i data-lucide="expand"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="packup-product-info">
+
+                    <div class="packup-product-category">HARDCASE LUGGAGE</div>
+
+                    <h3 class="packup-product-name">
+                        Voyager Hardcase Suitcase
+                    </h3>
+
+                    <div class="packup-product-price-row">
+                        <span class="packup-product-price">₹6,499</span>
+                        <span class="packup-product-price-note">Inclusive of taxes</span>
+                    </div>
+
+                    <div class="packup-product-option">
+                        <span class="packup-product-option-label">Colour</span>
+
+                        <div class="packup-product-swatches">
+
+                            <button class="packup-product-swatch is-selected"
+                                    type="button"
+                                    style="--swatch:#123C59"
+                                    data-colour="Navy"
+                                    aria-label="Navy"
+                                    aria-pressed="true"></button>
+
+                            <button class="packup-product-swatch"
+                                    type="button"
+                                    style="--swatch:#087F86"
+                                    data-colour="Teal"
+                                    aria-label="Teal"
+                                    aria-pressed="false"></button>
+
+                            <button class="packup-product-swatch"
+                                    type="button"
+                                    style="--swatch:#E7DCC9"
+                                    data-colour="Cream"
+                                    aria-label="Cream"
+                                    aria-pressed="false"></button>
+
+                        </div>
+
+                        <span class="packup-product-selected-colour">Navy</span>
+                    </div>
+
+                    <div class="packup-product-size-row">
+                        <span><i data-lucide="ruler"></i> Size</span>
+                        <strong>28 inch</strong>
+                    </div>
+
+                    <ul class="packup-product-features">
+                        <li><i data-lucide="check"></i> Hard shell exterior</li>
+                        <li><i data-lucide="check"></i> 360° spinner wheels</li>
+                    </ul>
+
+                    <div class="packup-product-actions">
+
+                        <button class="packup-product-details-btn"
+                                type="button"
+                                data-view-product>
+                            View Details
+                        </button>
+
+                        <button class="packup-product-add-btn"
+                                type="button"
+                                data-add-cart>
+                            <i data-lucide="shopping-cart"></i>
+                            <span>Add to Cart</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- PRODUCT 2 -->
+            <article class="packup-product-card"
+                     data-product-id="explorer-backpack"
+                     data-name="Explorer Travel Backpack"
+                     data-price="2499"
+                     data-image="https://images.openai.com/static-rsc-4/h9tG2piB16QXBnM4TFM-BdvrVgyUIrwEVh4V2ztEdbd0er22Hbhvec5fD4xkOhyfFj-IHXm2K63kE4t7WGIvaQyS1wKwddZomrrUPDmwrMl5BaILh_gwV3iPWmmMOvqRzcp-R69opb42ogj6-6seYH65USWwgntbB6xPl7g62578F0o--W8As90prA9XU7mv?purpose=fullsize"
+                     data-size="25 L"
+                     data-colours="Black,Olive,Cream"
+                     data-features="25-litre capacity,Padded laptop compartment,Water-resistant fabric,Multiple organiser pockets">
+
+                <div class="packup-product-image-wrap">
+
+                    <img
+                        class="packup-product-image"
+                        src="https://images.openai.com/static-rsc-4/h9tG2piB16QXBnM4TFM-BdvrVgyUIrwEVh4V2ztEdbd0er22Hbhvec5fD4xkOhyfFj-IHXm2K63kE4t7WGIvaQyS1wKwddZomrrUPDmwrMl5BaILh_gwV3iPWmmMOvqRzcp-R69opb42ogj6-6seYH65USWwgntbB6xPl7g62578F0o--W8As90prA9XU7mv?purpose=fullsize"
+                        alt="Everyday travel backpack"
+                        loading="lazy"
+                    >
+
+                    <span class="packup-product-badge packup-product-badge-new">
+                        EVERYDAY PICK
+                    </span>
+
+                    <button class="packup-product-view-image"
+                            type="button"
+                            data-view-product
+                            aria-label="View Explorer backpack details">
+
+                        <i data-lucide="expand"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="packup-product-info">
+
+                    <div class="packup-product-category">TRAVEL BACKPACKS</div>
+
+                    <h3 class="packup-product-name">
+                        Explorer Travel Backpack
+                    </h3>
+
+                    <div class="packup-product-price-row">
+                        <span class="packup-product-price">₹2,499</span>
+                        <span class="packup-product-price-note">Inclusive of taxes</span>
+                    </div>
+
+                    <div class="packup-product-option">
+                        <span class="packup-product-option-label">Colour</span>
+
+                        <div class="packup-product-swatches">
+
+                            <button class="packup-product-swatch is-selected"
+                                    type="button"
+                                    style="--swatch:#252B2F"
+                                    data-colour="Black"
+                                    aria-label="Black"
+                                    aria-pressed="true"></button>
+
+                            <button class="packup-product-swatch"
+                                    type="button"
+                                    style="--swatch:#687454"
+                                    data-colour="Olive"
+                                    aria-label="Olive"
+                                    aria-pressed="false"></button>
+
+                            <button class="packup-product-swatch"
+                                    type="button"
+                                    style="--swatch:#E7DCC9"
+                                    data-colour="Cream"
+                                    aria-label="Cream"
+                                    aria-pressed="false"></button>
+
+                        </div>
+
+                        <span class="packup-product-selected-colour">Black</span>
+                    </div>
+
+                    <div class="packup-product-size-row">
+                        <span><i data-lucide="ruler"></i> Capacity</span>
+                        <strong>25 L</strong>
+                    </div>
+
+                    <ul class="packup-product-features">
+                        <li><i data-lucide="check"></i> Padded laptop compartment</li>
+                        <li><i data-lucide="check"></i> Water-resistant fabric</li>
+                    </ul>
+
+                    <div class="packup-product-actions">
+
+                        <button class="packup-product-details-btn"
+                                type="button"
+                                data-view-product>
+                            View Details
+                        </button>
+
+                        <button class="packup-product-add-btn"
+                                type="button"
+                                data-add-cart>
+                            <i data-lucide="shopping-cart"></i>
+                            <span>Add to Cart</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- PRODUCT 3 -->
+            <article class="packup-product-card"
+                     data-product-id="weekender-duffel"
+                     data-name="Weekender Duffel Bag"
+                     data-price="1899"
+                     data-image="https://images.openai.com/static-rsc-4/-87u9h2m7CG_oPfPGqeti-2_OxgOUmCDCpKkJtH4ZsplL2AZ7e-a5wE2z0uVcCCGeLONWu8ilB14FFjNHtZ3kzb6isDcNA2kbMVz1WAO2o1UMpi4D22hJUfifxV14AOxMz-6blaI5IzoZ9R3SVmCRdbZSKKCJYLNcHNgkz74BNDxDzF8Q2yS5q8U_tA2TRnS?purpose=fullsize"
+                     data-size="35 L"
+                     data-colours="Navy,Black,Olive"
+                     data-features="35-litre storage,Adjustable shoulder strap,Wide zip opening,Separate accessory pockets">
+
+                <div class="packup-product-image-wrap">
+
+                    <img
+                        class="packup-product-image"
+                        src="https://images.openai.com/static-rsc-4/-87u9h2m7CG_oPfPGqeti-2_OxgOUmCDCpKkJtH4ZsplL2AZ7e-a5wE2z0uVcCCGeLONWu8ilB14FFjNHtZ3kzb6isDcNA2kbMVz1WAO2o1UMpi4D22hJUfifxV14AOxMz-6blaI5IzoZ9R3SVmCRdbZSKKCJYLNcHNgkz74BNDxDzF8Q2yS5q8U_tA2TRnS?purpose=fullsize"
+                        alt="Travel duffel bag"
+                        loading="lazy"
+                    >
+
+                    <button class="packup-product-view-image"
+                            type="button"
+                            data-view-product
+                            aria-label="View Weekender duffel details">
+
+                        <i data-lucide="expand"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="packup-product-info">
+
+                    <div class="packup-product-category">DUFFEL BAGS</div>
+
+                    <h3 class="packup-product-name">
+                        Weekender Duffel Bag
+                    </h3>
+
+                    <div class="packup-product-price-row">
+                        <span class="packup-product-price">₹1,899</span>
+                        <span class="packup-product-price-note">Inclusive of taxes</span>
+                    </div>
+
+                    <div class="packup-product-option">
+                        <span class="packup-product-option-label">Colour</span>
+
+                        <div class="packup-product-swatches">
+
+                            <button class="packup-product-swatch is-selected"
+                                    type="button"
+                                    style="--swatch:#123C59"
+                                    data-colour="Navy"
+                                    aria-label="Navy"
+                                    aria-pressed="true"></button>
+
+                            <button class="packup-product-swatch"
+                                    type="button"
+                                    style="--swatch:#252B2F"
+                                    data-colour="Black"
+                                    aria-label="Black"
+                                    aria-pressed="false"></button>
+
+                            <button class="packup-product-swatch"
+                                    type="button"
+                                    style="--swatch:#687454"
+                                    data-colour="Olive"
+                                    aria-label="Olive"
+                                    aria-pressed="false"></button>
+
+                        </div>
+
+                        <span class="packup-product-selected-colour">Navy</span>
+                    </div>
+
+                    <div class="packup-product-size-row">
+                        <span><i data-lucide="ruler"></i> Capacity</span>
+                        <strong>35 L</strong>
+                    </div>
+
+                    <ul class="packup-product-features">
+                        <li><i data-lucide="check"></i> Adjustable shoulder strap</li>
+                        <li><i data-lucide="check"></i> Wide zip opening</li>
+                    </ul>
+
+                    <div class="packup-product-actions">
+
+                        <button class="packup-product-details-btn"
+                                type="button"
+                                data-view-product>
+                            View Details
+                        </button>
+
+                        <button class="packup-product-add-btn"
+                                type="button"
+                                data-add-cart>
+                            <i data-lucide="shopping-cart"></i>
+                            <span>Add to Cart</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- PRODUCT 4 -->
+            <article class="packup-product-card"
+                     data-product-id="business-laptop"
+                     data-name="Business Laptop Bag"
+                     data-price="2199"
+                     data-image="https://images.openai.com/static-rsc-4/w-viGQ576M8wLW0COQBBcP3OkYKaX7rFOEXV4sAOZBUVd_umDBMriXfbzvG5Hxi953OzaxjK7AYwAkVhh6YAS7IzZsOw30IYoHYlqJR95x1_1LtSzBVUM7cMoC0hV2w5Ei42c1BOS0AnwbdIMKgTYxpchpVBbhTz8ekMGMh9Ct--aT4PoZGmL6QNj8gnch-5?purpose=fullsize"
+                     data-size="15.6 inch"
+                     data-colours="Black,Navy,Grey"
+                     data-features="Fits laptops up to 15.6 inches,Padded laptop sleeve,Document organiser,Comfortable carry handles">
+
+                <div class="packup-product-image-wrap">
+
+                    <img
+                        class="packup-product-image"
+                        src="https://images.openai.com/static-rsc-4/w-viGQ576M8wLW0COQBBcP3OkYKaX7rFOEXV4sAOZBUVd_umDBMriXfbzvG5Hxi953OzaxjK7AYwAkVhh6YAS7IzZsOw30IYoHYlqJR95x1_1LtSzBVUM7cMoC0hV2w5Ei42c1BOS0AnwbdIMKgTYxpchpVBbhTz8ekMGMh9Ct--aT4PoZGmL6QNj8gnch-5?purpose=fullsize"
+                        alt="Laptop and business bag"
+                        loading="lazy"
+                    >
+
+                    <button class="packup-product-view-image"
+                            type="button"
+                            data-view-product
+                            aria-label="View Business laptop bag details">
+
+                        <i data-lucide="expand"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="packup-product-info">
+
+                    <div class="packup-product-category">WORK & BUSINESS</div>
+
+                    <h3 class="packup-product-name">
+                        Business Laptop Bag
+                    </h3>
+
+                    <div class="packup-product-price-row">
+                        <span class="packup-product-price">₹2,199</span>
+                        <span class="packup-product-price-note">Inclusive of taxes</span>
+                    </div>
+
+                    <div class="packup-product-option">
+                        <span class="packup-product-option-label">Colour</span>
+
+                        <div class="packup-product-swatches">
+
+                            <button class="packup-product-swatch is-selected"
+                                    type="button"
+                                    style="--swatch:#252B2F"
+                                    data-colour="Black"
+                                    aria-label="Black"
+                                    aria-pressed="true"></button>
+
+                            <button class="packup-product-swatch"
+                                    type="button"
+                                    style="--swatch:#123C59"
+                                    data-colour="Navy"
+                                    aria-label="Navy"
+                                    aria-pressed="false"></button>
+
+                            <button class="packup-product-swatch"
+                                    type="button"
+                                    style="--swatch:#92999E"
+                                    data-colour="Grey"
+                                    aria-label="Grey"
+                                    aria-pressed="false"></button>
+
+                        </div>
+
+                        <span class="packup-product-selected-colour">Black</span>
+                    </div>
+
+                    <div class="packup-product-size-row">
+                        <span><i data-lucide="laptop"></i> Laptop Size</span>
+                        <strong>15.6 inch</strong>
+                    </div>
+
+                    <ul class="packup-product-features">
+                        <li><i data-lucide="check"></i> Padded laptop sleeve</li>
+                        <li><i data-lucide="check"></i> Document organiser</li>
+                    </ul>
+
+                    <div class="packup-product-actions">
+
+                        <button class="packup-product-details-btn"
+                                type="button"
+                                data-view-product>
+                            View Details
+                        </button>
+
+                        <button class="packup-product-add-btn"
+                                type="button"
+                                data-add-cart>
+                            <i data-lucide="shopping-cart"></i>
+                            <span>Add to Cart</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- PRODUCT 5 -->
+            <article class="packup-product-card"
+                     data-product-id="classic-cabin"
+                     data-name="Classic Cabin Suitcase"
+                     data-price="4299"
+                     data-image="https://images.openai.com/static-rsc-4/jqJcFkD32eE5rBijPSGQmsR0HibCpRssDRGv_FYme8pL-qOc9xA4aNHcJMhEMApI3nqu4O3Xjpn0OZTxI5y1bz51zPNKFu0K4Nj8SOU8LpZub0Tt7fQL7LKDNj83eMa9lnkdKUP649AkYXMFjzQeny8rdfHaMwDGfAOwASGFNl-spK7Wjcz6-Qkjg5hjurpa?purpose=fullsize"
+                     data-size="20 inch"
+                     data-colours="Teal,Black,Cream"
+                     data-features="Cabin-friendly dimensions,Lightweight construction,360° spinner wheels,Organised interior">
+
+                <div class="packup-product-image-wrap">
+
+                    <img
+                        class="packup-product-image"
+                        src="https://images.openai.com/static-rsc-4/jqJcFkD32eE5rBijPSGQmsR0HibCpRssDRGv_FYme8pL-qOc9xA4aNHcJMhEMApI3nqu4O3Xjpn0OZTxI5y1bz51zPNKFu0K4Nj8SOU8LpZub0Tt7fQL7LKDNj83eMa9lnkdKUP649AkYXMFjzQeny8rdfHaMwDGfAOwASGFNl-spK7Wjcz6-Qkjg5hjurpa?purpose=fullsize"
+                        alt="Compact cabin travel suitcase"
+                        loading="lazy"
+                    >
+
+                    <span class="packup-product-badge">CABIN PICK</span>
+
+                    <button class="packup-product-view-image"
+                            type="button"
+                            data-view-product
+                            aria-label="View Classic cabin suitcase details">
+
+                        <i data-lucide="expand"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="packup-product-info">
+
+                    <div class="packup-product-category">CABIN LUGGAGE</div>
+
+                    <h3 class="packup-product-name">
+                        Classic Cabin Suitcase
+                    </h3>
+
+                    <div class="packup-product-price-row">
+                        <span class="packup-product-price">₹4,299</span>
+                        <span class="packup-product-price-note">Inclusive of taxes</span>
+                    </div>
+
+                    <div class="packup-product-option">
+                        <span class="packup-product-option-label">Colour</span>
+
+                        <div class="packup-product-swatches">
+
+                            <button class="packup-product-swatch is-selected"
+                                    type="button"
+                                    style="--swatch:#087F86"
+                                    data-colour="Teal"
+                                    aria-label="Teal"
+                                    aria-pressed="true"></button>
+
+                            <button class="packup-product-swatch"
+                                    type="button"
+                                    style="--swatch:#252B2F"
+                                    data-colour="Black"
+                                    aria-label="Black"
+                                    aria-pressed="false"></button>
+
+                            <button class="packup-product-swatch"
+                                    type="button"
+                                    style="--swatch:#E7DCC9"
+                                    data-colour="Cream"
+                                    aria-label="Cream"
+                                    aria-pressed="false"></button>
+
+                        </div>
+
+                        <span class="packup-product-selected-colour">Teal</span>
+                    </div>
+
+                    <div class="packup-product-size-row">
+                        <span><i data-lucide="ruler"></i> Size</span>
+                        <strong>20 inch</strong>
+                    </div>
+
+                    <ul class="packup-product-features">
+                        <li><i data-lucide="check"></i> Cabin-friendly dimensions</li>
+                        <li><i data-lucide="check"></i> Lightweight construction</li>
+                    </ul>
+
+                    <div class="packup-product-actions">
+
+                        <button class="packup-product-details-btn"
+                                type="button"
+                                data-view-product>
+                            View Details
+                        </button>
+
+                        <button class="packup-product-add-btn"
+                                type="button"
+                                data-add-cart>
+                            <i data-lucide="shopping-cart"></i>
+                            <span>Add to Cart</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- PRODUCT 6 -->
+            <article class="packup-product-card"
+                     data-product-id="travel-organiser"
+                     data-name="Travel Organiser Kit"
+                     data-price="999"
+                     data-image="https://images.openai.com/static-rsc-4/_QRQYzFpxfo2Bn8oa3KwJ8q60NmoyUfglqSaZOShfiRFfTCOlVXvtrgGudnpgYQnFUMQuYxapBizTPK6yLWhYLs57nt3-wMcfMVh7qkZmZLD874B_YZI0akjkOMlE1wXW-qbySxpXoOGfJixWxyF1AYM0ePa3Mes9p8qmJSJofGDlbp9U9iFfJtD2AhsHmrx?purpose=fullsize"
+                     data-size="Compact Set"
+                     data-colours="Navy,Black,Teal"
+                     data-features="Compact travel storage,Multiple organiser pockets,Lightweight design,Easy to pack">
+
+                <div class="packup-product-image-wrap">
+
+                    <img
+                        class="packup-product-image"
+                        src="https://images.openai.com/static-rsc-4/_QRQYzFpxfo2Bn8oa3KwJ8q60NmoyUfglqSaZOShfiRFfTCOlVXvtrgGudnpgYQnFUMQuYxapBizTPK6yLWhYLs57nt3-wMcfMVh7qkZmZLD874B_YZI0akjkOMlE1wXW-qbySxpXoOGfJixWxyF1AYM0ePa3Mes9p8qmJSJofGDlbp9U9iFfJtD2AhsHmrx?purpose=fullsize"
+                        alt="Travel essentials and organiser kit"
+                        loading="lazy"
+                    >
+
+                    <button class="packup-product-view-image"
+                            type="button"
+                            data-view-product
+                            aria-label="View Travel organiser kit details">
+
+                        <i data-lucide="expand"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="packup-product-info">
+
+                    <div class="packup-product-category">TRAVEL ACCESSORIES</div>
+
+                    <h3 class="packup-product-name">
+                        Travel Organiser Kit
+                    </h3>
+
+                    <div class="packup-product-price-row">
+                        <span class="packup-product-price">₹999</span>
+                        <span class="packup-product-price-note">Inclusive of taxes</span>
+                    </div>
+
+                    <div class="packup-product-option">
+                        <span class="packup-product-option-label">Colour</span>
+
+                        <div class="packup-product-swatches">
+
+                            <button class="packup-product-swatch is-selected"
+                                    type="button"
+                                    style="--swatch:#123C59"
+                                    data-colour="Navy"
+                                    aria-label="Navy"
+                                    aria-pressed="true"></button>
+
+                            <button class="packup-product-swatch"
+                                    type="button"
+                                    style="--swatch:#252B2F"
+                                    data-colour="Black"
+                                    aria-label="Black"
+                                    aria-pressed="false"></button>
+
+                            <button class="packup-product-swatch"
+                                    type="button"
+                                    style="--swatch:#087F86"
+                                    data-colour="Teal"
+                                    aria-label="Teal"
+                                    aria-pressed="false"></button>
+
+                        </div>
+
+                        <span class="packup-product-selected-colour">Navy</span>
+                    </div>
+
+                    <div class="packup-product-size-row">
+                        <span><i data-lucide="package"></i> Size</span>
+                        <strong>Compact Set</strong>
+                    </div>
+
+                    <ul class="packup-product-features">
+                        <li><i data-lucide="check"></i> Multiple organiser pockets</li>
+                        <li><i data-lucide="check"></i> Lightweight design</li>
+                    </ul>
+
+                    <div class="packup-product-actions">
+
+                        <button class="packup-product-details-btn"
+                                type="button"
+                                data-view-product>
+                            View Details
+                        </button>
+
+                        <button class="packup-product-add-btn"
+                                type="button"
+                                data-add-cart>
+                            <i data-lucide="shopping-cart"></i>
+                            <span>Add to Cart</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <!-- COLLECTION FOOTER -->
+        <div class="packup-products-footer">
+
+            <div class="packup-products-footer-icon">
+                <i data-lucide="badge-check"></i>
+            </div>
+
+            <p>
+                Choose your style, compare the details, and find your
+                next travel companion.
+            </p>
+
+            <a href="contact.html" class="packup-products-footer-link">
+                Need Help?
+                <i data-lucide="arrow-up-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CART DRAWER
+===================================================== -->
+
+<div class="packup-cart-backdrop"
+     id="packupCartBackdrop"
+     hidden></div>
+
+<aside class="packup-cart-drawer"
+       id="packupCartDrawer"
+       aria-label="Shopping cart"
+       aria-hidden="true"
+       inert>
+
+    <div class="packup-cart-header">
+
+        <div>
+            <span class="packup-cart-eyebrow">YOUR SELECTION</span>
+            <h2>Your Shopping Cart</h2>
+            <p id="packupCartSubtitle">0 items selected</p>
+        </div>
+
+        <button class="packup-cart-close"
+                id="packupCloseCart"
+                type="button"
+                aria-label="Close shopping cart">
+
+            <i data-lucide="x"></i>
+
+        </button>
+
+    </div>
+
+    <div class="packup-cart-items" id="packupCartItems">
+
+        <div class="packup-cart-empty">
+
+            <span class="packup-cart-empty-icon">
+                <i data-lucide="shopping-bag"></i>
+            </span>
+
+            <h3>Your cart is waiting</h3>
+
+            <p>Add a bag you love and it will appear here.</p>
+
+            <button type="button"
+                    class="packup-cart-continue"
+                    id="packupContinueShopping">
+                Explore Bags
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="packup-cart-summary">
+
+        <div class="packup-cart-total-row">
+            <span>Subtotal</span>
+            <strong id="packupCartSubtotal">₹0</strong>
+        </div>
+
+        <p class="packup-cart-tax-note">
+            Prices are displayed in INR. Shipping and final charges,
+            if applicable, will be confirmed at checkout.
+        </p>
+
+        <button class="packup-cart-checkout"
+                id="packupCheckout"
+                type="button"
+                disabled>
+            Continue to Checkout
+            <i data-lucide="arrow-right"></i>
+        </button>
+
+        <button class="packup-cart-clear"
+                id="packupClearCart"
+                type="button"
+                disabled>
+            Clear Cart
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- =====================================================
+     PRODUCT DETAILS MODAL
+===================================================== -->
+
+<div class="packup-product-modal-backdrop"
+     id="packupProductModalBackdrop"
+     hidden>
+
+    <div class="packup-product-modal"
+         id="packupProductModal"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="packupModalTitle"
+         tabindex="-1">
+
+        <button class="packup-product-modal-close"
+                id="packupCloseProductModal"
+                type="button"
+                aria-label="Close product details">
+
+            <i data-lucide="x"></i>
+
+        </button>
+
+        <div class="packup-product-modal-image-wrap">
+            <img id="packupModalImage" src="" alt="">
+        </div>
+
+        <div class="packup-product-modal-content">
+
+            <span class="packup-product-modal-category"
+                  id="packupModalCategory"></span>
+
+            <h2 id="packupModalTitle"></h2>
+
+            <div class="packup-product-modal-price"
+                 id="packupModalPrice"></div>
+
+            <p class="packup-product-modal-description">
+                Review the available options and key features before
+                adding this product to your cart.
+            </p>
+
+            <div class="packup-product-modal-size">
+                <span>Size / Capacity</span>
+                <strong id="packupModalSize"></strong>
+            </div>
+
+            <div class="packup-product-modal-colours">
+                <span>Available Colours</span>
+                <div id="packupModalColours"></div>
+            </div>
+
+            <h3>Key Features</h3>
+
+            <ul id="packupModalFeatures"></ul>
+
+            <button class="packup-product-modal-add"
+                    id="packupModalAddCart"
+                    type="button">
+
+                <i data-lucide="shopping-cart"></i>
+                Add to Cart
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     CART TOAST
+===================================================== -->
+
+<div class="packup-cart-toast"
+     id="packupCartToast"
+     role="status"
+     aria-live="polite">
+
+    <i data-lucide="check-circle-2"></i>
+    <span id="packupCartToastMessage">Added to cart</span>
+
+</div>
+
+<section class="packup-size-section" id="choose-by-size">
+
+    <div class="packup-size-container">
+
+        <!-- SECTION HEADER -->
+        <header class="packup-size-header">
+
+            <div class="packup-size-eyebrow">
+                <span class="packup-size-eyebrow-line"></span>
+                <span>CHOOSE BY SIZE</span>
+            </div>
+
+            <h2 class="packup-size-heading">
+                The Right Fit for
+                <span>Every Trip</span>
+            </h2>
+
+            <p class="packup-size-description">
+                Different journeys call for different amounts of packing
+                space. Compare cabin, medium, and large luggage using the
+                dimensions and capacity listed for each product. Check
+                airline baggage rules before travelling.
+            </p>
+
+        </header>
+
+
+        <!-- SIZE SELECTOR LAYOUT -->
+        <div class="packup-size-layout">
+
+            <!-- LEFT SIDE -->
+            <div class="packup-size-left">
+
+                <div
+                    class="packup-size-options"
+                    role="tablist"
+                    aria-label="Choose luggage size"
+                >
+
+                    <!-- CABIN -->
+                    <button
+                        type="button"
+                        class="packup-size-option active"
+                        id="size-tab-cabin"
+                        role="tab"
+                        aria-selected="true"
+                        aria-controls="size-panel"
+                        data-size="cabin"
+                    >
+
+                        <span class="packup-size-option-number">
+                            01
+                        </span>
+
+                        <span class="packup-size-option-info">
+
+                            <span class="packup-size-option-title">
+                                Cabin Luggage
+                            </span>
+
+                            <span class="packup-size-option-description">
+                                Compact and easy to carry
+                            </span>
+
+                        </span>
+
+                        <span class="packup-size-option-arrow">
+                            <i data-lucide="arrow-up-right"></i>
+                        </span>
+
+                    </button>
+
+
+                    <!-- MEDIUM -->
+                    <button
+                        type="button"
+                        class="packup-size-option"
+                        id="size-tab-medium"
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="size-panel"
+                        data-size="medium"
+                        tabindex="-1"
+                    >
+
+                        <span class="packup-size-option-number">
+                            02
+                        </span>
+
+                        <span class="packup-size-option-info">
+
+                            <span class="packup-size-option-title">
+                                Medium Suitcases
+                            </span>
+
+                            <span class="packup-size-option-description">
+                                Balanced space for longer trips
+                            </span>
+
+                        </span>
+
+                        <span class="packup-size-option-arrow">
+                            <i data-lucide="arrow-up-right"></i>
+                        </span>
+
+                    </button>
+
+
+                    <!-- LARGE -->
+                    <button
+                        type="button"
+                        class="packup-size-option"
+                        id="size-tab-large"
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="size-panel"
+                        data-size="large"
+                        tabindex="-1"
+                    >
+
+                        <span class="packup-size-option-number">
+                            03
+                        </span>
+
+                        <span class="packup-size-option-info">
+
+                            <span class="packup-size-option-title">
+                                Large Suitcases
+                            </span>
+
+                            <span class="packup-size-option-description">
+                                Extra room for extended travel
+                            </span>
+
+                        </span>
+
+                        <span class="packup-size-option-arrow">
+                            <i data-lucide="arrow-up-right"></i>
+                        </span>
+
+                    </button>
+
+
+                    <!-- MULTI-PIECE SETS -->
+                    <button
+                        type="button"
+                        class="packup-size-option"
+                        id="size-tab-sets"
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="size-panel"
+                        data-size="sets"
+                        tabindex="-1"
+                    >
+
+                        <span class="packup-size-option-number">
+                            04
+                        </span>
+
+                        <span class="packup-size-option-info">
+
+                            <span class="packup-size-option-title">
+                                Multi-Piece Sets
+                            </span>
+
+                            <span class="packup-size-option-description">
+                                Multiple sizes for different journeys
+                            </span>
+
+                        </span>
+
+                        <span class="packup-size-option-arrow">
+                            <i data-lucide="arrow-up-right"></i>
+                        </span>
+
+                    </button>
+
+                </div>
+
+
+                <!-- LEFT BOTTOM INFORMATION CARD -->
+                <div class="packup-size-note">
+
+                    <span class="packup-size-note-icon">
+                        <i data-lucide="info"></i>
+                    </span>
+
+                    <div class="packup-size-note-content">
+
+                        <h3>Before You Choose</h3>
+
+                        <p>
+                            Check the actual product dimensions, capacity,
+                            and your airline's baggage allowance before
+                            travelling.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE -->
+            <div
+                class="packup-size-visual"
+                id="size-panel"
+                role="tabpanel"
+                aria-labelledby="size-tab-cabin"
+            >
+
+                <!-- FEATURE IMAGE -->
+                <div class="packup-size-image-wrap">
+
+                    <img
+                        class="packup-size-image"
+                        id="packup-size-image"
+                        src="https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=1200&q=85"
+                        alt="Cabin luggage suitcase"
+                        loading="lazy"
+                    >
+
+                    <div class="packup-size-image-overlay"></div>
+
+                    <div class="packup-size-image-top">
+
+                        <span class="packup-size-image-label">
+                            PACKUP TRAVEL GUIDE
+                        </span>
+
+                        <span
+                            class="packup-size-image-index"
+                            id="packup-size-index"
+                        >
+                            01 / 04
+                        </span>
+
+                    </div>
+
+                    <div class="packup-size-image-caption">
+
+                        <span
+                            class="packup-size-image-kicker"
+                            id="packup-size-kicker"
+                        >
+                            LIGHT TRAVEL
+                        </span>
+
+                        <h3 id="packup-size-image-title">
+                            Cabin Luggage
+                        </h3>
+
+                        <p id="packup-size-image-description">
+                            Smart packing for short trips and quick getaways.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SPECIFICATIONS -->
+                <div class="packup-size-specs">
+
+                    <div class="packup-size-spec">
+
+                        <span class="packup-size-spec-icon">
+                            <i data-lucide="ruler"></i>
+                        </span>
+
+                        <div class="packup-size-spec-content">
+
+                            <span class="packup-size-spec-label">
+                                Typical dimensions
+                            </span>
+
+                            <strong id="packup-size-dimensions">
+                                55 × 35 × 23 cm
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="packup-size-spec">
+
+                        <span class="packup-size-spec-icon">
+                            <i data-lucide="package"></i>
+                        </span>
+
+                        <div class="packup-size-spec-content">
+
+                            <span class="packup-size-spec-label">
+                                Approx. capacity
+                            </span>
+
+                            <strong id="packup-size-capacity">
+                                35–40 litres
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="packup-size-spec">
+
+                        <span class="packup-size-spec-icon">
+                            <i data-lucide="plane"></i>
+                        </span>
+
+                        <div class="packup-size-spec-content">
+
+                            <span class="packup-size-spec-label">
+                                Best suited for
+                            </span>
+
+                            <strong id="packup-size-purpose">
+                                Short trips
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     SECTION 5 — FEATURES AND BENEFITS
+===================================================== -->
+
+<section class="packup-features-section" id="features-benefits">
+
+    <div class="packup-features-container">
+
+        <div class="packup-features-layout">
+
+            <!-- LEFT SIDE IMAGE -->
+            <div class="packup-features-visual">
+
+                <img
+                    src="https://images.openai.com/static-rsc-4/tAFNFMvO0BMHw_AnHP8c0jmZZ0D0nhLd4gO5H35ehpKJQgbrqNKjf2yxDEeJAZ5aXUuKlvXoat8WkwlqrGZO1jpG8Pk86DSz5FDysbhwdU-lRQaZVi1UhGyA209hi4LRTtK84dRqLhCAQG8j_Q8fRsnkcIsGLHguFIwM61LRbSKgy-a4AXWminaV7DUqASe2?purpose=fullsize"
+                    alt="Travel backpack showing practical storage and design"
+                    class="packup-features-image"
+                    loading="lazy"
+                >
+
+                <div class="packup-features-image-overlay"></div>
+
+                <div class="packup-features-image-content">
+
+                    <span class="packup-features-image-label">
+                        DESIGNED FOR YOUR JOURNEY
+                    </span>
+
+                    <h3>
+                        Every Detail Has
+                        <span>a Purpose.</span>
+                    </h3>
+
+                    <p>
+                        Thoughtful features help make packing,
+                        carrying, and travelling more convenient.
+                    </p>
+
+                </div>
+
+                <div class="packup-features-image-mark">
+                    <i data-lucide="move-up-right"></i>
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE CONTENT -->
+            <div class="packup-features-content">
+
+                <div class="packup-features-header">
+
+                    <div class="packup-features-eyebrow">
+                        <span class="packup-features-eyebrow-line"></span>
+                        <span>FEATURES & BENEFITS</span>
+                    </div>
+
+                    <h2 class="packup-features-heading">
+                        Discover the Details
+                        <span>That Matter</span>
+                    </h2>
+
+                    <p class="packup-features-description">
+                        Explore practical features that can influence
+                        your travel experience. Review wheel design,
+                        handle construction, interior compartments,
+                        pockets, materials, and other specifications
+                        to select the right option for your needs.
+                    </p>
+
+                </div>
+
+
+                <!-- FEATURE GRID -->
+                <div class="packup-features-grid">
+
+                    <!-- FEATURE 1 -->
+                    <article class="packup-feature-card">
+
+                        <span class="packup-feature-icon">
+                            <i data-lucide="circle-dot"></i>
+                        </span>
+
+                        <span class="packup-feature-number">01</span>
+
+                        <h3>Wheel Design</h3>
+
+                        <p>
+                            Explore wheel configurations for
+                            easier movement and handling.
+                        </p>
+
+                    </article>
+
+
+                    <!-- FEATURE 2 -->
+                    <article class="packup-feature-card">
+
+                        <span class="packup-feature-icon">
+                            <i data-lucide="grip"></i>
+                        </span>
+
+                        <span class="packup-feature-number">02</span>
+
+                        <h3>Handle Comfort</h3>
+
+                        <p>
+                            Check handle construction and
+                            adjustability for comfortable carrying.
+                        </p>
+
+                    </article>
+
+
+                    <!-- FEATURE 3 -->
+                    <article class="packup-feature-card">
+
+                        <span class="packup-feature-icon">
+                            <i data-lucide="layers-3"></i>
+                        </span>
+
+                        <span class="packup-feature-number">03</span>
+
+                        <h3>Interior Storage</h3>
+
+                        <p>
+                            Look for compartments that help
+                            organise your travel essentials.
+                        </p>
+
+                    </article>
+
+
+                    <!-- FEATURE 4 -->
+                    <article class="packup-feature-card">
+
+                        <span class="packup-feature-icon">
+                            <i data-lucide="pocket"></i>
+                        </span>
+
+                        <span class="packup-feature-number">04</span>
+
+                        <h3>Useful Pockets</h3>
+
+                        <p>
+                            Keep smaller belongings accessible
+                            with practical pocket arrangements.
+                        </p>
+
+                    </article>
+
+
+                    <!-- FEATURE 5 -->
+                    <article class="packup-feature-card">
+
+                        <span class="packup-feature-icon">
+                            <i data-lucide="shield-check"></i>
+                        </span>
+
+                        <span class="packup-feature-number">05</span>
+
+                        <h3>Material Quality</h3>
+
+                        <p>
+                            Compare materials, construction,
+                            and the care each bag requires.
+                        </p>
+
+                    </article>
+
+
+                    <!-- FEATURE 6 -->
+                    <article class="packup-feature-card">
+
+                        <span class="packup-feature-icon">
+                            <i data-lucide="sliders-horizontal"></i>
+                        </span>
+
+                        <span class="packup-feature-number">06</span>
+
+                        <h3>Product Details</h3>
+
+                        <p>
+                            Review size, weight, capacity,
+                            and other listed specifications.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     SECTION 6 — COMPLETE YOUR TRAVEL KIT
+===================================================== -->
+
+<section class="packup-accessories-section" id="travel-accessories">
+
+    <div class="packup-accessories-container">
+
+        <!-- CENTERED HEADER -->
+        <header class="packup-accessories-header">
+
+            <div class="packup-accessories-eyebrow">
+                <span class="packup-accessories-eyebrow-line"></span>
+                <span>TRAVEL ACCESSORIES</span>
+            </div>
+
+            <h2 class="packup-accessories-heading">
+                Small Essentials,
+                <span>Better Organized Trips</span>
+            </h2>
+
+            <p class="packup-accessories-description">
+                Complement your luggage with practical travel accessories
+                and additional bags. Organizers and accessory bags can help
+                you keep smaller items arranged and accessible throughout
+                your journey.
+            </p>
+
+        </header>
+
+
+        <!-- FOUR HORIZONTAL IMAGE CARDS -->
+        <div class="packup-accessories-grid">
+
+            <!-- TRAVEL ORGANIZERS -->
+            <a
+                href="products.html?category=travel-organizers"
+                class="packup-accessory-card"
+            >
+
+                <div class="packup-accessory-image-wrap">
+
+                    <img
+                        src="https://images.openai.com/static-rsc-4/Tr-KexSU1S_BnOPkRvJZD9H1H-ihG8glWnSdA65vgHui_CS-OUNjWwyhlVzUf6BWozF0kc9ufF0xg7c3cZJIlMeqiPlTKbCW_0QyzJGElml--eiIS2kXih6X4o2GKysYuAr1FQZov7Ngip5Gpo3nP0m1i-s2iavvZYf7I8FrwOiKCRTs3U6DqdT7tf8NSJ-k?purpose=fullsize"
+                        alt="Travel organizer bag"
+                        class="packup-accessory-image"
+                        loading="lazy"
+                    >
+
+                    <span class="packup-accessory-number">01</span>
+
+                    <span class="packup-accessory-arrow">
+                        <i data-lucide="arrow-up-right"></i>
+                    </span>
+
+                </div>
+
+                <div class="packup-accessory-info">
+
+                    <h3>Travel Organizers</h3>
+
+                    <p>
+                        Keep travel essentials neatly arranged.
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <!-- TOILETRY BAGS -->
+            <a
+                href="products.html?category=toiletry-bags"
+                class="packup-accessory-card"
+            >
+
+                <div class="packup-accessory-image-wrap">
+
+                    <img
+                        src="https://images.openai.com/static-rsc-4/6ckhuH9zKDaYq9BMMa_96fWJgRz52ZELdU78FLnDJgBL6Vfcg3ImTlrGHejDEt2DWC26kCkVQ6I18Lm-NV3XYOvPxWUYBF5_4P092ZeFg1kYovzqBnnxhLsDcYrEYRZNT5yyYUsYMg-yOj84A8zQWCv_1H1v_1PJeUnJGTyuuaN1Dy9dYWHbtUMn_OuGDcsQ?purpose=fullsize"
+                        alt="Toiletry and personal care bag"
+                        class="packup-accessory-image"
+                        loading="lazy"
+                    >
+
+                    <span class="packup-accessory-number">02</span>
+
+                    <span class="packup-accessory-arrow">
+                        <i data-lucide="arrow-up-right"></i>
+                    </span>
+
+                </div>
+
+                <div class="packup-accessory-info">
+
+                    <h3>Toiletry Bags</h3>
+
+                    <p>
+                        Store personal care items together.
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <!-- PACKING CUBES -->
+            <a
+                href="products.html?category=packing-cubes"
+                class="packup-accessory-card"
+            >
+
+                <div class="packup-accessory-image-wrap">
+
+                    <img
+                        src="https://images.openai.com/static-rsc-4/XmzYGBMNX67P4hZPbY-y9wObxL7VI7eO_9oQhiMvUYpOyH-GwCGr3TTE5gw6XfVe9iNfwhf_Q67hEbDQq1nt67R5igAEziHwhq7oBIJq_TFmtQfWaLpxE3EDtCfZP8rZYirbBQ_Sro-YaAK5W4laer2dKvrnIS5f4DM3mP3hsvN0avgCUzo6FfnoMfRKvdbQ?purpose=fullsize"
+                        alt="Packing accessories for organized luggage"
+                        class="packup-accessory-image"
+                        loading="lazy"
+                    >
+
+                    <span class="packup-accessory-number">03</span>
+
+                    <span class="packup-accessory-arrow">
+                        <i data-lucide="arrow-up-right"></i>
+                    </span>
+
+                </div>
+
+                <div class="packup-accessory-info">
+
+                    <h3>Packing Cubes</h3>
+
+                    <p>
+                        Separate clothes and packing essentials.
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <!-- SMALL TRAVEL BAGS -->
+            <a
+                href="products.html?category=small-travel-bags"
+                class="packup-accessory-card"
+            >
+
+                <div class="packup-accessory-image-wrap">
+
+                    <img
+                        src="https://images.openai.com/static-rsc-4/uPvLLP-4FOxsrrU1xS3VD10HW4d56Wfr0Miqq23BIpnchg3jwKbdjgHa_EtdvhWaPe76QfIEi03iZPZWsBjV6Txm1DC6XuS13WrAPhY8q9BPbvmyS-TJrWTo4e1iifIOq1r8KxzLN4dvV9JyWbc9q_SgcJO6cmr0mLMHP480WGeQwqdqIJ4Jgsu4uBDEKAT9?purpose=fullsize"
+                        alt="Small travel bag and everyday carry accessory"
+                        class="packup-accessory-image"
+                        loading="lazy"
+                    >
+
+                    <span class="packup-accessory-number">04</span>
+
+                    <span class="packup-accessory-arrow">
+                        <i data-lucide="arrow-up-right"></i>
+                    </span>
+
+                </div>
+
+                <div class="packup-accessory-info">
+
+                    <h3>Small Travel Bags</h3>
+
+                    <p>
+                        Carry smaller essentials with ease.
+                    </p>
+
+                </div>
+
+            </a>
+
+        </div>
+
+
+        <!-- CTA BUTTON -->
+        <div class="packup-accessories-cta">
+
+            <a href="products.html" class="packup-accessories-button">
+
+                <span>Explore Accessories</span>
+
+                <i data-lucide="arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     PACKUP — NEED HELP SECTION
+===================================================== -->
+
+<section class="packup-help-section" id="need-help">
+
+    <div class="packup-help-container">
+
+        <div class="packup-help-card">
+
+            <!-- Full-height primary accent -->
+            <span class="packup-help-accent"></span>
+
+            <!-- Main icon -->
+            <div class="packup-help-icon">
+                <i data-lucide="headset"></i>
+            </div>
+
+            <!-- Main content -->
+            <div class="packup-help-content">
+
+                <!-- Tagline -->
+                <span class="packup-help-eyebrow">
+                    NEED A HAND?
+                </span>
+
+                <!-- Heading -->
+                <h2 class="packup-help-heading">
+                    Let Your Travel Plans
+                    <span>Guide Your Choice</span>
+                </h2>
+
+                <!-- Description -->
+                <p class="packup-help-description">
+                    Not sure which size or bag type suits your journey?
+                    Review our product information or contact us for help
+                    understanding the available options.
+                </p>
+
+                <!-- Feature items -->
+                <div class="packup-help-features">
+
+                    <!-- Feature 1 -->
+                    <div class="packup-help-feature">
+
+                        <div class="packup-help-feature-icon">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+
+                        <div class="packup-help-feature-text">
+
+                            <h3>Expert Advice</h3>
+
+                            <p>
+                                Get the right guidance
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="packup-help-feature">
+
+                        <div class="packup-help-feature-icon">
+                            <i data-lucide="plane"></i>
+                        </div>
+
+                        <div class="packup-help-feature-text">
+
+                            <h3>Travel Friendly</h3>
+
+                            <p>
+                                For every journey
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="packup-help-feature">
+
+                        <div class="packup-help-feature-icon">
+                            <i data-lucide="headset"></i>
+                        </div>
+
+                        <div class="packup-help-feature-text">
+
+                            <h3>Dedicated Support</h3>
+
+                            <p>
+                                We're here to help
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Action buttons -->
+            <div class="packup-help-actions">
+
+                <a
+                    href="contact.html"
+                    class="packup-help-button packup-help-button-primary"
+                >
+
+                    <span>Contact Us</span>
+
+                    <i data-lucide="arrow-up-right"></i>
+
+                </a>
+
+                <a
+                    href="warranty-repair.html"
+                    class="packup-help-button packup-help-button-secondary"
+                >
+
+                    <span>Warranty &amp; Repair</span>
+
+                    <i data-lucide="shield-check"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+
+        <!-- BRAND -->
+        <div class="footer-col footer-brand-col">
+
+            <div class="footer-logo">
+
+                <a
+                    href="index.html"
+                    class="logo-icon-link"
+                    aria-label="Packup Home"
+                >
+
+                    <img
+                        src="logo_light.png"
+                        data-light-logo="logo_light.png"
+                        data-dark-logo="logo_dark.png"
+                        alt="Packup Logo"
+                        class="brand-logo"
+                        id="footerLogo"
+                    >
+
+                </a>
+
+
+                <a
+                    href="index.html"
+                    class="brand-content footer-branding"
+                >
+
+                    <h2 class="brand-name">
+
+                        <span class="pack">PACK</span><span class="up">UP</span>
+
+                    </h2>
+
+                    <span class="subtitle-text">
+                        TRAVEL BEYOND LIMITS
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <p class="footer-about">
+
+                Discover thoughtfully designed luggage and travel bags
+                built for every journey. From weekend escapes to long
+                adventures, Packup helps you travel with confidence and style.
+
+            </p>
+
+
+            <!-- SOCIAL -->
+            <div class="social">
+
+                <a
+                    href="#"
+                    aria-label="Instagram"
+                    title="Instagram"
+                >
+                    <i data-lucide="instagram"></i>
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="Facebook"
+                    title="Facebook"
+                >
+                    <i data-lucide="facebook"></i>
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="Twitter"
+                    title="Twitter"
+                >
+                    <i data-lucide="twitter"></i>
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="YouTube"
+                    title="YouTube"
+                >
+                    <i data-lucide="youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QUICK LINKS -->
+        <div class="footer-col">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Products
+                    </a>
+                </li>
+
+                <li>
+                    <a href="warranty.html">
+                        Warranty &amp; Repair
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- PRODUCTS -->
+        <div class="footer-col">
+
+            <h3>
+                Our Products
+            </h3>
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="products.html">
+                        Luggage
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Travel Bags
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Backpacks
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Cabin Bags
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Travel Accessories
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- ADDITIONAL -->
+        <div class="footer-col">
+
+            <h3>
+                Additional Pages
+            </h3>
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="error.html">
+                        404 Error
+                    </a>
+                </li>
+
+                <li>
+                    <a href="soon.html">
+                        Coming Soon
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Support
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Explore Collections
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+        <div class="footer-col">
+
+            <h3>
+                Contact Us
+            </h3>
+
+            <ul class="contact">
+
+                <li>
+
+                    <span class="contact-icon">
+                        <i data-lucide="map-pin"></i>
+                    </span>
+
+                    <span>
+                        Hyderabad, Telangana, India
+                    </span>
+
+                </li>
+
+
+                <li>
+
+                    <span class="contact-icon">
+                        <i data-lucide="phone"></i>
+                    </span>
+
+                    <a href="tel:+919876543210">
+                        +91 98765 43210
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <span class="contact-icon">
+                        <i data-lucide="mail"></i>
+                    </span>
+
+                    <a href="mailto:hello@packup.com">
+                        hello@packup.com
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <span class="contact-icon">
+                        <i data-lucide="clock"></i>
+                    </span>
+
+                    <span>
+                        Mon – Sat: 9:00 AM – 7:00 PM
+                    </span>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER BOTTOM -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Packup. All Rights Reserved.
+        </p>
+
+
+        <div class="footer-bottom-links">
+
+            <a href="policy.html">
+                Privacy Policy
+            </a>
+
+            <a href="conditions.html">
+                Terms &amp; Conditions
+            </a>
+
+            <a href="cookies.html">
+                Cookies
+            </a>
+
+
+            <!-- GO TO TOP -->
+            <a
+                href="#"
+                class="top-btn"
+                aria-label="Back to top"
+                title="Back to top"
+            >
+
+                <i data-lucide="arrow-up"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+<script src="main.js"></script>
+<script src="products.js"></script>
+</body>
+</html>

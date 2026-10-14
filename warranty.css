@@ -1,0 +1,5355 @@
+/* =====================================================
+   PACKUP — WARRANTY & REPAIR HERO
+===================================================== */
+
+.packup-warranty-hero {
+    position: relative;
+    isolation: isolate;
+
+    width: 100%;
+    height: 90vh;
+    min-height: 620px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 45px 7%;
+    overflow: hidden;
+
+    background: var(--bg);
+    color: #FFFFFF;
+
+    box-sizing: border-box;
+}
+
+.packup-warranty-hero *,
+.packup-warranty-hero *::before,
+.packup-warranty-hero *::after {
+    box-sizing: border-box;
+}
+
+/* =====================================================
+   BACKGROUND IMAGE
+===================================================== */
+
+.packup-warranty-background {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+
+    background-image: url("repairbg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    transform: scale(1.01);
+}
+
+/* =====================================================
+   LIGHT MODE OVERLAY
+   Dark overlay keeps white text readable.
+===================================================== */
+
+.packup-warranty-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background: linear-gradient(
+        90deg,
+        rgba(7, 30, 53, 0.12) 0%,
+        rgba(7, 30, 53, 0.40) 35%,
+        rgba(7, 30, 53, 0.84) 64%,
+        rgba(7, 30, 53, 0.94) 100%
+    );
+}
+
+/* =====================================================
+   CONTENT CONTAINER
+===================================================== */
+
+.packup-warranty-hero-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.packup-warranty-content {
+    width: 55%;
+    max-width: 700px;
+    min-width: 0;
+
+    padding: 25px 0;
+}
+
+/* =====================================================
+   EYEBROW / TAGLINE
+===================================================== */
+
+.packup-warranty-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    color: var(--secondary);
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.packup-warranty-eyebrow::before {
+    content: "";
+
+    display: inline-block;
+    width: 35px;
+    height: 2px;
+    flex-shrink: 0;
+
+    background: var(--secondary);
+    border-radius: var(--radius-pill);
+}
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.packup-warranty-heading {
+    max-width: 650px;
+    margin: 0 0 20px;
+
+    color: #FFFFFF;
+    font-family: var(--font-family);
+    font-size: clamp(36px, 3.6vw, 54px);
+    font-weight: 800;
+    line-height: 1.13;
+    letter-spacing: -1.3px;
+
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.12);
+}
+
+.packup-warranty-heading span {
+    display: block;
+    color: var(--secondary);
+}
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.packup-warranty-description {
+    max-width: 590px;
+    margin: 0 0 27px;
+
+    color: #E8F0F7;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.9;
+}
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.packup-warranty-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    margin-bottom: 32px;
+}
+
+.packup-warranty-button {
+    min-height: 49px;
+    padding: 12px 18px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+        background var(--transition),
+        color var(--transition),
+        border-color var(--transition),
+        transform var(--transition);
+}
+
+.packup-warranty-button svg {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+}
+
+/* Primary button */
+
+.packup-warranty-button-primary {
+    color: #FFFFFF;
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.packup-warranty-button-primary:hover {
+    color: #FFFFFF;
+    background: var(--secondary);
+    border-color: var(--secondary);
+    transform: translateY(-2px);
+}
+
+/* Secondary button */
+
+.packup-warranty-button-secondary {
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.65);
+}
+
+.packup-warranty-button-secondary:hover {
+    color: #FFFFFF;
+    background: var(--secondary);
+    border-color: var(--secondary);
+    transform: translateY(-2px);
+}
+
+/* =====================================================
+   FEATURE HIGHLIGHTS
+===================================================== */
+
+.packup-warranty-features {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+
+    padding-top: 23px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.packup-warranty-feature {
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 0 12px;
+}
+
+.packup-warranty-feature:first-child {
+    padding-left: 0;
+}
+
+.packup-warranty-feature + .packup-warranty-feature {
+    border-left: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.packup-warranty-feature-icon {
+    width: 43px;
+    height: 43px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--secondary);
+    background: rgba(7, 159, 154, 0.18);
+
+    border: 1px solid rgba(7, 159, 154, 0.28);
+    border-radius: var(--radius-sm);
+}
+
+.packup-warranty-feature-icon svg {
+    width: 22px;
+    height: 22px;
+    stroke-width: 1.9;
+}
+
+.packup-warranty-feature-text {
+    min-width: 0;
+}
+
+.packup-warranty-feature-text h3 {
+    margin: 0 0 5px;
+
+    color: #FFFFFF;
+    font-family: var(--font-family);
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.packup-warranty-feature-text p {
+    margin: 0;
+
+    color: #D5E1EC;
+    font-family: var(--font-family);
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark-mode .packup-warranty-overlay {
+    background: linear-gradient(
+        90deg,
+        rgba(5, 15, 27, 0.24) 0%,
+        rgba(5, 15, 27, 0.60) 35%,
+        rgba(5, 15, 27, 0.91) 64%,
+        rgba(5, 15, 27, 0.97) 100%
+    );
+}
+
+/* Primary-colour heading in dark mode */
+
+body.dark-mode .packup-warranty-heading {
+    color: var(--primary);
+}
+
+body.dark-mode .packup-warranty-heading span {
+    color: var(--secondary);
+}
+
+body.dark-mode .packup-warranty-eyebrow {
+    color: var(--secondary);
+}
+
+body.dark-mode .packup-warranty-eyebrow::before {
+    background: var(--secondary);
+}
+
+body.dark-mode .packup-warranty-description {
+    color: #E0E8F1;
+}
+
+body.dark-mode .packup-warranty-feature-text h3 {
+    color: #FFFFFF;
+}
+
+body.dark-mode .packup-warranty-feature-text p {
+    color: #D5E1EC;
+}
+
+/* =====================================================
+   RTL SUPPORT
+===================================================== */
+
+html[dir="rtl"] .packup-warranty-hero-container {
+    justify-content: flex-start;
+}
+
+html[dir="rtl"] .packup-warranty-content {
+    text-align: right;
+}
+
+html[dir="rtl"] .packup-warranty-eyebrow {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .packup-warranty-actions {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+html[dir="rtl"] .packup-warranty-feature {
+    direction: rtl;
+}
+
+html[dir="rtl"] .packup-warranty-feature:first-child {
+    padding-left: 12px;
+    padding-right: 0;
+}
+
+html[dir="rtl"] .packup-warranty-feature + .packup-warranty-feature {
+    border-left: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+html[dir="rtl"] .packup-warranty-feature:last-child {
+    padding-left: 0;
+}
+
+/* =====================================================
+   PACKUP — WARRANTY INFORMATION SECTION
+===================================================== */
+
+.packup-coverage-section {
+    width: 100%;
+    padding: 80px 7%;
+
+    background: var(--bg);
+    color: var(--text);
+
+    box-sizing: border-box;
+}
+
+.packup-coverage-section *,
+.packup-coverage-section *::before,
+.packup-coverage-section *::after {
+    box-sizing: border-box;
+}
+
+.packup-coverage-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 0.82fr 1.18fr;
+    gap: 36px 48px;
+    align-items: stretch;
+}
+
+/* =====================================================
+   INTRO — LEFT SIDE
+===================================================== */
+
+.packup-coverage-intro {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 30px 0;
+}
+
+.packup-coverage-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 19px;
+
+    color: var(--secondary);
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.packup-coverage-eyebrow::before {
+    content: "";
+
+    width: 35px;
+    height: 2px;
+    flex-shrink: 0;
+
+    background: var(--secondary);
+    border-radius: var(--radius-pill);
+}
+
+.packup-coverage-heading {
+    margin: 0 0 19px;
+
+    color: var(--heading);
+    font-family: var(--font-family);
+    font-size: clamp(30px, 3vw, 43px);
+    font-weight: 800;
+    line-height: 1.18;
+    letter-spacing: -1px;
+}
+
+.packup-coverage-heading span {
+    display: block;
+    color: var(--secondary);
+}
+
+.packup-coverage-description {
+    margin: 0;
+
+    color: var(--text-light);
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* =====================================================
+   IMPORTANT NOTE
+===================================================== */
+
+.packup-coverage-note {
+    width: 100%;
+    margin-top: 27px;
+    padding: 18px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+
+    background: var(--soft-bg);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--secondary);
+    border-radius: var(--radius-md);
+}
+
+.packup-coverage-note-icon {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--secondary);
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+
+.packup-coverage-note-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.packup-coverage-note h3 {
+    margin: 0 0 6px;
+
+    color: var(--heading);
+    font-family: var(--font-family);
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.packup-coverage-note p {
+    margin: 0;
+
+    color: var(--text-light);
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* =====================================================
+   COVERAGE CARDS — RIGHT SIDE
+===================================================== */
+
+.packup-coverage-details {
+    min-width: 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.packup-coverage-card {
+    min-width: 0;
+    min-height: 230px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 23px;
+
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow);
+
+    transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition),
+        background var(--transition);
+}
+
+.packup-coverage-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--secondary);
+    box-shadow: var(--shadow-hover);
+}
+
+.packup-coverage-card-top {
+    width: 100%;
+    margin-bottom: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.packup-coverage-card-icon {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--secondary);
+    background: var(--soft-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+.packup-coverage-card-icon svg {
+    width: 25px;
+    height: 25px;
+    stroke-width: 1.8;
+}
+
+.packup-coverage-card-number {
+    color: var(--secondary);
+    font-family: var(--font-family);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.packup-coverage-card h3 {
+    margin: 0 0 10px;
+
+    color: var(--heading);
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.packup-coverage-card > p {
+    margin: 0 0 20px;
+
+    color: var(--text-light);
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 1.85;
+}
+
+.packup-coverage-card-footer {
+    width: 100%;
+    margin-top: auto;
+    padding-top: 13px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    border-top: 1px solid var(--border);
+
+    color: var(--secondary);
+    font-family: var(--font-family);
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.6;
+}
+
+.packup-coverage-card-footer svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+/* =====================================================
+   BOTTOM INFORMATION STRIP
+===================================================== */
+
+.packup-coverage-bottom {
+    grid-column: 1 / -1;
+    min-width: 0;
+
+    display: grid;
+    grid-template-columns: 54px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 20px;
+
+    padding: 23px 26px;
+
+    background: var(--soft-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+}
+
+.packup-coverage-bottom-icon {
+    width: 54px;
+    height: 54px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+    background: var(--primary);
+    border-radius: var(--radius-md);
+}
+
+.packup-coverage-bottom-icon svg {
+    width: 27px;
+    height: 27px;
+}
+
+.packup-coverage-bottom-content {
+    min-width: 0;
+}
+
+.packup-coverage-bottom-content h3 {
+    margin: 0 0 6px;
+
+    color: var(--heading);
+    font-family: var(--font-family);
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.packup-coverage-bottom-content p {
+    margin: 0;
+
+    color: var(--text-light);
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* =====================================================
+   CONTACT BUTTON
+===================================================== */
+
+.packup-coverage-contact-button {
+    min-height: 46px;
+    padding: 12px 18px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    color: #FFFFFF;
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: var(--radius-sm);
+
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.5;
+    text-decoration: none;
+    white-space: nowrap;
+
+    transition:
+        background var(--transition),
+        border-color var(--transition),
+        transform var(--transition);
+}
+
+.packup-coverage-contact-button svg {
+    width: 17px;
+    height: 17px;
+}
+
+.packup-coverage-contact-button:hover {
+    color: #FFFFFF;
+    background: var(--secondary);
+    border-color: var(--secondary);
+    transform: translateY(-2px);
+}
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark-mode .packup-coverage-section {
+    background: var(--bg);
+}
+
+body.dark-mode .packup-coverage-intro .packup-coverage-heading {
+    color: var(--primary);
+}
+
+body.dark-mode .packup-coverage-heading span {
+    color: var(--secondary);
+}
+
+body.dark-mode .packup-coverage-eyebrow {
+    color: var(--secondary);
+}
+
+body.dark-mode .packup-coverage-eyebrow::before {
+    background: var(--secondary);
+}
+
+body.dark-mode .packup-coverage-note,
+body.dark-mode .packup-coverage-bottom {
+    background: var(--soft-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-coverage-note {
+    border-left: 4px solid var(--secondary);
+}
+
+body.dark-mode .packup-coverage-note-icon,
+body.dark-mode .packup-coverage-card-icon {
+    background: var(--card-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-coverage-note h3,
+body.dark-mode .packup-coverage-card h3,
+body.dark-mode .packup-coverage-bottom-content h3 {
+    color: var(--primary);
+}
+
+body.dark-mode .packup-coverage-card {
+    background: var(--card-bg);
+    border-color: var(--border);
+    box-shadow: none;
+}
+
+body.dark-mode .packup-coverage-card:hover {
+    border-color: var(--secondary);
+    box-shadow: var(--shadow-hover);
+}
+
+body.dark-mode .packup-coverage-card-footer {
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-coverage-contact-button {
+    color: #FFFFFF;
+    background: var(--btn-primary-bg);
+    border-color: var(--btn-primary-bg);
+}
+
+body.dark-mode .packup-coverage-contact-button:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+}
+
+/* =====================================================
+   RTL SUPPORT
+===================================================== */
+
+html[dir="rtl"] .packup-coverage-intro {
+    text-align: right;
+    align-items: flex-start;
+}
+
+html[dir="rtl"] .packup-coverage-eyebrow {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .packup-coverage-note {
+    border-left: 1px solid var(--border);
+    border-right: 4px solid var(--secondary);
+    text-align: right;
+}
+
+html[dir="rtl"] .packup-coverage-card {
+    text-align: right;
+}
+
+html[dir="rtl"] .packup-coverage-card-top,
+html[dir="rtl"] .packup-coverage-card-footer,
+html[dir="rtl"] .packup-coverage-feature {
+    direction: rtl;
+}
+
+html[dir="rtl"] .packup-coverage-bottom {
+    direction: rtl;
+    text-align: right;
+}
+/* =====================================================
+   PACKUP — REPAIR SERVICES
+===================================================== */
+
+.packup-repair-section {
+    width: 100%;
+    padding: 75px 7% 85px;
+
+    background: var(--bg);
+    color: var(--text);
+
+    box-sizing: border-box;
+}
+
+.packup-repair-section *,
+.packup-repair-section *::before,
+.packup-repair-section *::after {
+    box-sizing: border-box;
+}
+
+.packup-repair-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* =====================================================
+   CENTERED HEADER
+===================================================== */
+
+.packup-repair-header {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto 38px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.packup-repair-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin-bottom: 16px;
+
+    color: var(--secondary);
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.packup-repair-eyebrow::before {
+    content: "";
+
+    width: 35px;
+    height: 2px;
+    flex-shrink: 0;
+
+    background: var(--secondary);
+    border-radius: var(--radius-pill);
+}
+
+.packup-repair-heading {
+    margin: 0 0 15px;
+
+    color: var(--heading);
+    font-family: var(--font-family);
+    font-size: clamp(30px, 3.1vw, 44px);
+    font-weight: 800;
+    line-height: 1.18;
+    letter-spacing: -1px;
+}
+
+.packup-repair-heading span {
+    color: var(--secondary);
+}
+
+.packup-repair-description {
+    max-width: 790px;
+    margin: 0;
+
+    color: var(--text-light);
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+/* =====================================================
+   MAIN TWO-COLUMN LAYOUT
+===================================================== */
+
+.packup-repair-layout {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    gap: 24px;
+}
+
+/* =====================================================
+   LEFT — REPAIR CARDS
+===================================================== */
+
+.packup-repair-grid {
+    min-width: 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: 17px;
+}
+
+.packup-repair-card {
+    min-width: 0;
+    min-height: 235px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 21px;
+
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow);
+
+    transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition),
+        background var(--transition);
+}
+
+.packup-repair-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--secondary);
+    box-shadow: var(--shadow-hover);
+}
+
+.packup-repair-card-top {
+    width: 100%;
+    margin-bottom: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.packup-repair-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--secondary);
+    background: var(--soft-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+.packup-repair-icon svg {
+    width: 24px;
+    height: 24px;
+    stroke-width: 1.8;
+}
+
+.packup-repair-number {
+    color: var(--secondary);
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.packup-repair-card h3 {
+    margin: 0 0 9px;
+
+    color: var(--heading);
+    font-family: var(--font-family);
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.packup-repair-card > p {
+    margin: 0 0 17px;
+
+    color: var(--text-light);
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.packup-repair-card-footer {
+    width: 100%;
+    margin-top: auto;
+    padding-top: 12px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    border-top: 1px solid var(--border);
+
+    color: var(--secondary);
+    font-family: var(--font-family);
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.6;
+}
+
+.packup-repair-card-footer svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+/* =====================================================
+   RIGHT — IMAGE PANEL
+===================================================== */
+
+.packup-repair-visual {
+    position: relative;
+    isolation: isolate;
+
+    min-width: 0;
+    min-height: 487px;
+
+    overflow: hidden;
+
+    background: var(--soft-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+}
+
+.packup-repair-image {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.6s ease;
+}
+
+.packup-repair-visual:hover .packup-repair-image {
+    transform: scale(1.035);
+}
+
+/* Image overlay */
+
+.packup-repair-image-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background: linear-gradient(
+        180deg,
+        rgba(7, 30, 53, 0.12) 0%,
+        rgba(7, 30, 53, 0.30) 35%,
+        rgba(7, 30, 53, 0.88) 72%,
+        rgba(7, 30, 53, 0.97) 100%
+    );
+}
+
+/* Image text */
+
+.packup-repair-image-content {
+    position: absolute;
+    left: 27px;
+    right: 27px;
+    bottom: 130px;
+
+    color: #FFFFFF;
+}
+
+.packup-repair-image-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 16px;
+
+    color: #FFFFFF;
+    font-family: var(--font-family);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+}
+
+.packup-repair-image-tag svg {
+    width: 17px;
+    height: 17px;
+    color: var(--secondary);
+}
+
+.packup-repair-image-content h3 {
+    max-width: 440px;
+    margin: 0 0 12px;
+
+    color: #FFFFFF;
+    font-family: var(--font-family);
+    font-size: clamp(25px, 2.5vw, 35px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.6px;
+}
+
+.packup-repair-image-content h3 span {
+    display: block;
+    color: var(--secondary);
+}
+
+.packup-repair-image-content > p {
+    max-width: 440px;
+    margin: 0;
+
+    color: #E4EDF5;
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 1.85;
+}
+
+/* Bottom info strip */
+
+.packup-repair-image-footer {
+    position: absolute;
+    left: 22px;
+    right: 22px;
+    bottom: 22px;
+
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    padding: 15px;
+
+    background: rgba(10, 27, 44, 0.78);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-md);
+
+    backdrop-filter: blur(8px);
+}
+
+.packup-repair-footer-icon {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--secondary);
+    background: rgba(7, 159, 154, 0.16);
+    border-radius: var(--radius-sm);
+}
+
+.packup-repair-footer-icon svg {
+    width: 23px;
+    height: 23px;
+}
+
+.packup-repair-image-footer > div {
+    min-width: 0;
+}
+
+.packup-repair-image-footer strong {
+    display: block;
+    margin-bottom: 4px;
+
+    color: #FFFFFF;
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.packup-repair-image-footer p {
+    margin: 0;
+
+    color: #D9E4EF;
+    font-family: var(--font-family);
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark-mode .packup-repair-section {
+    background: var(--bg);
+}
+
+body.dark-mode .packup-repair-heading {
+    color: var(--primary);
+}
+
+body.dark-mode .packup-repair-heading span {
+    color: var(--secondary);
+}
+
+body.dark-mode .packup-repair-eyebrow {
+    color: var(--secondary);
+}
+
+body.dark-mode .packup-repair-eyebrow::before {
+    background: var(--secondary);
+}
+
+body.dark-mode .packup-repair-card {
+    background: var(--card-bg);
+    border-color: var(--border);
+    box-shadow: none;
+}
+
+body.dark-mode .packup-repair-card:hover {
+    border-color: var(--secondary);
+    box-shadow: var(--shadow-hover);
+}
+
+body.dark-mode .packup-repair-card h3 {
+    color: var(--primary);
+}
+
+body.dark-mode .packup-repair-icon {
+    background: var(--soft-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-repair-card-footer {
+    border-color: var(--border);
+}
+
+/* =====================================================
+   RTL SUPPORT
+===================================================== */
+
+html[dir="rtl"] .packup-repair-header {
+    direction: rtl;
+}
+
+html[dir="rtl"] .packup-repair-eyebrow {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .packup-repair-card {
+    text-align: right;
+}
+
+html[dir="rtl"] .packup-repair-card-top,
+html[dir="rtl"] .packup-repair-card-footer {
+    direction: rtl;
+}
+
+html[dir="rtl"] .packup-repair-image-content {
+    text-align: right;
+}
+
+html[dir="rtl"] .packup-repair-image-tag {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .packup-repair-image-footer {
+    direction: rtl;
+    text-align: right;
+}
+/* =========================================================
+   PACKUP - SUPPORT PROCESS TIMELINE
+========================================================= */
+
+.packup-process-section {
+    width: 100%;
+    padding: 85px 7%;
+    background: var(--bg);
+    color: var(--text);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.packup-process-section *,
+.packup-process-section *::before,
+.packup-process-section *::after {
+    box-sizing: border-box;
+}
+
+.packup-process-container {
+    width: 100%;
+    max-width: 1250px;
+    margin-inline: auto;
+}
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.packup-process-header {
+    max-width: 760px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.packup-process-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 17px;
+    color: var(--secondary);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.packup-process-eyebrow::before {
+    content: "";
+    width: 36px;
+    height: 2px;
+    background: var(--secondary);
+    border-radius: 2px;
+}
+
+.packup-process-title {
+    margin: 0 0 17px;
+    color: var(--heading);
+    font-size: clamp(30px, 3.2vw, 46px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.packup-process-title span {
+    color: var(--secondary);
+}
+
+.packup-process-description {
+    max-width: 690px;
+    margin: 0 auto;
+    color: var(--text-light);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* =========================================================
+   TIMELINE WRAPPER
+   CENTER LINE ALWAYS STAYS IN THE PAGE CENTER
+========================================================= */
+
+.packup-process-timeline {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    isolation: isolate;
+}
+
+/* Center vertical line */
+
+.packup-process-center-line {
+    position: absolute;
+    top: 28px;
+    bottom: 28px;
+    left: 50%;
+    width: 3px;
+    background: var(--border);
+    border-radius: 10px;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+/* =========================================================
+   EACH TIMELINE ROW
+========================================================= */
+
+.packup-process-step {
+    position: relative;
+    width: 100%;
+    min-height: 180px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 76px minmax(0, 1fr);
+    align-items: center;
+    gap: 0;
+}
+
+/* Card on the left */
+
+.packup-process-left .packup-process-card {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: stretch;
+    margin-right: 34px;
+}
+
+/* Card on the right */
+
+.packup-process-right .packup-process-card {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: stretch;
+    margin-left: 34px;
+}
+
+/* Timeline marker always occupies the middle column */
+
+.packup-process-marker {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    z-index: 2;
+
+    border: 5px solid var(--bg);
+    border-radius: 50%;
+
+    background: var(--primary);
+    color: #FFFFFF;
+
+    box-shadow: 0 0 0 2px var(--secondary);
+    font-size: 14px;
+    font-weight: 800;
+
+    transition:
+        background var(--transition),
+        box-shadow var(--transition),
+        transform var(--transition);
+}
+
+.packup-process-step:hover .packup-process-marker {
+    background: var(--secondary);
+    box-shadow: 0 0 0 4px color-mix(
+        in srgb,
+        var(--secondary) 20%,
+        transparent
+    );
+    transform: scale(1.06);
+}
+
+/* =========================================================
+   TIMELINE CARDS
+========================================================= */
+
+.packup-process-card {
+    min-width: 0;
+    min-height: 180px;
+    padding: 25px 27px;
+
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+
+    transition:
+        border-color var(--transition),
+        box-shadow var(--transition),
+        transform var(--transition);
+}
+
+.packup-process-card:hover {
+    border-color: var(--secondary);
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+}
+
+.packup-process-step-label {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: var(--secondary);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+/* Card heading */
+
+.packup-process-card-heading {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 13px;
+}
+
+.packup-process-card-icon {
+    width: 43px;
+    height: 43px;
+    flex: 0 0 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--secondary);
+    background: var(--soft-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+.packup-process-card-icon svg {
+    width: 21px;
+    height: 21px;
+    stroke-width: 1.8;
+}
+
+.packup-process-card-heading h3 {
+    margin: 0;
+    color: var(--heading);
+    font-size: clamp(16px, 1.35vw, 19px);
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.packup-process-card p {
+    margin: 0;
+    color: var(--text-light);
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+/* =========================================================
+   BOTTOM INFORMATION NOTE
+========================================================= */
+
+.packup-process-note {
+    width: 100%;
+    max-width: 850px;
+    margin: 52px auto 0;
+    padding: 19px 23px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    background: var(--soft-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+.packup-process-note-icon {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--secondary);
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+}
+
+.packup-process-note-icon svg {
+    width: 19px;
+    height: 19px;
+}
+
+.packup-process-note p {
+    margin: 0;
+    color: var(--text-light);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .packup-process-card {
+    background: var(--card-bg);
+    border-color: var(--border);
+}
+body.dark-mode .packup-process-title{
+    color: var(--primary);
+}
+body.dark-mode .packup-process-card-icon {
+    background: var(--soft-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-process-marker {
+    border-color: var(--bg);
+}
+
+body.dark-mode .packup-process-note {
+    background: var(--soft-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-process-note-icon {
+    background: var(--card-bg);
+    border-color: var(--border);
+}
+
+/* =========================================================
+   RTL SUPPORT
+   Cards stay in their specified columns:
+   Step 1, 3 = left
+   Step 2, 4 = right
+   Center line remains centered.
+========================================================= */
+
+html[dir="rtl"] .packup-process-section {
+    direction: rtl;
+}
+
+html[dir="rtl"] .packup-process-header {
+    text-align: center;
+}
+
+html[dir="rtl"] .packup-process-left .packup-process-card {
+    grid-column: 1;
+    margin-right: 34px;
+    margin-left: 0;
+    text-align: right;
+}
+
+html[dir="rtl"] .packup-process-right .packup-process-card {
+    grid-column: 3;
+    margin-left: 34px;
+    margin-right: 0;
+    text-align: right;
+}
+
+html[dir="rtl"] .packup-process-card-heading {
+    flex-direction: row;
+}
+
+html[dir="rtl"] .packup-process-card-heading h3 {
+    text-align: right;
+}
+
+html[dir="rtl"] .packup-process-card p,
+html[dir="rtl"] .packup-process-step-label {
+    text-align: right;
+}
+
+html[dir="rtl"] .packup-process-note {
+    text-align: right;
+}
+/* =========================================================
+   PACKUP - PREPARATION CHECKLIST
+========================================================= */
+
+.packup-prepare-section {
+    width: 100%;
+    padding: 85px 7%;
+    background: var(--bg);
+    color: var(--text);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.packup-prepare-section *,
+.packup-prepare-section *::before,
+.packup-prepare-section *::after {
+    box-sizing: border-box;
+}
+
+.packup-prepare-container {
+    width: 100%;
+    max-width: 1250px;
+    margin-inline: auto;
+}
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.packup-prepare-header {
+    max-width: 760px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.packup-prepare-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 17px;
+
+    color: var(--secondary);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.packup-prepare-eyebrow::before {
+    content: "";
+    width: 36px;
+    height: 2px;
+    background: var(--secondary);
+    border-radius: 2px;
+}
+
+.packup-prepare-title {
+    margin: 0 0 17px;
+    color: var(--heading);
+    font-size: clamp(30px, 3.2vw, 46px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.packup-prepare-title span {
+    color: var(--secondary);
+}
+
+.packup-prepare-description {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--text-light);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* =========================================================
+   MAIN TWO-COLUMN LAYOUT
+========================================================= */
+
+.packup-prepare-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 28px;
+    align-items: stretch;
+}
+
+/* =========================================================
+   LEFT IMAGE CARD
+========================================================= */
+
+.packup-prepare-visual {
+    position: relative;
+    min-width: 0;
+    min-height: 650px;
+    overflow: hidden;
+
+    background: var(--soft-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    isolation: isolate;
+}
+
+.packup-prepare-image {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.6s ease;
+}
+
+.packup-prepare-visual:hover .packup-prepare-image {
+    transform: scale(1.035);
+}
+
+/* Overlay keeps text readable in both themes */
+
+.packup-prepare-image-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    background: linear-gradient(
+        180deg,
+        rgba(8, 22, 36, 0.12) 0%,
+        rgba(8, 22, 36, 0.42) 42%,
+        rgba(8, 22, 36, 0.94) 100%
+    );
+}
+
+/* Image content */
+
+.packup-prepare-image-content {
+    position: absolute;
+    inset-inline: 30px;
+    bottom: 32px;
+    z-index: 2;
+
+    color: #FFFFFF;
+}
+
+.packup-prepare-image-eyebrow {
+    display: inline-block;
+    margin-bottom: 16px;
+
+    color: #70E0D4;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    line-height: 1.7;
+}
+
+.packup-prepare-image-content h3 {
+    max-width: 420px;
+    margin: 0 0 16px;
+
+    color: #FFFFFF;
+    font-size: clamp(27px, 2.6vw, 38px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.7px;
+}
+
+.packup-prepare-image-content h3 span {
+    display: block;
+    color: #70E0D4;
+}
+
+.packup-prepare-image-content > p {
+    max-width: 420px;
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+/* Image tip */
+
+.packup-prepare-image-tip {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    margin-top: 25px;
+    padding-top: 19px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.27);
+}
+
+.packup-prepare-image-tip svg {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+
+    margin-top: 2px;
+    color: #70E0D4;
+}
+
+.packup-prepare-image-tip span {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* =========================================================
+   RIGHT CHECKLIST CARD
+========================================================= */
+
+.packup-prepare-checklist-card {
+    min-width: 0;
+    padding: 30px;
+
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+}
+
+.packup-prepare-checklist-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: 22px;
+}
+
+.packup-prepare-checklist-label {
+    display: block;
+    margin-bottom: 8px;
+
+    color: var(--secondary);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+}
+
+.packup-prepare-checklist-header h3 {
+    margin: 0;
+    color: var(--heading);
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.packup-prepare-count {
+    width: 55px;
+    height: 55px;
+    flex: 0 0 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--primary);
+    background: var(--soft-bg);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+/* =========================================================
+   PROGRESS BAR
+========================================================= */
+
+.packup-prepare-progress-track {
+    width: 100%;
+    height: 6px;
+    margin-bottom: 22px;
+
+    overflow: hidden;
+    background: var(--soft-bg);
+    border-radius: var(--radius-pill);
+}
+
+.packup-prepare-progress-fill {
+    display: block;
+    width: 0;
+    height: 100%;
+
+    background: var(--secondary);
+    border-radius: inherit;
+    transition: width var(--transition);
+}
+
+/* =========================================================
+   CHECKLIST ITEMS
+========================================================= */
+
+.packup-prepare-items {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.packup-prepare-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    min-width: 0;
+    min-height: 78px;
+    padding: 14px 15px;
+
+    background: var(--soft-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+
+    cursor: pointer;
+
+    transition:
+        border-color var(--transition),
+        background var(--transition),
+        transform var(--transition);
+}
+
+/* Accessible native checkbox */
+
+.packup-prepare-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Custom checkbox */
+
+.packup-prepare-custom-check {
+    width: 22px;
+    height: 22px;
+    flex: 0 0 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: transparent;
+    background: var(--card-bg);
+    border: 1.5px solid var(--border);
+    border-radius: 6px;
+
+    transition:
+        background var(--transition),
+        border-color var(--transition);
+}
+
+.packup-prepare-custom-check svg {
+    width: 14px;
+    height: 14px;
+    stroke-width: 3;
+}
+
+/* Item icon */
+
+.packup-prepare-item-icon {
+    width: 43px;
+    height: 43px;
+    flex: 0 0 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--secondary);
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+.packup-prepare-item-icon svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 1.8;
+}
+
+/* Item text */
+
+.packup-prepare-item-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+}
+
+.packup-prepare-item-content strong {
+    color: var(--heading);
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.packup-prepare-item-content small {
+    color: var(--text-muted);
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+/* Checked state */
+
+.packup-prepare-item:has(.packup-prepare-checkbox:checked) {
+    background: color-mix(
+        in srgb,
+        var(--secondary) 8%,
+        var(--card-bg)
+    );
+    border-color: var(--secondary);
+}
+
+.packup-prepare-checkbox:checked
++ .packup-prepare-custom-check {
+    color: #FFFFFF;
+    background: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.packup-prepare-checkbox:checked
+~ .packup-prepare-item-content strong {
+    color: var(--secondary);
+}
+
+.packup-prepare-checkbox:focus-visible
++ .packup-prepare-custom-check {
+    outline: 3px solid var(--primary);
+    outline-offset: 4px;
+}
+
+/* =========================================================
+   COMPLETION MESSAGE
+========================================================= */
+
+.packup-prepare-complete {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 20px;
+    padding: 14px 16px;
+
+    color: var(--secondary);
+    background: var(--soft-bg);
+    border: 1px solid var(--secondary);
+    border-radius: var(--radius-md);
+
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.6;
+}
+
+.packup-prepare-complete[hidden] {
+    display: none;
+}
+
+.packup-prepare-complete svg {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+}
+
+/* =========================================================
+   DARK MODE
+   Primary color for headings that are white in light mode
+========================================================= */
+
+body.dark-mode .packup-prepare-title,
+body.dark-mode .packup-prepare-checklist-header h3,
+body.dark-mode .packup-prepare-item-content strong {
+    color: var(--primary);
+}
+
+body.dark-mode .packup-prepare-title span {
+    color: var(--secondary);
+}
+
+body.dark-mode .packup-prepare-checklist-card {
+    background: var(--card-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-prepare-item {
+    background: var(--soft-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-prepare-count,
+body.dark-mode .packup-prepare-item-icon,
+body.dark-mode .packup-prepare-custom-check {
+    background: var(--card-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-prepare-checkbox:checked
++ .packup-prepare-custom-check {
+    background: var(--secondary);
+    border-color: var(--secondary);
+}
+
+body.dark-mode .packup-prepare-item:has(.packup-prepare-checkbox:checked) {
+    background: color-mix(
+        in srgb,
+        var(--secondary) 13%,
+        var(--card-bg)
+    );
+    border-color: var(--secondary);
+}
+
+body.dark-mode .packup-prepare-checkbox:checked
+~ .packup-prepare-item-content strong {
+    color: var(--secondary);
+}
+
+/* =========================================================
+   RTL SUPPORT
+========================================================= */
+
+html[dir="rtl"] .packup-prepare-section {
+    direction: rtl;
+}
+
+html[dir="rtl"] .packup-prepare-header {
+    text-align: center;
+}
+
+html[dir="rtl"] .packup-prepare-image-content {
+    text-align: right;
+}
+
+html[dir="rtl"] .packup-prepare-image-tip {
+    flex-direction: row;
+    text-align: right;
+}
+
+html[dir="rtl"] .packup-prepare-checklist-header {
+    flex-direction: row;
+}
+
+html[dir="rtl"] .packup-prepare-item {
+    flex-direction: row;
+    text-align: right;
+}
+
+html[dir="rtl"] .packup-prepare-item-content {
+    text-align: right;
+}
+
+html[dir="rtl"] .packup-prepare-complete {
+    flex-direction: row;
+    text-align: right;
+}
+
+/* =========================================================
+   PACKUP - LUGGAGE CARE GUIDE
+========================================================= */
+
+.packup-care-section {
+    width: 100%;
+    padding: 85px 7%;
+    background: var(--bg);
+    color: var(--text);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.packup-care-section *,
+.packup-care-section *::before,
+.packup-care-section *::after {
+    box-sizing: border-box;
+}
+
+.packup-care-container {
+    width: 100%;
+    max-width: 1250px;
+    margin-inline: auto;
+}
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.packup-care-header {
+    max-width: 780px;
+    margin: 0 auto 43px;
+    text-align: center;
+}
+
+.packup-care-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 17px;
+
+    color: var(--secondary);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.packup-care-eyebrow::before {
+    content: "";
+    width: 36px;
+    height: 2px;
+    background: var(--secondary);
+    border-radius: 2px;
+}
+
+.packup-care-title {
+    margin: 0 0 17px;
+    color: var(--heading);
+    font-size: clamp(30px, 3.2vw, 46px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.packup-care-title span {
+    color: var(--secondary);
+}
+
+.packup-care-description {
+    max-width: 730px;
+    margin: 0 auto;
+
+    color: var(--text-light);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* =========================================================
+   HORIZONTAL CARD GRID
+========================================================= */
+
+.packup-care-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    align-items: stretch;
+}
+
+/* =========================================================
+   CARE CARD
+========================================================= */
+
+.packup-care-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    min-width: 0;
+    min-height: 290px;
+    padding: 25px 22px 21px;
+
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+
+    transition:
+        border-color var(--transition),
+        box-shadow var(--transition),
+        transform var(--transition);
+}
+
+.packup-care-card:hover {
+    border-color: var(--secondary);
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-5px);
+}
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.packup-care-card-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    margin-bottom: 27px;
+}
+
+.packup-care-icon {
+    width: 55px;
+    height: 55px;
+    flex: 0 0 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--secondary);
+    background: var(--soft-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+
+    transition:
+        color var(--transition),
+        background var(--transition),
+        border-color var(--transition);
+}
+
+.packup-care-icon svg {
+    width: 25px;
+    height: 25px;
+    stroke-width: 1.8;
+}
+
+.packup-care-card:hover .packup-care-icon {
+    color: #FFFFFF;
+    background: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.packup-care-number {
+    color: var(--text-muted);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.packup-care-card h3 {
+    margin: 0 0 12px;
+    color: var(--heading);
+
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.packup-care-card p {
+    margin: 0 0 23px;
+    color: var(--text-light);
+
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+/* =========================================================
+   CARD FOOTER
+========================================================= */
+
+.packup-care-card-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-top: auto;
+    padding-top: 15px;
+
+    border-top: 1px solid var(--border);
+}
+
+.packup-care-card-footer svg {
+    width: 17px;
+    height: 17px;
+    flex: 0 0 17px;
+    color: var(--secondary);
+}
+
+.packup-care-card-footer span {
+    color: var(--text-muted);
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+/* =========================================================
+   BOTTOM CARE NOTE
+========================================================= */
+
+.packup-care-note {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    max-width: 900px;
+    margin: 30px auto 0;
+    padding: 18px 22px;
+
+    background: var(--soft-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+.packup-care-note-icon {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--secondary);
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+}
+
+.packup-care-note-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.packup-care-note p {
+    margin: 0;
+    color: var(--text-light);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.packup-care-note p strong {
+    color: var(--heading);
+    font-weight: 800;
+}
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .packup-care-title,
+body.dark-mode .packup-care-card h3,
+body.dark-mode .packup-care-note p strong {
+    color: var(--primary);
+}
+
+body.dark-mode .packup-care-title span {
+    color: var(--secondary);
+}
+
+body.dark-mode .packup-care-card {
+    background: var(--card-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-care-icon {
+    background: var(--soft-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-care-card:hover .packup-care-icon {
+    color: #FFFFFF;
+    background: var(--secondary);
+    border-color: var(--secondary);
+}
+
+body.dark-mode .packup-care-note {
+    background: var(--soft-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-care-note-icon {
+    background: var(--card-bg);
+    border-color: var(--border);
+}
+
+/* =========================================================
+   RTL SUPPORT
+========================================================= */
+
+html[dir="rtl"] .packup-care-section {
+    direction: rtl;
+}
+
+html[dir="rtl"] .packup-care-header {
+    text-align: center;
+}
+
+html[dir="rtl"] .packup-care-card {
+    align-items: flex-start;
+    text-align: right;
+}
+
+html[dir="rtl"] .packup-care-card-top {
+    flex-direction: row;
+}
+
+html[dir="rtl"] .packup-care-card-footer {
+    flex-direction: row;
+    text-align: right;
+}
+
+html[dir="rtl"] .packup-care-note {
+    flex-direction: row;
+    text-align: right;
+}
+/* =========================================================
+   REPAIR ENQUIRY CTA SECTION
+========================================================= */
+/* =====================================================
+   WARRANTY CTA — EQUAL HEIGHT SPLIT LAYOUT
+===================================================== */
+
+.packup-warranty-cta {
+    width: 100%;
+    margin: 0;
+    padding: 75px 7%;
+    background: var(--soft-bg);
+    color: var(--text);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.packup-warranty-cta-container {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: stretch;
+    gap: 35px;
+
+    box-sizing: border-box;
+}
+
+/* =====================================================
+   LEFT CONTENT — MATCH PANEL HEIGHT
+===================================================== */
+
+.packup-warranty-cta-content {
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    min-height: 100%;
+    padding: 32px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: var(--card-bg);
+
+    box-sizing: border-box;
+}
+
+/* =====================================================
+   EYEBROW
+===================================================== */
+
+.packup-warranty-cta-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+
+    color: var(--secondary);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    line-height: 1.6;
+}
+
+.packup-warranty-cta-line {
+    width: 25px;
+    height: 2px;
+    flex-shrink: 0;
+    background: var(--secondary);
+}
+
+.packup-warranty-cta-eyebrow i {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    color: var(--secondary);
+}
+
+/* =====================================================
+   LEFT HEADING
+===================================================== */
+
+.packup-warranty-cta-content h2 {
+    width: 100%;
+    margin: 0 0 22px;
+
+    color: var(--primary);
+    font-family: var(--font-family);
+    font-size: clamp(36px, 3.5vw, 52px);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+}
+
+.packup-warranty-cta-content h2 span {
+    display: block;
+    color: var(--secondary);
+}
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.packup-warranty-cta-content > p {
+    width: 100%;
+    max-width: 540px;
+    margin: 0;
+
+    color: var(--text-light);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.9;
+}
+
+/* =====================================================
+   DIVIDER
+===================================================== */
+
+.packup-warranty-cta-divider {
+    width: 100%;
+    height: 1px;
+    margin: 28px 0;
+    background: var(--border);
+}
+
+/* =====================================================
+   SUPPORT POINTS
+===================================================== */
+
+.packup-warranty-cta-points {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.packup-warranty-cta-point {
+    min-width: 0;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.packup-warranty-cta-point > i {
+    width: 22px;
+    height: 22px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    color: var(--primary);
+}
+
+.packup-warranty-cta-point > span {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.packup-warranty-cta-point strong {
+    color: var(--heading);
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.packup-warranty-cta-point small {
+    color: var(--text-light);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* =====================================================
+   RIGHT PANEL — SAME HEIGHT AS LEFT
+===================================================== */
+
+.packup-warranty-cta-panel {
+    position: relative;
+
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    min-height: 100%;
+    padding: 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: var(--card-bg);
+
+    box-sizing: border-box;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+/* Decorative corner circles */
+
+.packup-warranty-cta-panel::before {
+    content: "";
+    position: absolute;
+    top: -75px;
+    right: -65px;
+
+    width: 180px;
+    height: 180px;
+
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.packup-warranty-cta-panel::after {
+    content: "";
+    position: absolute;
+    top: -45px;
+    right: -35px;
+
+    width: 120px;
+    height: 120px;
+
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* =====================================================
+   PANEL TOP
+===================================================== */
+
+.packup-warranty-cta-panel-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.packup-warranty-cta-panel-label {
+    color: var(--secondary);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    line-height: 1.6;
+}
+
+.packup-warranty-cta-panel-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--soft-bg);
+    color: var(--primary);
+}
+
+.packup-warranty-cta-panel-icon i {
+    width: 24px;
+    height: 24px;
+}
+
+/* =====================================================
+   PANEL HEADING
+===================================================== */
+
+.packup-warranty-cta-panel-heading {
+    margin-bottom: 17px;
+}
+
+.packup-warranty-cta-panel-heading > span {
+    display: block;
+    margin-bottom: 12px;
+
+    color: var(--text-light);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    line-height: 1.6;
+}
+
+.packup-warranty-cta-panel-heading h3 {
+    margin: 0;
+
+    color: var(--primary);
+    font-family: var(--font-family);
+    font-size: clamp(27px, 2.5vw, 35px);
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.7px;
+}
+
+.packup-warranty-cta-panel-heading h3 span {
+    display: block;
+    color: var(--secondary);
+}
+
+/* =====================================================
+   PANEL DESCRIPTION
+===================================================== */
+
+.packup-warranty-cta-panel > p {
+    margin: 0 0 25px;
+    color: var(--text-light);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.packup-warranty-cta-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.packup-warranty-cta-primary {
+    min-height: 52px;
+    padding: 0 19px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    border: 1px solid var(--btn-primary-bg);
+    border-radius: var(--radius-sm);
+    background: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+
+    box-sizing: border-box;
+
+    transition:
+        background var(--transition),
+        color var(--transition),
+        border-color var(--transition),
+        transform var(--transition);
+}
+
+.packup-warranty-cta-primary i {
+    width: 19px;
+    height: 19px;
+    flex-shrink: 0;
+    transition: transform var(--transition);
+}
+
+.packup-warranty-cta-primary:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.packup-warranty-cta-primary:hover i {
+    transform: translate(3px, -3px);
+}
+
+/* Secondary button */
+
+.packup-warranty-cta-secondary {
+    min-height: 52px;
+    padding: 0 19px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    border: 1px solid var(--btn-primary-bg);
+    border-radius: var(--radius-sm);
+    background: transparent; 
+    color: var(--btn-primary-bg);
+
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+
+    box-sizing: border-box;
+
+    transition:
+        background var(--transition),
+        color var(--transition),
+        border-color var(--transition),
+        transform var(--transition);
+}
+
+.packup-warranty-cta-secondary i {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    color: var(--primary);
+}
+
+.packup-warranty-cta-secondary:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.packup-warranty-cta-secondary:hover i {
+    color: #fff;
+}
+
+/* =====================================================
+   PANEL FOOTER
+===================================================== */
+
+.packup-warranty-cta-panel-footer {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+
+    color: var(--text-light);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.packup-warranty-cta-panel-footer i {
+    width: 17px;
+    height: 17px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    color: var(--primary);
+}
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark-mode .packup-warranty-cta {
+    background: var(--soft-bg);
+}
+
+body.dark-mode .packup-warranty-cta-content,
+body.dark-mode .packup-warranty-cta-panel {
+    background: var(--card-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-warranty-cta-content h2,
+body.dark-mode .packup-warranty-cta-panel-heading h3 {
+    color: var(--primary);
+}
+
+body.dark-mode .packup-warranty-cta-content h2 span,
+body.dark-mode .packup-warranty-cta-panel-heading h3 span {
+    color: var(--secondary);
+}
+
+body.dark-mode .packup-warranty-cta-eyebrow,
+body.dark-mode .packup-warranty-cta-eyebrow i,
+body.dark-mode .packup-warranty-cta-panel-label {
+    color: var(--secondary);
+}
+
+body.dark-mode .packup-warranty-cta-line {
+    background: var(--secondary);
+}
+
+body.dark-mode .packup-warranty-cta-secondary {
+    background: var(--card-bg);
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+body.dark-mode .packup-warranty-cta-secondary:hover {
+    background: var(--secondary);
+    color: #fff;
+    border-color: var(--secondary);
+}
+
+body.dark-mode .packup-warranty-cta-secondary:hover i {
+    color: #fff;
+}
+
+/* =====================================================
+   RTL SUPPORT
+===================================================== */
+
+html[dir="rtl"] .packup-warranty-cta {
+    direction: rtl;
+}
+
+html[dir="rtl"] .packup-warranty-cta-content,
+html[dir="rtl"] .packup-warranty-cta-panel {
+    text-align: right;
+}
+
+html[dir="rtl"] .packup-warranty-cta-eyebrow,
+html[dir="rtl"] .packup-warranty-cta-point,
+html[dir="rtl"] .packup-warranty-cta-panel-footer,
+html[dir="rtl"] .packup-warranty-cta-primary,
+html[dir="rtl"] .packup-warranty-cta-secondary {
+    direction: rtl;
+}
+
+html[dir="rtl"] .packup-warranty-cta-primary:hover i {
+    transform: translate(-3px, -3px);
+}
+
+html[dir="rtl"] .packup-warranty-cta-panel-top {
+    direction: rtl;
+}
+
+/* =====================================================
+   HOME1 DESIGN SYSTEM ALIGNMENT
+   Headings and buttons: Manrope | Body content: DM Sans
+   Keep existing layouts, imagery, interactions, themes, RTL and
+   responsive rules unchanged; only standardize typography and radii.
+===================================================== */
+
+.packup-warranty-hero,
+.packup-coverage-section,
+.packup-repair-section,
+.packup-process-section,
+.packup-prepare-section,
+.packup-warranty-cta {
+    font-family: "DM Sans", sans-serif;
+}
+
+/* Main headings follow Home1's heading scale */
+.packup-warranty-heading {
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(42px, 4.2vw, 68px);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -2px;
+}
+
+.packup-coverage-heading,
+.packup-repair-heading,
+.packup-process-title,
+.packup-prepare-title,
+.packup-warranty-cta-content h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(34px, 3.3vw, 52px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+}
+
+/* Supporting headings use Manrope */
+.packup-warranty-feature-text h3,
+.packup-coverage-note h3,
+.packup-coverage-card h3,
+.packup-coverage-bottom-content h3,
+.packup-repair-card h3,
+.packup-repair-image-content h3,
+.packup-process-card-heading h3,
+.packup-prepare-checklist-header h3,
+.packup-warranty-cta-panel-heading h3 {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.5;
+    letter-spacing: -0.2px;
+}
+
+/* Eyebrows, labels and step indicators use the heading font */
+.packup-warranty-eyebrow,
+.packup-coverage-eyebrow,
+.packup-repair-eyebrow,
+.packup-process-eyebrow,
+.packup-prepare-eyebrow,
+.packup-prepare-checklist-label,
+.packup-warranty-cta-eyebrow,
+.packup-warranty-cta-panel-label,
+.packup-process-step-label {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+}
+
+/* Descriptions and supporting copy use DM Sans */
+.packup-warranty-description,
+.packup-coverage-description,
+.packup-coverage-note p,
+.packup-coverage-card > p,
+.packup-coverage-bottom-content p,
+.packup-repair-description,
+.packup-repair-card > p,
+.packup-repair-image-content > p,
+.packup-repair-image-footer p,
+.packup-process-description,
+.packup-process-card p,
+.packup-process-note p,
+.packup-prepare-description,
+.packup-prepare-image-content > p,
+.packup-prepare-image-tip span,
+.packup-warranty-cta-content > p,
+.packup-warranty-cta-panel > p,
+.packup-warranty-cta-panel-footer {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+/* Buttons follow Home1's Manrope typography and button radius */
+.packup-warranty-button,
+.packup-coverage-contact-button,
+.packup-warranty-cta-primary,
+.packup-warranty-cta-secondary {
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: var(--radius-sm);
+}
+
+/* Cards, image panels and note containers use the Home1 card radius */
+.packup-coverage-note,
+.packup-coverage-card,
+.packup-coverage-bottom,
+.packup-repair-card,
+.packup-repair-visual,
+.packup-process-card,
+.packup-process-note,
+.packup-prepare-visual,
+.packup-prepare-checklist-card,
+.packup-prepare-item,
+.packup-warranty-cta-content,
+.packup-warranty-cta-panel {
+    border-radius: var(--radius-md);
+}
+
+/* Icon containers keep the smaller Home1 corner radius */
+.packup-warranty-feature-icon,
+.packup-coverage-note-icon,
+.packup-coverage-card-icon,
+.packup-coverage-bottom-icon,
+.packup-repair-icon,
+.packup-repair-footer-icon,
+.packup-process-card-icon,
+.packup-process-note-icon,
+.packup-prepare-item-icon,
+.packup-warranty-cta-panel-icon {
+    border-radius: var(--radius-sm);
+}
+
+/* =========================================================
+   RESPONSIVE MEDIA QUERIES
+   PACKUP — WARRANTY & REPAIR PAGE
+========================================================= */
+
+
+/* =========================================================
+   SAMSUNG GALAXY S8+ / MOBILE
+   Width: 360px – 740px
+========================================================= */
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+
+    /* GLOBAL SECTION ALIGNMENT */
+
+    .packup-warranty-hero,
+    .packup-coverage-section,
+    .packup-repair-section,
+    .packup-process-section,
+    .packup-prepare-section,
+    .packup-care-section,
+    .packup-warranty-cta {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .packup-coverage-section,
+    .packup-repair-section,
+    .packup-process-section,
+    .packup-prepare-section,
+    .packup-care-section,
+    .packup-warranty-cta {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .packup-coverage-container,
+    .packup-repair-container,
+    .packup-process-container,
+    .packup-prepare-container,
+    .packup-care-container,
+    .packup-warranty-cta-container {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* -----------------------------------------
+       1. WARRANTY HERO
+    ----------------------------------------- */
+
+    .packup-warranty-hero {
+        height: auto;
+        min-height: 0;
+        padding-top: 75px;
+        padding-bottom: 55px;
+    }
+
+    .packup-warranty-hero-container {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .packup-warranty-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 0;
+        text-align: left;
+    }
+
+    .packup-warranty-eyebrow {
+        gap: 8px;
+        margin-bottom: 16px;
+        font-size: 11px;
+        letter-spacing: 1.4px;
+    }
+
+    .packup-warranty-eyebrow::before {
+        width: 25px;
+    }
+
+    .packup-warranty-heading {
+        max-width: 100%;
+        margin-bottom: 16px;
+        font-size: clamp(32px, 8vw, 42px);
+        line-height: 1.15;
+        letter-spacing: -1px;
+        overflow-wrap: anywhere;
+    }
+
+    .packup-warranty-description {
+        max-width: 100%;
+        margin-bottom: 22px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .packup-warranty-actions {
+        width: 100%;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+    .packup-warranty-button {
+        min-height: 46px;
+        padding: 11px 13px;
+        font-size: 13px;
+    }
+
+    .packup-warranty-features {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding-top: 20px;
+    }
+
+    .packup-warranty-feature {
+        padding: 0;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .packup-warranty-feature:first-child {
+        padding-left: 0;
+    }
+
+    .packup-warranty-feature + .packup-warranty-feature {
+        padding-top: 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.22);
+        border-left: none;
+    }
+
+    .packup-warranty-feature-icon {
+        width: 42px;
+        height: 42px;
+        flex: 0 0 42px;
+    }
+
+    .packup-warranty-feature-text h3 {
+        font-size: 13px;
+    }
+
+    .packup-warranty-feature-text p {
+        font-size: 12px;
+    }
+
+
+    /* -----------------------------------------
+       2. WARRANTY COVERAGE
+    ----------------------------------------- */
+
+    .packup-coverage-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 25px;
+    }
+
+    .packup-coverage-intro {
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    .packup-coverage-eyebrow {
+        font-size: 11px;
+        letter-spacing: 1.3px;
+    }
+
+    .packup-coverage-heading {
+        font-size: clamp(28px, 7vw, 36px);
+        line-height: 1.2;
+        letter-spacing: -0.6px;
+    }
+
+    .packup-coverage-description {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .packup-coverage-note {
+        gap: 12px;
+        margin-top: 22px;
+        padding: 15px;
+    }
+
+    .packup-coverage-note-icon {
+        width: 38px;
+        height: 38px;
+        flex: 0 0 38px;
+    }
+
+    .packup-coverage-note h3 {
+        font-size: 14px;
+    }
+
+    .packup-coverage-note p {
+        font-size: 13px;
+    }
+
+    .packup-coverage-details {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: auto;
+        gap: 14px;
+    }
+
+    .packup-coverage-card {
+        min-height: 0;
+        padding: 19px;
+    }
+
+    .packup-coverage-card-top {
+        margin-bottom: 16px;
+    }
+
+    .packup-coverage-card h3 {
+        font-size: 16px;
+    }
+
+    .packup-coverage-card > p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .packup-coverage-card-footer {
+        font-size: 12px;
+    }
+
+    .packup-coverage-bottom {
+        grid-column: 1;
+        grid-template-columns: minmax(0, 1fr);
+        justify-items: start;
+        gap: 14px;
+        padding: 19px;
+    }
+
+    .packup-coverage-bottom-icon {
+        width: 46px;
+        height: 46px;
+    }
+
+    .packup-coverage-bottom-content h3 {
+        font-size: 16px;
+    }
+
+    .packup-coverage-bottom-content p {
+        font-size: 13px;
+    }
+
+    .packup-coverage-contact-button {
+        width: 100%;
+        white-space: normal;
+    }
+
+
+    /* -----------------------------------------
+       3. REPAIR SERVICES
+    ----------------------------------------- */
+
+    .packup-repair-header {
+        margin-bottom: 28px;
+    }
+
+    .packup-repair-eyebrow {
+        font-size: 11px;
+        letter-spacing: 1.3px;
+    }
+
+    .packup-repair-heading {
+        font-size: clamp(28px, 7vw, 36px);
+        line-height: 1.2;
+        letter-spacing: -0.6px;
+    }
+
+    .packup-repair-description {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .packup-repair-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .packup-repair-grid {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: auto;
+        gap: 14px;
+    }
+
+    .packup-repair-card {
+        min-height: 0;
+        padding: 19px;
+    }
+
+    .packup-repair-card-top {
+        margin-bottom: 15px;
+    }
+
+    .packup-repair-card h3 {
+        font-size: 16px;
+    }
+
+    .packup-repair-card > p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .packup-repair-card-footer {
+        font-size: 12px;
+    }
+
+    .packup-repair-visual {
+        min-height: 460px;
+    }
+
+    .packup-repair-image-content {
+        left: 20px;
+        right: 20px;
+        bottom: 125px;
+    }
+
+    .packup-repair-image-content h3 {
+        font-size: clamp(25px, 6vw, 32px);
+    }
+
+    .packup-repair-image-content > p {
+        font-size: 13px;
+    }
+
+    .packup-repair-image-footer {
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .packup-repair-image-footer strong {
+        font-size: 12px;
+    }
+
+    .packup-repair-image-footer p {
+        font-size: 11px;
+    }
+
+
+    /* -----------------------------------------
+       4. SUPPORT PROCESS TIMELINE
+    ----------------------------------------- */
+
+    .packup-process-header {
+        margin-bottom: 32px;
+    }
+
+    .packup-process-eyebrow {
+        font-size: 11px;
+        letter-spacing: 1.3px;
+    }
+
+    .packup-process-title {
+        font-size: clamp(28px, 7vw, 36px);
+        line-height: 1.2;
+        letter-spacing: -0.6px;
+    }
+
+    .packup-process-description {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .packup-process-timeline {
+        gap: 18px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .packup-process-center-line {
+        display: none;
+    }
+
+    .packup-process-step {
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .packup-process-marker {
+        align-self: flex-start;
+        width: 45px;
+        height: 45px;
+        flex: 0 0 45px;
+        border-width: 4px;
+        font-size: 13px;
+    }
+
+    .packup-process-left .packup-process-card,
+    .packup-process-right .packup-process-card,
+    html[dir="rtl"] .packup-process-left .packup-process-card,
+    html[dir="rtl"] .packup-process-right .packup-process-card {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .packup-process-card {
+        min-height: 0;
+        padding: 20px;
+    }
+
+    .packup-process-step-label {
+        font-size: 11px;
+    }
+
+    .packup-process-card-heading {
+        gap: 11px;
+    }
+
+    .packup-process-card-icon {
+        width: 40px;
+        height: 40px;
+        flex: 0 0 40px;
+    }
+
+    .packup-process-card-heading h3 {
+        font-size: 16px;
+    }
+
+    .packup-process-card p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .packup-process-note {
+        align-items: flex-start;
+        gap: 12px;
+        margin-top: 28px;
+        padding: 16px;
+    }
+
+    .packup-process-note-icon {
+        width: 36px;
+        height: 36px;
+        flex: 0 0 36px;
+    }
+
+    .packup-process-note p {
+        font-size: 13px;
+    }
+
+
+    /* -----------------------------------------
+       5. PREPARATION CHECKLIST
+    ----------------------------------------- */
+
+    .packup-prepare-header {
+        margin-bottom: 30px;
+    }
+
+    .packup-prepare-eyebrow {
+        font-size: 11px;
+        letter-spacing: 1.3px;
+    }
+
+    .packup-prepare-title {
+        font-size: clamp(28px, 7vw, 36px);
+        line-height: 1.2;
+        letter-spacing: -0.6px;
+    }
+
+    .packup-prepare-description {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .packup-prepare-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .packup-prepare-visual {
+        min-height: 460px;
+    }
+
+    .packup-prepare-image-content {
+        inset-inline: 20px;
+        bottom: 22px;
+    }
+
+    .packup-prepare-image-content h3 {
+        font-size: clamp(25px, 6vw, 32px);
+    }
+
+    .packup-prepare-image-content > p {
+        font-size: 13px;
+    }
+
+    .packup-prepare-image-tip {
+        gap: 10px;
+        margin-top: 20px;
+        padding-top: 16px;
+    }
+
+    .packup-prepare-image-tip span {
+        font-size: 12px;
+    }
+
+    .packup-prepare-checklist-card {
+        padding: 18px;
+    }
+
+    .packup-prepare-checklist-header {
+        gap: 12px;
+        margin-bottom: 18px;
+    }
+
+    .packup-prepare-checklist-header h3 {
+        font-size: 19px;
+    }
+
+    .packup-prepare-count {
+        width: 45px;
+        height: 45px;
+        flex: 0 0 45px;
+    }
+
+    .packup-prepare-items {
+        gap: 10px;
+    }
+
+    .packup-prepare-item {
+        min-height: 70px;
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .packup-prepare-item-content {
+        min-width: 0;
+    }
+
+    .packup-prepare-complete {
+        align-items: flex-start;
+        padding: 12px;
+        font-size: 12px;
+    }
+
+
+    /* -----------------------------------------
+       6. LUGGAGE CARE GUIDE
+    ----------------------------------------- */
+
+    .packup-care-header {
+        margin-bottom: 28px;
+    }
+
+    .packup-care-title {
+        font-size: clamp(28px, 7vw, 36px);
+        line-height: 1.2;
+        letter-spacing: -0.6px;
+    }
+
+    .packup-care-description {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .packup-care-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 14px;
+    }
+
+    .packup-care-card {
+        min-height: 0;
+        padding: 20px;
+    }
+
+    .packup-care-card h3 {
+        font-size: 16px;
+    }
+
+    .packup-care-card p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .packup-care-note {
+        align-items: flex-start;
+        gap: 12px;
+        padding: 15px;
+    }
+
+    .packup-care-note p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+
+    /* -----------------------------------------
+       7. FINAL WARRANTY CTA
+    ----------------------------------------- */
+
+    .packup-warranty-cta-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+    }
+
+    .packup-warranty-cta-content,
+    .packup-warranty-cta-panel {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        padding: 22px;
+    }
+
+    .packup-warranty-cta-content h2 {
+        font-size: clamp(27px, 7vw, 35px);
+        line-height: 1.2;
+        letter-spacing: -0.6px;
+    }
+
+    .packup-warranty-cta-content > p,
+    .packup-warranty-cta-panel > p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .packup-warranty-cta-points {
+        gap: 12px;
+    }
+
+    .packup-warranty-cta-actions {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .packup-warranty-cta-primary,
+    .packup-warranty-cta-secondary {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .packup-warranty-cta-panel-heading h3 {
+        font-size: 17px;
+    }
+
+    .packup-warranty-cta-panel-footer {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+
+    /* -----------------------------------------
+       RTL ALIGNMENT — MOBILE
+    ----------------------------------------- */
+
+    html[dir="rtl"] .packup-warranty-hero-container {
+        justify-content: center;
+    }
+
+    html[dir="rtl"] .packup-warranty-content {
+        text-align: right;
+    }
+
+    html[dir="rtl"] .packup-warranty-actions {
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+    }
+
+    html[dir="rtl"] .packup-warranty-feature {
+        direction: rtl;
+    }
+
+    html[dir="rtl"] .packup-warranty-feature + .packup-warranty-feature {
+        border-right: none;
+        border-left: none;
+    }
+
+    html[dir="rtl"] .packup-coverage-intro,
+    html[dir="rtl"] .packup-coverage-card,
+    html[dir="rtl"] .packup-repair-card,
+    html[dir="rtl"] .packup-repair-image-content,
+    html[dir="rtl"] .packup-prepare-image-content,
+    html[dir="rtl"] .packup-prepare-checklist-card,
+    html[dir="rtl"] .packup-care-card,
+    html[dir="rtl"] .packup-warranty-cta-content,
+    html[dir="rtl"] .packup-warranty-cta-panel {
+        text-align: right;
+    }
+
+    html[dir="rtl"] .packup-coverage-note,
+    html[dir="rtl"] .packup-coverage-bottom,
+    html[dir="rtl"] .packup-process-note,
+    html[dir="rtl"] .packup-care-note {
+        direction: rtl;
+    }
+
+    html[dir="rtl"] .packup-repair-image-footer,
+    html[dir="rtl"] .packup-prepare-checklist-header,
+    html[dir="rtl"] .packup-prepare-item {
+        direction: rtl;
+    }
+
+}
+
+
+/* =========================================================
+   IPAD MINI / TABLET
+   Width: 768px – 820px
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+    /* GLOBAL SECTION ALIGNMENT */
+
+    .packup-warranty-hero,
+    .packup-coverage-section,
+    .packup-repair-section,
+    .packup-process-section,
+    .packup-prepare-section,
+    .packup-care-section,
+    .packup-warranty-cta {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .packup-coverage-section,
+    .packup-repair-section,
+    .packup-process-section,
+    .packup-prepare-section,
+    .packup-care-section,
+    .packup-warranty-cta {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .packup-coverage-container,
+    .packup-repair-container,
+    .packup-process-container,
+    .packup-prepare-container,
+    .packup-care-container,
+    .packup-warranty-cta-container {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+
+    /* WARRANTY HERO */
+
+    .packup-warranty-hero {
+        height: auto;
+        min-height: 650px;
+        padding-top: 65px;
+        padding-bottom: 55px;
+    }
+
+    .packup-warranty-content {
+        width: 68%;
+        max-width: 580px;
+    }
+
+    .packup-warranty-heading {
+        font-size: clamp(38px, 5.4vw, 46px);
+        letter-spacing: -1px;
+    }
+
+    .packup-warranty-description {
+        font-size: 14px;
+    }
+
+    .packup-warranty-features {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .packup-warranty-feature {
+        gap: 8px;
+        padding: 0 8px;
+        align-items: flex-start;
+    }
+
+    .packup-warranty-feature-icon {
+        width: 36px;
+        height: 36px;
+        flex: 0 0 36px;
+    }
+
+    .packup-warranty-feature-icon svg {
+        width: 19px;
+        height: 19px;
+    }
+
+    .packup-warranty-feature-text h3 {
+        font-size: 12px;
+    }
+
+    .packup-warranty-feature-text p {
+        font-size: 11px;
+    }
+
+
+    /* WARRANTY COVERAGE */
+
+    .packup-coverage-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 25px;
+    }
+
+    .packup-coverage-intro {
+        padding: 0;
+    }
+
+    .packup-coverage-heading {
+        font-size: clamp(32px, 4.5vw, 38px);
+    }
+
+    .packup-coverage-details {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+
+    .packup-coverage-card {
+        min-height: 230px;
+        padding: 19px;
+    }
+
+    .packup-coverage-card > p {
+        font-size: 13px;
+    }
+
+    .packup-coverage-bottom {
+        grid-template-columns: 48px minmax(0, 1fr);
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .packup-coverage-bottom-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .packup-coverage-contact-button {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+
+
+    /* REPAIR SERVICES */
+
+    .packup-repair-heading {
+        font-size: clamp(32px, 4.5vw, 38px);
+    }
+
+    .packup-repair-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+    }
+
+    .packup-repair-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+
+    .packup-repair-card {
+        min-height: 220px;
+        padding: 18px;
+    }
+
+    .packup-repair-visual {
+        min-height: 500px;
+    }
+
+    .packup-repair-image-content {
+        left: 25px;
+        right: 25px;
+        bottom: 125px;
+    }
+
+
+    /* SUPPORT PROCESS TIMELINE */
+
+    .packup-process-title {
+        font-size: clamp(32px, 4.5vw, 38px);
+    }
+
+    .packup-process-header {
+        margin-bottom: 35px;
+    }
+
+    .packup-process-timeline {
+        gap: 20px;
+    }
+
+    .packup-process-center-line {
+        display: none;
+    }
+
+    .packup-process-step {
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .packup-process-marker {
+        align-self: flex-start;
+        width: 48px;
+        height: 48px;
+    }
+
+    .packup-process-left .packup-process-card,
+    .packup-process-right .packup-process-card,
+    html[dir="rtl"] .packup-process-left .packup-process-card,
+    html[dir="rtl"] .packup-process-right .packup-process-card {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .packup-process-card {
+        min-height: 0;
+        padding: 22px;
+    }
+
+
+    /* PREPARATION CHECKLIST */
+
+    .packup-prepare-title {
+        font-size: clamp(32px, 4.5vw, 38px);
+    }
+
+    .packup-prepare-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+    }
+
+    .packup-prepare-visual {
+        min-height: 500px;
+    }
+
+    .packup-prepare-checklist-card {
+        padding: 25px;
+    }
+
+    .packup-prepare-item {
+        min-height: 74px;
+    }
+
+
+    /* LUGGAGE CARE GUIDE */
+
+    .packup-care-title {
+        font-size: clamp(32px, 4.5vw, 38px);
+    }
+
+    .packup-care-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .packup-care-card {
+        min-height: 250px;
+        padding: 20px;
+    }
+
+
+    /* FINAL CTA */
+
+    .packup-warranty-cta-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .packup-warranty-cta-content,
+    .packup-warranty-cta-panel {
+        height: auto;
+        min-height: 0;
+        padding: 27px;
+    }
+
+    .packup-warranty-cta-content h2 {
+        font-size: clamp(30px, 4.5vw, 38px);
+    }
+
+    .packup-warranty-cta-actions {
+        flex-wrap: wrap;
+    }
+
+
+    /* RTL ALIGNMENT */
+
+    html[dir="rtl"] .packup-warranty-content,
+    html[dir="rtl"] .packup-coverage-intro,
+    html[dir="rtl"] .packup-coverage-card,
+    html[dir="rtl"] .packup-repair-card,
+    html[dir="rtl"] .packup-prepare-checklist-card,
+    html[dir="rtl"] .packup-care-card,
+    html[dir="rtl"] .packup-warranty-cta-content,
+    html[dir="rtl"] .packup-warranty-cta-panel {
+        text-align: right;
+    }
+
+    html[dir="rtl"] .packup-process-left .packup-process-card,
+    html[dir="rtl"] .packup-process-right .packup-process-card {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
+
+
+/* =========================================================
+   IPAD PRO 11" / LARGE TABLET
+   Width: 821px – 1024px
+========================================================= */
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+    /* GLOBAL SECTION ALIGNMENT */
+
+    .packup-warranty-hero,
+    .packup-coverage-section,
+    .packup-repair-section,
+    .packup-process-section,
+    .packup-prepare-section,
+    .packup-care-section,
+    .packup-warranty-cta {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .packup-coverage-section,
+    .packup-repair-section,
+    .packup-process-section,
+    .packup-prepare-section,
+    .packup-care-section,
+    .packup-warranty-cta {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .packup-coverage-container,
+    .packup-repair-container,
+    .packup-process-container,
+    .packup-prepare-container,
+    .packup-care-container,
+    .packup-warranty-cta-container {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+
+    /* WARRANTY HERO */
+
+    .packup-warranty-hero {
+        height: auto;
+        min-height: 650px;
+    }
+
+    .packup-warranty-content {
+        width: 62%;
+        max-width: 620px;
+    }
+
+    .packup-warranty-heading {
+        font-size: clamp(40px, 4.8vw, 50px);
+        letter-spacing: -1px;
+    }
+
+    .packup-warranty-features {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .packup-warranty-feature {
+        gap: 8px;
+        padding: 0 8px;
+    }
+
+    .packup-warranty-feature-icon {
+        width: 38px;
+        height: 38px;
+        flex: 0 0 38px;
+    }
+
+    .packup-warranty-feature-text h3 {
+        font-size: 12px;
+    }
+
+    .packup-warranty-feature-text p {
+        font-size: 11px;
+    }
+
+
+    /* WARRANTY COVERAGE */
+
+    .packup-coverage-container {
+        grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+        gap: 25px;
+    }
+
+    .packup-coverage-details {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: auto;
+        gap: 14px;
+    }
+
+    .packup-coverage-card {
+        min-height: 235px;
+        padding: 17px;
+    }
+
+    .packup-coverage-card h3 {
+        font-size: 15px;
+    }
+
+    .packup-coverage-card > p {
+        font-size: 12px;
+    }
+
+    .packup-coverage-bottom {
+        grid-template-columns: 48px minmax(0, 1fr) auto;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .packup-coverage-contact-button {
+        padding: 11px 13px;
+    }
+
+
+    /* REPAIR SERVICES */
+
+    .packup-repair-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+    }
+
+    .packup-repair-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: auto;
+        gap: 16px;
+    }
+
+    .packup-repair-card {
+        min-height: 220px;
+        padding: 20px;
+    }
+
+    .packup-repair-visual {
+        min-height: 520px;
+    }
+
+
+    /* SUPPORT PROCESS TIMELINE */
+
+    .packup-process-header {
+        margin-bottom: 42px;
+    }
+
+    .packup-process-timeline {
+        gap: 24px;
+    }
+
+    .packup-process-step {
+        grid-template-columns: minmax(0, 1fr) 62px minmax(0, 1fr);
+    }
+
+    .packup-process-left .packup-process-card {
+        margin-right: 17px;
+    }
+
+    .packup-process-right .packup-process-card {
+        margin-left: 17px;
+    }
+
+    .packup-process-marker {
+        width: 50px;
+        height: 50px;
+        font-size: 13px;
+    }
+
+    .packup-process-card {
+        min-height: 190px;
+        padding: 20px;
+    }
+
+    .packup-process-card-heading {
+        gap: 10px;
+    }
+
+    .packup-process-card-icon {
+        width: 38px;
+        height: 38px;
+        flex: 0 0 38px;
+    }
+
+    .packup-process-card-heading h3 {
+        font-size: 15px;
+    }
+
+    .packup-process-card p {
+        font-size: 12px;
+    }
+
+    html[dir="rtl"] .packup-process-left .packup-process-card {
+        margin-right: 17px;
+        margin-left: 0;
+    }
+
+    html[dir="rtl"] .packup-process-right .packup-process-card {
+        margin-left: 17px;
+        margin-right: 0;
+    }
+
+
+    /* PREPARATION CHECKLIST */
+
+    .packup-prepare-layout {
+        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+        gap: 20px;
+    }
+
+    .packup-prepare-visual {
+        min-height: 650px;
+    }
+
+    .packup-prepare-image-content {
+        inset-inline: 20px;
+        bottom: 25px;
+    }
+
+    .packup-prepare-checklist-card {
+        padding: 22px;
+    }
+
+    .packup-prepare-checklist-header {
+        gap: 10px;
+    }
+
+    .packup-prepare-checklist-header h3 {
+        font-size: 20px;
+    }
+
+    .packup-prepare-count {
+        width: 45px;
+        height: 45px;
+        flex: 0 0 45px;
+    }
+
+    .packup-prepare-item {
+        gap: 10px;
+        padding: 12px;
+    }
+
+
+    /* LUGGAGE CARE GUIDE */
+
+    .packup-care-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .packup-care-card {
+        min-height: 270px;
+        padding: 20px 17px;
+    }
+
+
+    /* FINAL CTA */
+
+    .packup-warranty-cta-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .packup-warranty-cta-content,
+    .packup-warranty-cta-panel {
+        padding: 24px;
+    }
+
+    .packup-warranty-cta-content h2 {
+        font-size: clamp(30px, 3.5vw, 38px);
+    }
+
+    .packup-warranty-cta-actions {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .packup-warranty-cta-primary,
+    .packup-warranty-cta-secondary {
+        max-width: 100%;
+        white-space: normal;
+    }
+
+
+    /* RTL ALIGNMENT */
+
+    html[dir="rtl"] .packup-warranty-content,
+    html[dir="rtl"] .packup-coverage-intro,
+    html[dir="rtl"] .packup-coverage-card,
+    html[dir="rtl"] .packup-repair-card,
+    html[dir="rtl"] .packup-prepare-checklist-card,
+    html[dir="rtl"] .packup-care-card,
+    html[dir="rtl"] .packup-warranty-cta-content,
+    html[dir="rtl"] .packup-warranty-cta-panel {
+        text-align: right;
+    }
+
+}
+
+
+/* =========================================================
+   NEST HUB
+   Exact viewport: 1024px × 600px
+   Keep this query AFTER the iPad Pro query.
+========================================================= */
+
+@media screen and (width: 1024px) and (height: 600px) {
+
+    /* GLOBAL SECTION ALIGNMENT */
+
+    .packup-warranty-hero,
+    .packup-coverage-section,
+    .packup-repair-section,
+    .packup-process-section,
+    .packup-prepare-section,
+    .packup-care-section,
+    .packup-warranty-cta {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .packup-coverage-section,
+    .packup-repair-section,
+    .packup-process-section,
+    .packup-prepare-section,
+    .packup-care-section,
+    .packup-warranty-cta {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+
+    /* WARRANTY HERO — FIT THE SHORT SCREEN */
+
+    .packup-warranty-hero {
+        height: 600px;
+        min-height: 0;
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+
+    .packup-warranty-content {
+        width: 62%;
+        max-width: 600px;
+        padding: 10px 0;
+    }
+
+    .packup-warranty-eyebrow {
+        margin-bottom: 12px;
+        font-size: 11px;
+    }
+
+    .packup-warranty-heading {
+        margin-bottom: 12px;
+        font-size: 38px;
+        line-height: 1.08;
+        letter-spacing: -0.8px;
+    }
+
+    .packup-warranty-description {
+        margin-bottom: 16px;
+        font-size: 12px;
+        line-height: 1.65;
+    }
+
+    .packup-warranty-actions {
+        gap: 9px;
+        margin-bottom: 18px;
+    }
+
+    .packup-warranty-button {
+        min-height: 40px;
+        padding: 9px 12px;
+        font-size: 12px;
+    }
+
+    .packup-warranty-features {
+        padding-top: 15px;
+        gap: 7px;
+    }
+
+    .packup-warranty-feature {
+        gap: 7px;
+        padding: 0 7px;
+    }
+
+    .packup-warranty-feature-icon {
+        width: 32px;
+        height: 32px;
+        flex: 0 0 32px;
+    }
+
+    .packup-warranty-feature-icon svg {
+        width: 17px;
+        height: 17px;
+    }
+
+    .packup-warranty-feature-text h3 {
+        margin-bottom: 3px;
+        font-size: 11px;
+    }
+
+    .packup-warranty-feature-text p {
+        font-size: 10px;
+        line-height: 1.4;
+    }
+
+
+    /* WARRANTY COVERAGE */
+
+    .packup-coverage-container {
+        grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+        gap: 20px;
+    }
+
+    .packup-coverage-intro {
+        padding: 0;
+    }
+
+    .packup-coverage-heading {
+        font-size: 30px;
+    }
+
+    .packup-coverage-description {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .packup-coverage-note {
+        margin-top: 15px;
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .packup-coverage-note-icon {
+        width: 34px;
+        height: 34px;
+        flex: 0 0 34px;
+    }
+
+    .packup-coverage-note h3 {
+        font-size: 12px;
+    }
+
+    .packup-coverage-note p {
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+    .packup-coverage-details {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+
+    .packup-coverage-card {
+        min-height: 0;
+        padding: 13px;
+    }
+
+    .packup-coverage-card-top {
+        margin-bottom: 12px;
+    }
+
+    .packup-coverage-card-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    .packup-coverage-card-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .packup-coverage-card h3 {
+        margin-bottom: 7px;
+        font-size: 13px;
+    }
+
+    .packup-coverage-card > p {
+        margin-bottom: 12px;
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+    .packup-coverage-card-footer {
+        padding-top: 9px;
+        font-size: 10px;
+    }
+
+    .packup-coverage-bottom {
+        grid-template-columns: 42px minmax(0, 1fr) auto;
+        gap: 12px;
+        padding: 14px;
+    }
+
+    .packup-coverage-bottom-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .packup-coverage-bottom-content h3 {
+        font-size: 13px;
+    }
+
+    .packup-coverage-bottom-content p {
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+    .packup-coverage-contact-button {
+        min-height: 40px;
+        padding: 9px 11px;
+        font-size: 11px;
+    }
+
+
+    /* REPAIR SERVICES */
+
+    .packup-repair-header {
+        margin-bottom: 25px;
+    }
+
+    .packup-repair-heading {
+        font-size: 30px;
+    }
+
+    .packup-repair-description {
+        font-size: 12px;
+    }
+
+    .packup-repair-layout {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 15px;
+    }
+
+    .packup-repair-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+
+    .packup-repair-card {
+        min-height: 0;
+        padding: 13px;
+    }
+
+    .packup-repair-card-top {
+        margin-bottom: 10px;
+    }
+
+    .packup-repair-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .packup-repair-icon svg {
+        width: 19px;
+        height: 19px;
+    }
+
+    .packup-repair-card h3 {
+        font-size: 13px;
+    }
+
+    .packup-repair-card > p {
+        margin-bottom: 11px;
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+    .packup-repair-card-footer {
+        padding-top: 9px;
+        font-size: 10px;
+    }
+
+    .packup-repair-visual {
+        min-height: 420px;
+    }
+
+    .packup-repair-image-content {
+        left: 18px;
+        right: 18px;
+        bottom: 105px;
+    }
+
+    .packup-repair-image-tag {
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+
+    .packup-repair-image-content h3 {
+        margin-bottom: 9px;
+        font-size: 25px;
+    }
+
+    .packup-repair-image-content > p {
+        font-size: 11px;
+        line-height: 1.65;
+    }
+
+    .packup-repair-image-footer {
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        gap: 9px;
+        padding: 10px;
+    }
+
+    .packup-repair-footer-icon {
+        width: 34px;
+        height: 34px;
+    }
+
+    .packup-repair-footer-icon svg {
+        width: 19px;
+        height: 19px;
+    }
+
+    .packup-repair-image-footer strong {
+        font-size: 11px;
+    }
+
+    .packup-repair-image-footer p {
+        font-size: 10px;
+    }
+
+
+    /* SUPPORT PROCESS TIMELINE */
+
+    .packup-process-header {
+        margin-bottom: 30px;
+    }
+
+    .packup-process-title {
+        font-size: 30px;
+    }
+
+    .packup-process-description {
+        font-size: 12px;
+    }
+
+    .packup-process-timeline {
+        gap: 16px;
+    }
+
+    .packup-process-step {
+        min-height: 135px;
+        grid-template-columns: minmax(0, 1fr) 48px minmax(0, 1fr);
+    }
+
+    .packup-process-left .packup-process-card {
+        margin-right: 12px;
+    }
+
+    .packup-process-right .packup-process-card {
+        margin-left: 12px;
+    }
+
+    .packup-process-marker {
+        width: 40px;
+        height: 40px;
+        border-width: 4px;
+        font-size: 11px;
+    }
+
+    .packup-process-card {
+        min-height: 135px;
+        padding: 14px;
+    }
+
+    .packup-process-step-label {
+        margin-bottom: 8px;
+        font-size: 9px;
+    }
+
+    .packup-process-card-heading {
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+
+    .packup-process-card-icon {
+        width: 32px;
+        height: 32px;
+        flex: 0 0 32px;
+    }
+
+    .packup-process-card-icon svg {
+        width: 17px;
+        height: 17px;
+    }
+
+    .packup-process-card-heading h3 {
+        font-size: 12px;
+    }
+
+    .packup-process-card p {
+        font-size: 10px;
+        line-height: 1.6;
+    }
+
+    .packup-process-note {
+        margin-top: 25px;
+        padding: 14px;
+    }
+
+    .packup-process-note p {
+        font-size: 11px;
+    }
+
+    html[dir="rtl"] .packup-process-left .packup-process-card {
+        margin-right: 12px;
+        margin-left: 0;
+    }
+
+    html[dir="rtl"] .packup-process-right .packup-process-card {
+        margin-left: 12px;
+        margin-right: 0;
+    }
+
+
+    /* PREPARATION CHECKLIST */
+
+    .packup-prepare-header {
+        margin-bottom: 28px;
+    }
+
+    .packup-prepare-title {
+        font-size: 30px;
+    }
+
+    .packup-prepare-description {
+        font-size: 12px;
+    }
+
+    .packup-prepare-layout {
+        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+        gap: 16px;
+    }
+
+    .packup-prepare-visual {
+        min-height: 500px;
+    }
+
+    .packup-prepare-image-content {
+        inset-inline: 17px;
+        bottom: 18px;
+    }
+
+    .packup-prepare-image-content h3 {
+        font-size: 25px;
+    }
+
+    .packup-prepare-image-content > p {
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+    .packup-prepare-image-tip {
+        gap: 8px;
+        margin-top: 15px;
+        padding-top: 12px;
+    }
+
+    .packup-prepare-image-tip span {
+        font-size: 10px;
+    }
+
+    .packup-prepare-checklist-card {
+        padding: 17px;
+    }
+
+    .packup-prepare-checklist-header {
+        gap: 8px;
+        margin-bottom: 14px;
+    }
+
+    .packup-prepare-checklist-label {
+        font-size: 9px;
+    }
+
+    .packup-prepare-checklist-header h3 {
+        font-size: 16px;
+    }
+
+    .packup-prepare-count {
+        width: 38px;
+        height: 38px;
+        flex: 0 0 38px;
+        font-size: 11px;
+    }
+
+    .packup-prepare-progress-track {
+        margin-bottom: 15px;
+    }
+
+    .packup-prepare-items {
+        gap: 8px;
+    }
+
+    .packup-prepare-item {
+        min-height: 60px;
+        gap: 8px;
+        padding: 9px;
+    }
+
+    .packup-prepare-item-icon {
+        flex: 0 0 auto;
+    }
+
+    .packup-prepare-item-content {
+        min-width: 0;
+        font-size: 11px;
+    }
+
+
+    /* LUGGAGE CARE GUIDE */
+
+    .packup-care-header {
+        margin-bottom: 25px;
+    }
+
+    .packup-care-title {
+        font-size: 30px;
+    }
+
+    .packup-care-description {
+        font-size: 12px;
+    }
+
+    .packup-care-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .packup-care-card {
+        min-height: 235px;
+        padding: 13px;
+    }
+
+    .packup-care-card h3 {
+        font-size: 13px;
+    }
+
+    .packup-care-card p {
+        font-size: 10px;
+        line-height: 1.6;
+    }
+
+    .packup-care-note {
+        gap: 10px;
+        padding: 14px;
+    }
+
+    .packup-care-note p {
+        font-size: 11px;
+    }
+
+
+    /* FINAL CTA */
+
+    .packup-warranty-cta-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .packup-warranty-cta-content,
+    .packup-warranty-cta-panel {
+        padding: 20px;
+    }
+
+    .packup-warranty-cta-content h2 {
+        font-size: 29px;
+        line-height: 1.2;
+    }
+
+    .packup-warranty-cta-content > p,
+    .packup-warranty-cta-panel > p {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .packup-warranty-cta-panel-heading h3 {
+        font-size: 14px;
+    }
+
+    .packup-warranty-cta-actions {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .packup-warranty-cta-primary,
+    .packup-warranty-cta-secondary {
+        padding: 10px 12px;
+        font-size: 12px;
+        white-space: normal;
+    }
+
+}
+
+
+/* =========================================================
+   FINAL ALIGNMENT SAFEGUARDS
+   Apply only to the requested device sizes.
+========================================================= */
+
+@media screen and (min-width: 360px) and (max-width: 740px),
+       screen and (min-width: 768px) and (max-width: 820px),
+       screen and (min-width: 821px) and (max-width: 1024px) {
+
+    .packup-warranty-hero *,
+    .packup-coverage-section *,
+    .packup-repair-section *,
+    .packup-process-section *,
+    .packup-prepare-section *,
+    .packup-care-section *,
+    .packup-warranty-cta * {
+        box-sizing: border-box;
+    }
+
+    .packup-coverage-card,
+    .packup-repair-card,
+    .packup-process-card,
+    .packup-prepare-item,
+    .packup-care-card,
+    .packup-warranty-cta-content,
+    .packup-warranty-cta-panel {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .packup-warranty-hero img,
+    .packup-coverage-section img,
+    .packup-repair-section img,
+    .packup-process-section img,
+    .packup-prepare-section img,
+    .packup-care-section img,
+    .packup-warranty-cta img {
+        max-width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   NEST HUB — FINAL OVERRIDES
+   Must remain after all other responsive rules.
+========================================================= */
+
+@media screen and (width: 1024px) and (height: 600px) {
+
+    .packup-warranty-hero {
+        height: 600px;
+        min-height: 0;
+    }
+
+    .packup-coverage-section,
+    .packup-repair-section,
+    .packup-process-section,
+    .packup-prepare-section,
+    .packup-care-section,
+    .packup-warranty-cta {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .packup-coverage-container {
+        gap: 18px;
+    }
+
+    .packup-repair-layout {
+        gap: 14px;
+    }
+
+    .packup-repair-visual {
+        min-height: 400px;
+    }
+
+    .packup-prepare-layout {
+        gap: 14px;
+    }
+
+    .packup-prepare-visual {
+        min-height: 460px;
+    }
+
+    .packup-care-grid {
+        gap: 9px;
+    }
+
+    .packup-care-card {
+        padding: 12px;
+    }
+
+    .packup-warranty-cta-container {
+        gap: 14px;
+    }
+
+}

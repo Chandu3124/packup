@@ -1,0 +1,6028 @@
+/* =========================================================
+   PACKUP CONTACT HERO SECTION
+   No Header Included
+========================================================= */
+
+.packup-contact-hero {
+    position: relative;
+    isolation: isolate;
+
+    width: 100%;
+    height: 90vh;
+    min-height: 620px;
+    max-height: 1000px;
+
+    margin: 0;
+    padding: 35px 7%;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background-color: var(--soft-bg);
+    background-image:
+        linear-gradient(
+            90deg,
+            var(--soft-bg) 0%,
+            color-mix(in srgb, var(--soft-bg) 96%, transparent) 30%,
+            color-mix(in srgb, var(--soft-bg) 82%, transparent) 43%,
+            color-mix(in srgb, var(--soft-bg) 30%, transparent) 60%,
+            transparent 78%
+        ),
+        linear-gradient(
+            0deg,
+            color-mix(in srgb, var(--bg) 20%, transparent),
+            transparent 35%
+        ),
+        url("contactbg.png");
+
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+
+    color: var(--text);
+    font-family: "DM Sans", sans-serif;
+
+    box-sizing: border-box;
+}
+
+.packup-contact-hero *,
+.packup-contact-hero *::before,
+.packup-contact-hero *::after {
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   CONTENT CONTAINER
+========================================================= */
+
+.packup-contact-hero-container {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.92fr);
+    align-items: center;
+
+    gap: 35px;
+}
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.packup-contact-hero-content {
+    position: relative;
+    z-index: 3;
+
+    width: 100%;
+    min-width: 0;
+
+    padding: 15px 0;
+}
+
+/* =========================================================
+   TAGLINE
+========================================================= */
+
+.packup-contact-hero-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    width: fit-content;
+    margin: 0 0 24px;
+
+    color: var(--secondary);
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.packup-contact-hero-eyebrow::before {
+    content: "";
+
+    display: inline-block;
+
+    width: 38px;
+    height: 2px;
+
+    flex-shrink: 0;
+
+    background: var(--secondary);
+    border-radius: var(--radius-pill);
+}
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.packup-contact-hero-heading {
+    max-width: 650px;
+
+    margin: 0 0 22px;
+
+    color: var(--primary);
+
+    font-size: clamp(34px, 3.5vw, 52px);
+    font-weight: 800;
+
+    line-height: 1.14;
+    letter-spacing: -1.3px;
+}
+
+.packup-contact-hero-heading span {
+    display: block;
+    color: var(--secondary);
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.packup-contact-hero-description {
+    max-width: 590px;
+
+    margin: 0;
+
+    color: var(--text-light);
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.9;
+}
+
+/* =========================================================
+   BUTTONS - SIDE BY SIDE
+========================================================= */
+
+.packup-contact-hero-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 13px;
+
+    margin-top: 29px;
+}
+
+.packup-contact-hero-button {
+    min-height: 48px;
+    padding: 12px 19px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 750;
+    line-height: 1.5;
+
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+
+    transition:
+        color var(--transition),
+        background var(--transition),
+        border-color var(--transition),
+        transform var(--transition);
+}
+
+.packup-contact-hero-button svg {
+    width: 17px;
+    height: 17px;
+
+    flex-shrink: 0;
+    stroke-width: 2;
+}
+
+.packup-contact-hero-button:hover {
+    transform: translateY(-2px);
+}
+
+/* Primary Button */
+
+.packup-contact-hero-primary {
+    color: var(--btn-primary-text);
+    background: var(--btn-primary-bg);
+    border-color: var(--btn-primary-bg);
+}
+
+.packup-contact-hero-primary:hover {
+    color: #FFFFFF;
+    background: var(--secondary);
+    border-color: var(--secondary);
+}
+
+/* Secondary Button */
+
+.packup-contact-hero-secondary {
+    color: var(--primary);
+    background: var(--card-bg);
+    border-color: var(--primary);
+}
+
+.packup-contact-hero-secondary:hover {
+    color: #FFFFFF;
+    background: var(--secondary);
+    border-color: var(--secondary);
+}
+
+/* =========================================================
+   SUPPORT HIGHLIGHTS
+========================================================= */
+
+.packup-contact-hero-highlights {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    margin-top: 31px;
+}
+
+.packup-contact-hero-highlight {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+    min-width: 0;
+}
+
+.packup-contact-hero-highlight-icon {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    color: var(--secondary);
+
+    background: color-mix(
+        in srgb,
+        var(--secondary) 12%,
+        var(--card-bg)
+    );
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+
+    transition:
+        color var(--transition),
+        background var(--transition),
+        transform var(--transition);
+}
+
+.packup-contact-hero-highlight-icon svg {
+    width: 22px;
+    height: 22px;
+    stroke-width: 1.9;
+}
+
+.packup-contact-hero-highlight:hover
+.packup-contact-hero-highlight-icon {
+    color: #FFFFFF;
+    background: var(--secondary);
+    transform: translateY(-2px);
+}
+
+.packup-contact-hero-highlight-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    color: var(--text-light);
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.packup-contact-hero-highlight-text strong {
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+/* Dividers */
+
+.packup-contact-hero-divider {
+    width: 1px;
+    height: 37px;
+
+    flex-shrink: 0;
+
+    background: var(--border);
+}
+
+/* =========================================================
+   RIGHT-SIDE VISUAL AREA
+========================================================= */
+
+.packup-contact-hero-visual {
+    position: relative;
+    align-self: stretch;
+
+    min-width: 0;
+    min-height: 0;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+/* Floating information card */
+
+.packup-contact-hero-image-note {
+    position: relative;
+    z-index: 3;
+
+    max-width: 285px;
+    margin: 0 -3% 7% 0;
+
+    padding: 15px 17px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: var(--text);
+    background: var(--card-bg);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+
+    box-shadow: var(--shadow-hover);
+}
+
+.packup-contact-hero-note-icon {
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    color: var(--secondary);
+    background: var(--soft-bg);
+
+    border-radius: var(--radius-sm);
+}
+
+.packup-contact-hero-note-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.packup-contact-hero-note-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.packup-contact-hero-note-content strong {
+    color: var(--primary);
+
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.packup-contact-hero-note-content span {
+    color: var(--text-light);
+
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+/* =========================================================
+   DARK MODE BACKGROUND OVERLAY
+========================================================= */
+
+body.dark-mode .packup-contact-hero {
+    background-color: var(--bg);
+
+    background-image:
+        linear-gradient(
+            90deg,
+            var(--bg) 0%,
+            color-mix(in srgb, var(--bg) 97%, transparent) 30%,
+            color-mix(in srgb, var(--bg) 86%, transparent) 43%,
+            color-mix(in srgb, var(--bg) 48%, transparent) 60%,
+            color-mix(in srgb, var(--bg) 12%, transparent) 82%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(16, 23, 34, 0.50),
+            transparent 45%
+        ),
+        url("contactbg.png");
+
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+body.dark-mode .packup-contact-hero-heading {
+    color: var(--primary);
+}
+
+body.dark-mode .packup-contact-hero-heading span {
+    color: var(--secondary);
+}
+
+body.dark-mode .packup-contact-hero-description {
+    color: var(--text-light);
+}
+
+body.dark-mode .packup-contact-hero-highlight-text {
+    color: var(--text-light);
+}
+
+body.dark-mode .packup-contact-hero-highlight-text strong {
+    color: var(--primary);
+}
+
+body.dark-mode .packup-contact-hero-highlight-icon {
+    color: var(--secondary);
+    background: var(--card-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-contact-hero-divider {
+    background: var(--border);
+}
+
+body.dark-mode .packup-contact-hero-secondary {
+    color: var(--primary);
+    background: var(--card-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-contact-hero-secondary:hover {
+    color: #FFFFFF;
+    background: var(--secondary);
+    border-color: var(--secondary);
+}
+
+body.dark-mode .packup-contact-hero-image-note {
+    color: var(--text);
+    background: var(--card-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-contact-hero-note-icon {
+    color: var(--secondary);
+    background: var(--soft-bg);
+}
+
+body.dark-mode .packup-contact-hero-note-content strong {
+    color: var(--primary);
+}
+
+body.dark-mode .packup-contact-hero-note-content span {
+    color: var(--text-light);
+}
+/* =========================================================
+   RTL SUPPORT
+   Keep hero content on the LEFT.
+   Change text direction only.
+========================================================= */
+
+html[dir="rtl"] .packup-contact-hero-container {
+    direction: ltr;
+}
+
+/* Keep content in the original left column */
+html[dir="rtl"] .packup-contact-hero-content {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Keep tagline and its line in their original layout */
+html[dir="rtl"] .packup-contact-hero-eyebrow {
+    direction: rtl;
+    flex-direction: row;
+}
+
+/* Keep buttons in their original positions */
+html[dir="rtl"] .packup-contact-hero-actions {
+    direction: ltr;
+    flex-direction: row;
+}
+
+html[dir="rtl"] .packup-contact-hero-button {
+    direction: rtl;
+    flex-direction: row;
+}
+
+/* Keep highlights in the original layout */
+html[dir="rtl"] .packup-contact-hero-highlights {
+    direction: ltr;
+    flex-direction: row;
+}
+
+html[dir="rtl"] .packup-contact-hero-highlight {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Keep right-side visual in the SAME position */
+html[dir="rtl"] .packup-contact-hero-visual {
+    direction: ltr;
+    justify-content: flex-end;
+}
+
+/* Keep floating note in its original position */
+html[dir="rtl"] .packup-contact-hero-image-note {
+    direction: ltr;
+    margin: 0 -3% 7% 0;
+    flex-direction: row;
+    text-align: left;
+}
+
+/* Keep note text RTL without moving the note */
+html[dir="rtl"] .packup-contact-hero-note-content {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Preserve heading line layout */
+html[dir="rtl"] .packup-contact-hero-heading {
+    direction: rtl;
+    letter-spacing: 0;
+}
+
+html[dir="rtl"] .packup-contact-hero-heading span {
+    direction: rtl;
+}
+
+/* Description changes text direction only */
+html[dir="rtl"] .packup-contact-hero-description {
+    direction: rtl;
+    text-align: right;
+}
+/* =========================================================
+   PACKUP CONTACT OPTIONS
+========================================================= */
+
+.packup-contact-options {
+    position: relative;
+    width: 100%;
+
+    padding: 78px 7% 75px;
+
+    background: var(--bg);
+    color: var(--text);
+
+    font-family: "DM Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+.packup-contact-options *,
+.packup-contact-options *::before,
+.packup-contact-options *::after {
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.packup-contact-options-container {
+    width: 100%;
+    max-width: 1440px;
+
+    margin: 0 auto;
+}
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.packup-contact-options-header {
+    max-width: 760px;
+
+    margin: 0 auto 39px;
+
+    text-align: center;
+}
+
+/* Eyebrow */
+
+.packup-contact-options-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+
+    margin-bottom: 15px;
+
+    color: var(--secondary);
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.packup-contact-options-eyebrow::before {
+    content: "";
+
+    display: inline-block;
+
+    width: 34px;
+    height: 2px;
+
+    flex-shrink: 0;
+
+    background: var(--secondary);
+    border-radius: var(--radius-pill);
+}
+
+/* Heading */
+
+.packup-contact-options-heading {
+    margin: 0 0 15px;
+
+    color: var(--primary);
+
+    font-size: clamp(30px, 3vw, 43px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.packup-contact-options-heading span {
+    color: var(--secondary);
+}
+
+/* Description */
+
+.packup-contact-options-description {
+    max-width: 680px;
+
+    margin: 0 auto;
+
+    color: var(--text-light);
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+/* =========================================================
+   CONTACT OPTIONS GRID
+========================================================= */
+
+.packup-contact-options-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 18px;
+
+    align-items: stretch;
+}
+
+/* =========================================================
+   OPTION CARD
+========================================================= */
+
+.packup-contact-option-card {
+    position: relative;
+    isolation: isolate;
+
+    min-width: 0;
+    min-height: 270px;
+
+    padding: 23px 21px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    overflow: hidden;
+
+    color: var(--text);
+    background: var(--card-bg);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow);
+
+    text-decoration: none;
+
+    transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition),
+        background var(--transition);
+}
+
+/* Subtle top accent */
+
+.packup-contact-option-card::before {
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 3px;
+
+    background: var(--secondary);
+
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: transform var(--transition);
+}
+
+/* Hover */
+
+.packup-contact-option-card:hover {
+    transform: translateY(-5px);
+
+    border-color: var(--secondary);
+
+    box-shadow: var(--shadow-hover);
+}
+
+.packup-contact-option-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* =========================================================
+   CARD TOP ROW
+========================================================= */
+
+.packup-contact-option-top {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+
+    margin-bottom: 23px;
+}
+
+/* Icon */
+
+.packup-contact-option-icon {
+    width: 53px;
+    height: 53px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--secondary);
+
+    background: color-mix(
+        in srgb,
+        var(--secondary) 11%,
+        var(--card-bg)
+    );
+
+    border: 1px solid color-mix(
+        in srgb,
+        var(--secondary) 20%,
+        var(--border)
+    );
+
+    border-radius: var(--radius-md);
+
+    transition:
+        color var(--transition),
+        background var(--transition),
+        transform var(--transition);
+}
+
+.packup-contact-option-icon svg {
+    width: 24px;
+    height: 24px;
+
+    stroke-width: 1.9;
+}
+
+.packup-contact-option-card:hover
+.packup-contact-option-icon {
+    color: #FFFFFF;
+    background: var(--secondary);
+
+    transform: translateY(-2px);
+}
+
+/* Number */
+
+.packup-contact-option-number {
+    color: var(--text-muted);
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.packup-contact-option-card h3 {
+    margin: 0 0 11px;
+
+    color: var(--primary);
+
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 1.45;
+    letter-spacing: -0.25px;
+}
+
+/* =========================================================
+   CARD DESCRIPTION
+========================================================= */
+
+.packup-contact-option-card p {
+    margin: 0 0 22px;
+
+    color: var(--text-light);
+
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+/* =========================================================
+   CARD LINK
+========================================================= */
+
+.packup-contact-option-link {
+    width: 100%;
+
+    margin-top: auto;
+    padding-top: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    color: var(--secondary);
+
+    border-top: 1px solid var(--border);
+
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.5;
+
+    transition: color var(--transition);
+}
+
+.packup-contact-option-link svg {
+    width: 17px;
+    height: 17px;
+
+    flex-shrink: 0;
+
+    transition: transform var(--transition);
+}
+
+.packup-contact-option-card:hover
+.packup-contact-option-link {
+    color: var(--primary);
+}
+
+.packup-contact-option-card:hover
+.packup-contact-option-link svg {
+    transform: translate(3px, -3px);
+}
+
+/* =========================================================
+   BOTTOM SUPPORT STRIP
+========================================================= */
+
+.packup-contact-options-footer {
+    width: 100%;
+
+    margin-top: 23px;
+    padding: 20px 23px;
+
+    display: flex;
+    align-items: center;
+    gap: 17px;
+
+    background: var(--soft-bg);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+/* Footer icon */
+
+.packup-contact-options-footer-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    color: var(--secondary);
+    background: var(--card-bg);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+.packup-contact-options-footer-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+/* Footer content */
+
+.packup-contact-options-footer-content {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.packup-contact-options-footer-content strong {
+    color: var(--primary);
+
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.packup-contact-options-footer-content span {
+    color: var(--text-light);
+
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* Footer link */
+
+.packup-contact-options-footer-link {
+    margin-left: auto;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    flex-shrink: 0;
+
+    padding: 11px 16px;
+
+    color: var(--btn-primary-text);
+    background: var(--btn-primary-bg);
+
+    border: 1px solid var(--btn-primary-bg);
+    border-radius: var(--radius-sm);
+
+    font-size: 12px;
+    font-weight: 800;
+    text-decoration: none;
+    white-space: nowrap;
+
+    transition:
+        background var(--transition),
+        border-color var(--transition),
+        transform var(--transition);
+}
+
+.packup-contact-options-footer-link svg {
+    width: 16px;
+    height: 16px;
+}
+
+.packup-contact-options-footer-link:hover {
+    color: #FFFFFF;
+    background: var(--secondary);
+    border-color: var(--secondary);
+
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .packup-contact-options {
+    background: var(--bg);
+}
+
+body.dark-mode .packup-contact-options-heading {
+    color: var(--primary);
+}
+
+body.dark-mode .packup-contact-options-heading span {
+    color: var(--secondary);
+}
+
+body.dark-mode .packup-contact-option-card {
+    background: var(--card-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-contact-option-card h3 {
+    color: var(--primary);
+}
+
+body.dark-mode .packup-contact-option-card p {
+    color: var(--text-light);
+}
+
+body.dark-mode .packup-contact-option-number {
+    color: var(--text-muted);
+}
+
+body.dark-mode .packup-contact-option-icon {
+    color: var(--secondary);
+    background: var(--soft-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-contact-option-card:hover
+.packup-contact-option-icon {
+    color: #FFFFFF;
+    background: var(--secondary);
+}
+
+body.dark-mode .packup-contact-option-link {
+    color: var(--secondary);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-contact-option-card:hover
+.packup-contact-option-link {
+    color: var(--primary);
+}
+
+body.dark-mode .packup-contact-options-footer {
+    background: var(--soft-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-contact-options-footer-icon {
+    color: var(--secondary);
+    background: var(--card-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-contact-options-footer-content strong {
+    color: var(--primary);
+}
+
+body.dark-mode .packup-contact-options-footer-content span {
+    color: var(--text-light);
+}
+
+/* =========================================================
+   RTL SUPPORT
+========================================================= */
+
+html[dir="rtl"] .packup-contact-options-header {
+    direction: rtl;
+}
+
+html[dir="rtl"] .packup-contact-option-card {
+    text-align: right;
+    align-items: stretch;
+}
+
+html[dir="rtl"] .packup-contact-option-card::before {
+    transform-origin: right;
+}
+
+html[dir="rtl"] .packup-contact-option-link {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .packup-contact-option-card:hover
+.packup-contact-option-link svg {
+    transform: translate(-3px, -3px);
+}
+
+html[dir="rtl"] .packup-contact-options-footer {
+    direction: rtl;
+}
+
+html[dir="rtl"] .packup-contact-options-footer-link {
+    margin-left: 0;
+    margin-right: auto;
+    flex-direction: row-reverse;
+}
+/* =========================================================
+   PACKUP CONTACT FORM SECTION
+========================================================= */
+
+.packup-contact-form-section {
+    width: 100%;
+    padding: 75px 7%;
+
+    color: var(--text);
+    background: var(--bg);
+
+    font-family: "DM Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+.packup-contact-form-section *,
+.packup-contact-form-section *::before,
+.packup-contact-form-section *::after {
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   MAIN LAYOUT
+========================================================= */
+
+.packup-contact-form-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+
+    align-items: stretch;
+    gap: 28px;
+}
+
+/* =========================================================
+   LEFT IMAGE PANEL
+========================================================= */
+
+.packup-contact-form-visual {
+    position: relative;
+    isolation: isolate;
+
+    min-width: 0;
+    min-height: 690px;
+
+    display: flex;
+    align-items: flex-end;
+
+    overflow: hidden;
+
+    padding: 36px 32px;
+
+    background-color: var(--primary);
+
+    background-image: url(
+        "https://images.openai.com/static-rsc-4/-AdrZ60y1dG6Eg_SlzfstSVZJ7BpgTib9OV0wFQdqs70Thb14WpiyDo3v44v5FRcQ3Z5JdfWGxFuTRDtuV6L08a3OJd9s8R00ChZ0Q10LbvsHTGYZZcIweCQjrP8rSGXkxxFRqH6XZJFXAnLdy0lgL6J6Wmeh0fFXNayk2EBHlepMZGKviEVrtz69g4vhUA-?purpose=fullsize"
+    );
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: var(--radius-lg);
+}
+
+/* Image overlay */
+
+.packup-contact-form-visual-overlay {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(7, 25, 45, 0.04) 0%,
+            rgba(7, 25, 45, 0.30) 35%,
+            rgba(7, 25, 45, 0.91) 100%
+        );
+}
+
+/* =========================================================
+   IMAGE CONTENT
+========================================================= */
+
+.packup-contact-form-visual-content {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* Image eyebrow */
+
+.packup-contact-form-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 18px;
+
+    color: #75E0D7;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.packup-contact-form-eyebrow::before {
+    content: "";
+
+    width: 34px;
+    height: 2px;
+
+    flex-shrink: 0;
+
+    background: #75E0D7;
+    border-radius: var(--radius-pill);
+}
+
+/* Image heading */
+
+.packup-contact-form-visual-content h2 {
+    max-width: 440px;
+
+    margin: 0 0 15px;
+
+    color: #FFFFFF;
+
+    font-size: clamp(29px, 2.8vw, 39px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+.packup-contact-form-visual-content h2 span {
+    display: block;
+    color: #75E0D7;
+}
+
+/* Image description */
+
+.packup-contact-form-visual-content > p {
+    max-width: 450px;
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.87);
+
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+/* =========================================================
+   IMAGE BENEFITS
+========================================================= */
+
+.packup-contact-form-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+
+    margin-top: 29px;
+}
+
+.packup-contact-form-benefit {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    min-width: 0;
+}
+
+.packup-contact-form-benefit-icon {
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    color: #75E0D7;
+
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.23);
+
+    border-radius: var(--radius-md);
+}
+
+.packup-contact-form-benefit-icon svg {
+    width: 21px;
+    height: 21px;
+    stroke-width: 1.8;
+}
+
+.packup-contact-form-benefit > div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.packup-contact-form-benefit strong {
+    color: #FFFFFF;
+
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.packup-contact-form-benefit > div > span {
+    color: rgba(255, 255, 255, 0.78);
+
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+/* =========================================================
+   IMAGE BOTTOM NOTE
+========================================================= */
+
+.packup-contact-form-visual-note {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 27px;
+    padding-top: 20px;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    border-top: 1px solid rgba(255, 255, 255, 0.24);
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.packup-contact-form-visual-note svg {
+    width: 19px;
+    height: 19px;
+
+    flex-shrink: 0;
+    color: #75E0D7;
+}
+
+/* =========================================================
+   RIGHT FORM PANEL
+========================================================= */
+
+.packup-contact-form-panel {
+    min-width: 0;
+
+    padding: 32px 30px;
+
+    background: var(--card-bg);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow);
+}
+
+/* =========================================================
+   FORM HEADER
+========================================================= */
+
+.packup-contact-form-header {
+    margin-bottom: 25px;
+}
+
+.packup-contact-form-panel-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-bottom: 11px;
+
+    color: var(--secondary);
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    line-height: 1.5;
+}
+
+.packup-contact-form-panel-eyebrow::before {
+    content: "";
+
+    width: 27px;
+    height: 2px;
+
+    background: var(--secondary);
+    border-radius: var(--radius-pill);
+}
+
+.packup-contact-form-header h2 {
+    margin: 0 0 11px;
+
+    color: var(--primary);
+
+    font-size: clamp(28px, 2.6vw, 36px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.7px;
+}
+
+.packup-contact-form-header h2 span {
+    color: var(--secondary);
+}
+
+.packup-contact-form-header p {
+    max-width: 620px;
+
+    margin: 0;
+
+    color: var(--text-light);
+
+    font-size: 12px;
+    line-height: 1.85;
+}
+
+/* =========================================================
+   FORM ROWS
+========================================================= */
+
+.packup-contact-form {
+    width: 100%;
+}
+
+.packup-contact-form-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+    margin-bottom: 17px;
+}
+
+/* =========================================================
+   FIELD
+========================================================= */
+
+.packup-contact-form-field {
+    min-width: 0;
+    margin-bottom: 17px;
+}
+
+.packup-contact-form-row .packup-contact-form-field {
+    margin-bottom: 0;
+}
+
+.packup-contact-form-field label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--text);
+
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.packup-contact-form-field label > span:first-child {
+    color: var(--secondary);
+}
+
+.packup-contact-form-optional {
+    color: var(--text-muted);
+
+    font-size: 10px;
+    font-weight: 500;
+}
+
+/* =========================================================
+   INPUT WRAPPER
+========================================================= */
+
+.packup-contact-form-input-wrap {
+    position: relative;
+
+    width: 100%;
+    min-width: 0;
+}
+
+.packup-contact-form-input-wrap > svg:first-child {
+    position: absolute;
+
+    top: 50%;
+    left: 13px;
+
+    width: 17px;
+    height: 17px;
+
+    color: var(--text-muted);
+
+    transform: translateY(-50%);
+
+    pointer-events: none;
+    stroke-width: 1.8;
+}
+
+.packup-contact-form-input-wrap input,
+.packup-contact-form-input-wrap select {
+    width: 100%;
+    min-width: 0;
+    height: 46px;
+
+    padding: 0 38px 0 40px;
+
+    color: var(--text);
+    background: var(--soft-bg);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+
+    outline: none;
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 500;
+
+    transition:
+        border-color var(--transition),
+        box-shadow var(--transition),
+        background var(--transition);
+}
+
+.packup-contact-form-input-wrap input::placeholder,
+.packup-contact-form-textarea-wrap textarea::placeholder {
+    color: var(--text-muted);
+    opacity: 0.9;
+}
+
+.packup-contact-form-input-wrap input:focus,
+.packup-contact-form-input-wrap select:focus,
+.packup-contact-form-textarea-wrap textarea:focus {
+    border-color: var(--secondary);
+
+    box-shadow: 0 0 0 3px
+        color-mix(in srgb, var(--secondary) 12%, transparent);
+}
+
+/* Select */
+
+.packup-contact-form-input-wrap select {
+    appearance: none;
+    cursor: pointer;
+}
+
+.packup-contact-form-input-wrap select:invalid {
+    color: var(--text-muted);
+}
+
+.packup-contact-form-input-wrap select option {
+    color: var(--text);
+    background: var(--card-bg);
+}
+
+.packup-contact-form-input-wrap .packup-contact-form-select-arrow {
+    position: absolute;
+
+    top: 50%;
+    right: 12px;
+
+    width: 15px;
+    height: 15px;
+
+    color: var(--text-muted);
+
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* =========================================================
+   TEXTAREA
+========================================================= */
+
+.packup-contact-form-message-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+}
+
+.packup-contact-form-message-label > span {
+    margin-bottom: 8px;
+
+    color: var(--text-muted);
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.packup-contact-form-textarea-wrap {
+    position: relative;
+}
+
+.packup-contact-form-textarea-wrap > svg {
+    position: absolute;
+
+    top: 14px;
+    left: 13px;
+
+    width: 17px;
+    height: 17px;
+
+    color: var(--text-muted);
+
+    pointer-events: none;
+}
+
+.packup-contact-form-textarea-wrap textarea {
+    display: block;
+
+    width: 100%;
+    min-height: 112px;
+    max-height: 220px;
+
+    padding: 13px 14px 13px 40px;
+
+    resize: vertical;
+
+    color: var(--text);
+    background: var(--soft-bg);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+
+    outline: none;
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.7;
+
+    transition:
+        border-color var(--transition),
+        box-shadow var(--transition),
+        background var(--transition);
+}
+
+/* =========================================================
+   VALIDATION
+========================================================= */
+
+.packup-contact-form-field.has-error input,
+.packup-contact-form-field.has-error select,
+.packup-contact-form-field.has-error textarea {
+    border-color: var(--error, #DC2626);
+}
+
+.packup-contact-form-error {
+    display: block;
+
+    min-height: 0;
+    margin-top: 5px;
+
+    color: var(--error, #DC2626);
+
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.packup-contact-form-error:empty {
+    display: none;
+}
+
+/* =========================================================
+   PRIVACY NOTE
+========================================================= */
+
+.packup-contact-form-privacy {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+
+    margin: 3px 0 17px;
+
+    color: var(--text-light);
+
+    font-size: 11px;
+    line-height: 1.65;
+}
+
+.packup-contact-form-privacy svg {
+    width: 16px;
+    height: 16px;
+
+    flex-shrink: 0;
+    margin-top: 1px;
+
+    color: var(--secondary);
+}
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.packup-contact-form-submit {
+    width: 100%;
+    min-height: 48px;
+
+    padding: 13px 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+
+    color: var(--btn-primary-text);
+    background: var(--btn-primary-bg);
+
+    border: 1px solid var(--btn-primary-bg);
+    border-radius: var(--radius-sm);
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition:
+        background var(--transition),
+        border-color var(--transition),
+        transform var(--transition);
+}
+
+.packup-contact-form-submit svg {
+    width: 17px;
+    height: 17px;
+}
+
+.packup-contact-form-submit:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+
+    transform: translateY(-2px);
+}
+
+.packup-contact-form-submit:disabled {
+    opacity: 0.7;
+    cursor: wait;
+    transform: none;
+}
+
+/* =========================================================
+   STATUS MESSAGE
+========================================================= */
+
+.packup-contact-form-status {
+    margin-top: 14px;
+    padding: 12px 14px;
+
+    color: var(--text);
+
+    background: var(--soft-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.packup-contact-form-status.success {
+    border-color: var(--success, #16A34A);
+}
+
+.packup-contact-form-status.error {
+    border-color: var(--error, #DC2626);
+}
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .packup-contact-form-panel {
+    background: var(--card-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-contact-form-header h2 {
+    color: var(--primary);
+}
+
+body.dark-mode .packup-contact-form-header h2 span {
+    color: var(--secondary);
+}
+
+body.dark-mode .packup-contact-form-header p {
+    color: var(--text-light);
+}
+
+body.dark-mode .packup-contact-form-field label {
+    color: var(--text);
+}
+
+body.dark-mode .packup-contact-form-input-wrap input,
+body.dark-mode .packup-contact-form-input-wrap select,
+body.dark-mode .packup-contact-form-textarea-wrap textarea {
+    color: var(--text);
+    background: var(--soft-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-contact-form-input-wrap input::placeholder,
+body.dark-mode .packup-contact-form-textarea-wrap textarea::placeholder {
+    color: var(--text-muted);
+}
+
+body.dark-mode .packup-contact-form-input-wrap select option {
+    color: var(--text);
+    background: var(--card-bg);
+}
+
+body.dark-mode .packup-contact-form-privacy {
+    color: var(--text-light);
+}
+
+body.dark-mode .packup-contact-form-status {
+    color: var(--text);
+    background: var(--soft-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-contact-form-status.success {
+    border-color: var(--success, #16A34A);
+}
+
+body.dark-mode .packup-contact-form-status.error {
+    border-color: var(--error, #DC2626);
+}
+
+/* =========================================================
+   RTL SUPPORT
+========================================================= */
+
+html[dir="rtl"] .packup-contact-form-container {
+    direction: rtl;
+}
+
+html[dir="rtl"] .packup-contact-form-panel {
+    text-align: right;
+}
+
+html[dir="rtl"] .packup-contact-form-input-wrap > svg:first-child {
+    left: auto;
+    right: 13px;
+}
+
+html[dir="rtl"] .packup-contact-form-input-wrap input,
+html[dir="rtl"] .packup-contact-form-input-wrap select {
+    padding: 0 40px 0 38px;
+}
+
+html[dir="rtl"] .packup-contact-form-input-wrap .packup-contact-form-select-arrow {
+    right: auto;
+    left: 12px;
+}
+
+html[dir="rtl"] .packup-contact-form-textarea-wrap > svg {
+    left: auto;
+    right: 13px;
+}
+
+html[dir="rtl"] .packup-contact-form-textarea-wrap textarea {
+    padding: 13px 40px 13px 14px;
+}
+
+html[dir="rtl"] .packup-contact-form-visual-content {
+    text-align: right;
+}
+
+html[dir="rtl"] .packup-contact-form-visual-note,
+html[dir="rtl"] .packup-contact-form-benefit {
+    flex-direction: row;
+}
+/* =========================================================
+   PACKUP - VISIT OUR STORE
+   DESKTOP: CONTENT LEFT | IMAGE RIGHT
+========================================================= */
+
+.packup-store-section {
+    width: 100%;
+    padding: 78px 7%;
+
+    background: var(--bg);
+    color: var(--text);
+
+    font-family: "DM Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+.packup-store-section *,
+.packup-store-section *::before,
+.packup-store-section *::after {
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   MAIN GRID
+========================================================= */
+
+.packup-store-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    display: grid;
+
+    /* First column = content, second column = image */
+    grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+
+    gap: 28px;
+    align-items: stretch;
+}
+
+/* =========================================================
+   LEFT SIDE CONTENT
+========================================================= */
+
+.packup-store-details {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 14px;
+}
+
+.packup-store-details-header {
+    margin-bottom: 7px;
+}
+
+/* =========================================================
+   TAGLINE
+========================================================= */
+
+.packup-store-details-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 13px;
+
+    color: var(--secondary);
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    line-height: 1.5;
+}
+
+.packup-store-details-eyebrow::before {
+    content: "";
+
+    width: 35px;
+    height: 2px;
+
+    flex-shrink: 0;
+
+    background: var(--secondary);
+    border-radius: var(--radius-pill);
+}
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.packup-store-details-header h2 {
+    margin: 0 0 13px;
+
+    color: var(--primary);
+
+    font-size: clamp(29px, 2.8vw, 40px);
+    font-weight: 800;
+    line-height: 1.18;
+    letter-spacing: -0.8px;
+}
+
+.packup-store-details-header h2 span {
+    display: block;
+    color: var(--secondary);
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.packup-store-details-header > p {
+    max-width: 590px;
+    margin: 0;
+
+    color: var(--text-light);
+
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+/* =========================================================
+   STORE INFO CARDS
+========================================================= */
+
+.packup-store-info-card {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 16px 17px;
+
+    background: var(--card-bg);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+
+    box-shadow: var(--shadow);
+
+    transition:
+        border-color var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+.packup-store-info-card:hover {
+    border-color: var(--secondary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* =========================================================
+   INFO CARD ICONS
+========================================================= */
+
+.packup-store-info-icon {
+    width: 47px;
+    height: 47px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    color: var(--secondary);
+    background: var(--soft-bg);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+.packup-store-info-icon svg {
+    width: 22px;
+    height: 22px;
+    stroke-width: 1.8;
+}
+
+/* =========================================================
+   INFO CARD CONTENT
+========================================================= */
+
+.packup-store-info-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.packup-store-info-label {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: var(--secondary);
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+    line-height: 1.5;
+}
+
+.packup-store-info-content h3 {
+    margin: 0 0 4px;
+
+    color: var(--primary);
+
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.55;
+
+    overflow-wrap: anywhere;
+}
+
+.packup-store-info-content p {
+    margin: 0;
+
+    color: var(--text-light);
+
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+/* =========================================================
+   DIRECTIONS PANEL
+========================================================= */
+
+.packup-store-directions {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 16px;
+
+    background: var(--soft-bg);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+/* Directions icon */
+
+.packup-store-directions-icon {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    color: var(--secondary);
+    background: var(--card-bg);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+.packup-store-directions-icon svg {
+    width: 21px;
+    height: 21px;
+}
+
+/* Directions text */
+
+.packup-store-directions-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.packup-store-directions-content h3 {
+    margin: 0 0 5px;
+
+    color: var(--primary);
+
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.packup-store-directions-content p {
+    margin: 0;
+
+    color: var(--text-light);
+
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+/* =========================================================
+   DIRECTIONS BUTTON
+========================================================= */
+
+.packup-store-directions-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    flex-shrink: 0;
+
+    margin-left: auto;
+    padding: 11px 13px;
+
+    color: var(--btn-primary-text);
+    background: var(--btn-primary-bg);
+
+    border: 1px solid var(--btn-primary-bg);
+    border-radius: var(--radius-sm);
+
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.5;
+
+    text-decoration: none;
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition:
+        background var(--transition),
+        border-color var(--transition),
+        transform var(--transition);
+}
+
+.packup-store-directions-button svg {
+    width: 15px;
+    height: 15px;
+}
+
+.packup-store-directions-button:hover {
+    color: #FFFFFF;
+    background: var(--secondary);
+    border-color: var(--secondary);
+
+    transform: translateY(-2px);
+}
+
+.packup-store-directions-button:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 4px;
+}
+
+/* =========================================================
+   STORE NOTE
+========================================================= */
+
+.packup-store-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    padding: 12px 14px;
+
+    background: color-mix(
+        in srgb,
+        var(--secondary) 7%,
+        var(--card-bg)
+    );
+
+    border: 1px solid color-mix(
+        in srgb,
+        var(--secondary) 22%,
+        var(--border)
+    );
+
+    border-radius: var(--radius-sm);
+}
+
+.packup-store-note > svg {
+    width: 16px;
+    height: 16px;
+
+    flex-shrink: 0;
+    margin-top: 2px;
+
+    color: var(--secondary);
+}
+
+.packup-store-note p {
+    margin: 0;
+
+    color: var(--text-light);
+
+    font-size: 10px;
+    line-height: 1.75;
+}
+
+/* =========================================================
+   RIGHT SIDE IMAGE PANEL
+========================================================= */
+
+.packup-store-visual {
+    position: relative;
+    isolation: isolate;
+
+    width: 100%;
+    min-width: 0;
+    min-height: 680px;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 34px 30px;
+
+    overflow: hidden;
+
+    background: var(--primary);
+    border-radius: var(--radius-lg);
+}
+
+/* Image */
+
+.packup-store-image {
+    position: absolute;
+    z-index: -2;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.6s ease;
+}
+
+.packup-store-visual:hover .packup-store-image {
+    transform: scale(1.035);
+}
+
+/* Overlay */
+
+.packup-store-image-overlay {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(5, 25, 43, 0.04) 0%,
+            rgba(5, 25, 43, 0.24) 38%,
+            rgba(5, 25, 43, 0.92) 100%
+        );
+}
+
+/* =========================================================
+   IMAGE TEXT
+========================================================= */
+
+.packup-store-visual-content {
+    width: 100%;
+    max-width: 470px;
+}
+
+.packup-store-visual-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 17px;
+
+    color: #75E0D7;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    line-height: 1.5;
+}
+
+.packup-store-visual-eyebrow::before {
+    content: "";
+
+    width: 34px;
+    height: 2px;
+
+    flex-shrink: 0;
+
+    background: #75E0D7;
+    border-radius: var(--radius-pill);
+}
+
+.packup-store-visual-content h3 {
+    margin: 0 0 15px;
+
+    color: #FFFFFF;
+
+    font-size: clamp(30px, 2.8vw, 40px);
+    font-weight: 800;
+    line-height: 1.18;
+    letter-spacing: -0.8px;
+}
+
+.packup-store-visual-content h3 span {
+    display: block;
+    color: #75E0D7;
+}
+
+.packup-store-visual-content > p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.89);
+
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+/* =========================================================
+   IMAGE BOTTOM NOTE
+========================================================= */
+
+.packup-store-image-note {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    margin-top: 26px;
+    padding-top: 19px;
+
+    color: #FFFFFF;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+.packup-store-image-note svg {
+    width: 21px;
+    height: 21px;
+
+    flex-shrink: 0;
+
+    color: #75E0D7;
+}
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .packup-store-section {
+    background: var(--bg);
+    color: var(--text);
+}
+
+body.dark-mode .packup-store-info-card {
+    background: var(--card-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-store-info-icon {
+    color: var(--secondary);
+    background: var(--soft-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-store-details-header h2,
+body.dark-mode .packup-store-info-content h3,
+body.dark-mode .packup-store-directions-content h3 {
+    color: var(--primary);
+}
+
+body.dark-mode .packup-store-details-header h2 span {
+    color: var(--secondary);
+}
+
+body.dark-mode .packup-store-info-content p,
+body.dark-mode .packup-store-details-header > p,
+body.dark-mode .packup-store-directions-content p,
+body.dark-mode .packup-store-note p {
+    color: var(--text-light);
+}
+
+body.dark-mode .packup-store-directions {
+    background: var(--soft-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-store-directions-icon {
+    background: var(--card-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-store-note {
+    background: var(--soft-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-store-image-overlay {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(5, 12, 22, 0.15) 0%,
+            rgba(5, 12, 22, 0.38) 38%,
+            rgba(5, 12, 22, 0.94) 100%
+        );
+}
+
+/* =========================================================
+   RTL SUPPORT
+   Desktop columns remain in the same order:
+   content first, image second.
+========================================================= */
+
+html[dir="rtl"] .packup-store-container {
+    direction: rtl;
+
+    grid-template-columns:
+        minmax(0, 1.08fr)
+        minmax(0, 0.92fr);
+}
+
+html[dir="rtl"] .packup-store-details {
+    text-align: right;
+}
+
+html[dir="rtl"] .packup-store-visual-content {
+    text-align: right;
+}
+
+html[dir="rtl"] .packup-store-info-card,
+html[dir="rtl"] .packup-store-directions,
+html[dir="rtl"] .packup-store-note {
+    direction: rtl;
+}
+
+html[dir="rtl"] .packup-store-directions-button {
+    margin-left: 0;
+    margin-right: auto;
+
+    flex-direction: row-reverse;
+}
+/* =====================================================
+   SECTION 5 — HOURS AND SERVICES
+===================================================== */
+
+.packup-hours-section {
+    width: 100%;
+    padding: 90px 7%;
+    background: var(--bg);
+    color: var(--text);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.packup-hours-section *,
+.packup-hours-section *::before,
+.packup-hours-section *::after {
+    box-sizing: border-box;
+}
+
+.packup-hours-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.packup-hours-header {
+    max-width: 760px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.packup-hours-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 17px;
+    color: var(--secondary);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.packup-hours-eyebrow-line {
+    width: 36px;
+    height: 3px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background: var(--secondary);
+}
+
+.packup-hours-heading {
+    margin: 0;
+    color: var(--primary);
+    font-family: "DM Sans", sans-serif;
+    font-size: clamp(34px, 3.5vw, 49px);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -1.3px;
+}
+
+.packup-hours-heading span {
+    color: var(--secondary);
+}
+
+.packup-hours-description {
+    max-width: 680px;
+    margin: 18px auto 0;
+    color: var(--text-light);
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* =====================================================
+   MAIN LAYOUT
+===================================================== */
+
+.packup-hours-layout {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 0.95fr)
+        minmax(0, 1.05fr);
+    align-items: stretch;
+    gap: 30px;
+}
+
+
+/* =====================================================
+   SCHEDULE CARD
+===================================================== */
+
+.packup-hours-schedule-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--card-bg);
+    box-shadow: var(--shadow);
+    transition:
+        border-color var(--transition),
+        box-shadow var(--transition);
+}
+
+.packup-hours-schedule-card:hover {
+    border-color: var(--secondary);
+    box-shadow: var(--shadow-hover);
+}
+
+
+/* CARD HEADER */
+
+.packup-hours-card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid var(--border);
+}
+
+.packup-hours-main-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    flex-shrink: 0;
+    border-radius: var(--radius-md);
+    background: var(--soft-bg);
+    color: var(--secondary);
+}
+
+.packup-hours-main-icon svg {
+    width: 27px;
+    height: 27px;
+}
+
+.packup-hours-small-label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--secondary);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.7px;
+}
+
+.packup-hours-card-header h3 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 23px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.packup-hours-card-header p {
+    margin: 5px 0 0;
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+
+/* STATUS MESSAGE */
+
+.packup-hours-status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0 22px;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--soft-bg);
+    color: var(--text-light);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.packup-hours-status-dot {
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--secondary);
+}
+
+
+/* =====================================================
+   WEEKLY SCHEDULE
+===================================================== */
+
+.packup-hours-weekly {
+    width: 100%;
+}
+
+.packup-hours-weekly-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.packup-hours-weekly-heading svg {
+    width: 19px;
+    height: 19px;
+    color: var(--secondary);
+}
+
+.packup-hours-weekly-heading h4 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.packup-hours-day {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    min-height: 46px;
+    padding: 11px 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-light);
+    font-size: 13px;
+}
+
+.packup-hours-day > span:first-child {
+    color: var(--text);
+    font-weight: 650;
+}
+
+.packup-hours-day-last {
+    border-bottom: none;
+}
+
+.packup-hours-time {
+    text-align: right;
+}
+
+.packup-hours-placeholder {
+    display: inline-block;
+    padding: 5px 9px;
+    border-radius: var(--radius-pill);
+    background: var(--soft-bg);
+    color: var(--text-muted);
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+/* SCHEDULE NOTE */
+
+.packup-hours-schedule-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+
+.packup-hours-schedule-note svg {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+    margin-top: 3px;
+    color: var(--secondary);
+}
+
+.packup-hours-schedule-note p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   SERVICES SIDE
+===================================================== */
+
+.packup-hours-services {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    gap: 16px;
+}
+
+.packup-hours-services-header {
+    margin-bottom: 5px;
+}
+
+.packup-hours-services-header h3 {
+    max-width: 500px;
+    margin: 0;
+    color: var(--primary);
+    font-size: clamp(25px, 2.5vw, 34px);
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.6px;
+}
+
+.packup-hours-services-header h3 span {
+    color: var(--secondary);
+}
+
+.packup-hours-services-header > p {
+    max-width: 520px;
+    margin: 12px 0 0;
+    color: var(--text-light);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   SERVICE CARDS
+===================================================== */
+
+.packup-hours-service-card {
+    display: grid;
+    grid-template-columns: 54px minmax(0, 1fr) 20px;
+    align-items: center;
+    gap: 17px;
+    min-width: 0;
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--card-bg);
+    color: inherit;
+    text-decoration: none;
+    box-shadow: 0 5px 18px rgba(11, 55, 104, 0.035);
+    transition:
+        transform var(--transition),
+        border-color var(--transition),
+        background var(--transition),
+        box-shadow var(--transition);
+}
+
+.packup-hours-service-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--secondary);
+    background: var(--soft-bg);
+    box-shadow: var(--shadow-hover);
+}
+
+.packup-hours-service-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: var(--radius-md);
+    background: var(--soft-bg);
+    color: var(--secondary);
+    transition:
+        background var(--transition),
+        color var(--transition);
+}
+
+.packup-hours-service-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.packup-hours-service-content {
+    min-width: 0;
+}
+
+.packup-hours-service-content h4 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.45;
+}
+
+.packup-hours-service-content p {
+    margin: 6px 0 0;
+    color: var(--text-light);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.packup-hours-service-arrow {
+    width: 19px;
+    height: 19px;
+    color: var(--text-muted);
+    transition:
+        color var(--transition),
+        transform var(--transition);
+}
+
+.packup-hours-service-card:hover .packup-hours-service-arrow {
+    color: var(--secondary);
+    transform: translate(3px, -3px);
+}
+
+
+/* =====================================================
+   CONTACT STRIP
+===================================================== */
+
+.packup-hours-contact-strip {
+    display: grid;
+    grid-template-columns: 46px minmax(0, 1fr) 42px;
+    align-items: center;
+    gap: 15px;
+    margin-top: auto;
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--primary);
+    border-radius: var(--radius-md);
+    background: var(--soft-bg);
+}
+
+.packup-hours-contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: var(--radius-md);
+    background: var(--card-bg);
+    color: var(--secondary);
+}
+
+.packup-hours-contact-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.packup-hours-contact-content {
+    min-width: 0;
+}
+
+.packup-hours-contact-content h4 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.packup-hours-contact-content p {
+    margin: 5px 0 0;
+    color: var(--text-light);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.packup-hours-contact-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: var(--radius-sm);
+    background: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+    text-decoration: none;
+    transition:
+        background var(--transition),
+        transform var(--transition);
+}
+
+.packup-hours-contact-link svg {
+    width: 19px;
+    height: 19px;
+}
+
+.packup-hours-contact-link:hover {
+    background: var(--secondary);
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark-mode .packup-hours-section {
+    background: var(--bg);
+}
+
+body.dark-mode .packup-hours-schedule-card,
+body.dark-mode .packup-hours-service-card {
+    background: var(--card-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-hours-schedule-card:hover,
+body.dark-mode .packup-hours-service-card:hover {
+    border-color: var(--secondary);
+    background: var(--soft-bg);
+}
+
+body.dark-mode .packup-hours-heading,
+body.dark-mode .packup-hours-card-header h3,
+body.dark-mode .packup-hours-weekly-heading h4,
+body.dark-mode .packup-hours-services-header h3,
+body.dark-mode .packup-hours-service-content h4,
+body.dark-mode .packup-hours-contact-content h4 {
+    color: var(--primary);
+}
+
+body.dark-mode .packup-hours-heading span,
+body.dark-mode .packup-hours-services-header h3 span {
+    color: var(--secondary);
+}
+
+body.dark-mode .packup-hours-main-icon,
+body.dark-mode .packup-hours-status,
+body.dark-mode .packup-hours-placeholder,
+body.dark-mode .packup-hours-service-icon {
+    background: var(--soft-bg);
+}
+
+body.dark-mode .packup-hours-contact-strip {
+    background: var(--soft-bg);
+    border-color: var(--border);
+    border-left-color: var(--primary);
+}
+
+body.dark-mode .packup-hours-contact-icon {
+    background: var(--card-bg);
+}
+
+
+/* =====================================================
+   RTL SUPPORT
+===================================================== */
+
+html[dir="rtl"] .packup-hours-section {
+    direction: rtl;
+}
+
+html[dir="rtl"] .packup-hours-eyebrow {
+    letter-spacing: 0;
+}
+
+html[dir="rtl"] .packup-hours-time {
+    text-align: left;
+}
+
+html[dir="rtl"] .packup-hours-service-arrow {
+    transform: scaleX(-1);
+}
+
+html[dir="rtl"] .packup-hours-service-card:hover
+.packup-hours-service-arrow {
+    transform: scaleX(-1) translate(3px, -3px);
+}
+
+html[dir="rtl"] .packup-hours-contact-strip {
+    border-left: 1px solid var(--border);
+    border-right: 4px solid var(--primary);
+}
+
+/* =====================================================
+   SECTION 6 — LOCATION AND DIRECTIONS
+===================================================== */
+/* =====================================================
+   PACKUP LOCATION SECTION
+===================================================== */
+
+.packup-location-section {
+    width: 100%;
+    padding: 90px 7%;
+    background: var(--soft-bg);
+    color: var(--text);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.packup-location-section *,
+.packup-location-section *::before,
+.packup-location-section *::after {
+    box-sizing: border-box;
+}
+
+.packup-location-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.packup-location-header {
+    max-width: 760px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.packup-location-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 17px;
+    color: var(--secondary);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.packup-location-eyebrow-line {
+    width: 36px;
+    height: 3px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background: var(--secondary);
+}
+
+.packup-location-heading {
+    margin: 0;
+    color: var(--primary);
+    font-family: "DM Sans", sans-serif;
+    font-size: clamp(34px, 3.5vw, 49px);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -1.3px;
+}
+
+.packup-location-heading span {
+    color: var(--secondary);
+}
+
+.packup-location-description {
+    max-width: 680px;
+    margin: 18px auto 0;
+    color: var(--text-light);
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* =====================================================
+   MAIN LAYOUT
+   CONTENT LEFT | MAP RIGHT
+===================================================== */
+
+.packup-location-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+    grid-template-areas: "details map";
+    align-items: stretch;
+    gap: 32px;
+}
+
+
+/* =====================================================
+   LEFT — LOCATION DETAILS
+===================================================== */
+
+.packup-location-details {
+    grid-area: details;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 0;
+    padding: 30px 0;
+}
+
+.packup-location-details-eyebrow {
+    display: block;
+    margin-bottom: 13px;
+    color: var(--secondary);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.packup-location-details-heading {
+    margin: 0;
+    color: var(--primary);
+    font-size: clamp(28px, 2.7vw, 38px);
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: -0.8px;
+}
+
+.packup-location-details-heading span {
+    display: block;
+    margin-top: 3px;
+    color: var(--secondary);
+}
+
+.packup-location-details-description {
+    margin: 15px 0 25px;
+    color: var(--text-light);
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+
+/* =====================================================
+   RIGHT — MAP CARD
+===================================================== */
+
+.packup-location-map-panel {
+    grid-area: map;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 680px;
+    padding: 24px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    background: var(--card-bg);
+    box-shadow: var(--shadow);
+    transition:
+        border-color var(--transition),
+        box-shadow var(--transition);
+}
+
+.packup-location-map-panel:hover {
+    border-color: var(--secondary);
+    box-shadow: var(--shadow-hover);
+}
+
+
+/* =====================================================
+   MAP HEADER
+===================================================== */
+
+.packup-location-map-top {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 3px 2px 20px;
+}
+
+.packup-location-map-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: var(--radius-md);
+    background: var(--soft-bg);
+    color: var(--secondary);
+}
+
+.packup-location-map-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.packup-location-map-label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--secondary);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.7px;
+}
+
+.packup-location-map-top h3 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+
+/* =====================================================
+   GOOGLE MAP
+===================================================== */
+
+.packup-location-map-placeholder {
+    position: relative;
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    min-height: 500px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--soft-bg);
+}
+
+.packup-location-google-map {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    flex: 1;
+    border: 0;
+    border-radius: inherit;
+}
+
+
+/* =====================================================
+   MAP FOOTER
+===================================================== */
+
+.packup-location-map-footer {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 17px 3px 1px;
+}
+
+.packup-location-map-footer svg {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+    margin-top: 3px;
+    color: var(--secondary);
+}
+
+.packup-location-map-footer p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   ADDRESS AND LANDMARK CARDS
+===================================================== */
+
+.packup-location-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+    padding: 19px;
+    margin-bottom: 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--card-bg);
+    transition:
+        border-color var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+.packup-location-info:hover {
+    transform: translateY(-2px);
+    border-color: var(--secondary);
+    box-shadow: var(--shadow);
+}
+
+.packup-location-info-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 47px;
+    height: 47px;
+    flex-shrink: 0;
+    border-radius: var(--radius-md);
+    background: var(--soft-bg);
+    color: var(--secondary);
+}
+
+.packup-location-info-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.packup-location-info-content {
+    min-width: 0;
+}
+
+.packup-location-info-content > span {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--secondary);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+.packup-location-info-content h4 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.packup-location-info-content p {
+    margin: 5px 0 0;
+    overflow-wrap: anywhere;
+    color: var(--text-light);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   VISIT TIP
+===================================================== */
+
+.packup-location-tip {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    width: 100%;
+    margin: 4px 0 23px;
+    padding: 14px 15px;
+    border-left: 3px solid var(--secondary);
+    border-radius: var(--radius-sm);
+    background: var(--card-bg);
+}
+
+.packup-location-tip svg {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+    margin-top: 3px;
+    color: var(--secondary);
+}
+
+.packup-location-tip p {
+    margin: 0;
+    color: var(--text-light);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   ACTION BUTTONS
+===================================================== */
+
+.packup-location-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 2px;
+}
+
+.packup-location-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 48px;
+    padding: 12px 18px;
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 750;
+    line-height: 1.4;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition:
+        background var(--transition),
+        color var(--transition),
+        border-color var(--transition),
+        transform var(--transition);
+}
+
+.packup-location-button svg {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+}
+
+.packup-location-button-primary {
+    background: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+}
+
+.packup-location-button-primary:hover {
+    background: var(--secondary);
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+.packup-location-button-secondary {
+    border-color: var(--btn-primary-bg);
+    background: rgba(255, 255, 255, 0.82);
+    color: var(--btn-primary-bg);
+}
+
+.packup-location-button-secondary:hover {
+    border-color: var(--secondary);
+    background: var(--secondary);
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark-mode .packup-location-section {
+    background: var(--bg);
+}
+
+body.dark-mode .packup-location-map-panel,
+body.dark-mode .packup-location-info,
+body.dark-mode .packup-location-tip {
+    background: var(--card-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-location-heading,
+body.dark-mode .packup-location-map-top h3,
+body.dark-mode .packup-location-details-heading,
+body.dark-mode .packup-location-info-content h4 {
+    color: var(--primary);
+}
+
+body.dark-mode .packup-location-heading span,
+body.dark-mode .packup-location-details-heading span {
+    color: var(--secondary);
+}
+
+body.dark-mode .packup-location-pin,
+body.dark-mode .packup-location-map-icon,
+body.dark-mode .packup-location-info-icon {
+    background: var(--soft-bg);
+}
+
+body.dark-mode .packup-location-button-secondary {
+    background: var(--card-bg);
+    color: var(--primary);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-location-button-secondary:hover {
+    background: var(--secondary);
+    color: #FFFFFF;
+    border-color: var(--secondary);
+}
+
+body.dark-mode .packup-location-tip {
+    border-left-color: var(--secondary);
+}
+
+
+/* =====================================================
+   RTL SUPPORT
+===================================================== */
+
+html[dir="rtl"] .packup-location-section {
+    direction: rtl;
+}
+
+html[dir="rtl"] .packup-location-eyebrow,
+html[dir="rtl"] .packup-location-map-caption {
+    letter-spacing: 0;
+}
+
+html[dir="rtl"] .packup-location-tip {
+    border-left: none;
+    border-right: 3px solid var(--secondary);
+}
+
+html[dir="rtl"] .packup-location-actions {
+    flex-direction: row;
+}
+/* =====================================================
+   SECTION 7 — FINAL CONTACT CTA
+===================================================== */
+/* =====================================================
+   CONTACT PAGE — HORIZONTAL CTA BANNER
+===================================================== */
+
+.packup-contact-cta {
+    position: relative;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 75px 7%;
+
+    background: var(--soft-bg);
+    color: var(--text);
+
+    box-sizing: border-box;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.packup-contact-cta-container {
+    position: relative;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 35px;
+
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: var(--card-bg);
+
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Decorative corner detail */
+
+.packup-contact-cta-container::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    right: -65px;
+
+    width: 220px;
+    height: 220px;
+
+    border: 1px solid var(--border);
+    border-radius: 50%;
+
+    pointer-events: none;
+    z-index: -1;
+}
+
+.packup-contact-cta-container::after {
+    content: "";
+    position: absolute;
+    top: -65px;
+    right: -30px;
+
+    width: 150px;
+    height: 150px;
+
+    border: 1px solid var(--border);
+    border-radius: 50%;
+
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* =====================================================
+   EYEBROW
+===================================================== */
+
+.packup-contact-cta-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 32px;
+
+    color: var(--secondary);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    line-height: 1.6;
+}
+
+.packup-contact-cta-eyebrow-line {
+    width: 25px;
+    height: 2px;
+    flex-shrink: 0;
+
+    background: var(--secondary);
+}
+
+.packup-contact-cta-eyebrow i {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+
+    color: var(--secondary);
+}
+
+/* =====================================================
+   MAIN HORIZONTAL LAYOUT
+===================================================== */
+
+.packup-contact-cta-main {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1.05fr)
+        minmax(0, 0.8fr)
+        auto;
+
+    align-items: center;
+    gap: 35px;
+
+    box-sizing: border-box;
+}
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.packup-contact-cta-heading {
+    min-width: 0;
+}
+
+.packup-contact-cta-heading h2 {
+    margin: 0;
+
+    color: var(--primary);
+    font-family: "DM Sans", sans-serif;
+    font-size: clamp(32px, 3.2vw, 47px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1.2px;
+}
+
+.packup-contact-cta-heading h2 span {
+    display: block;
+    margin-top: 5px;
+
+    color: var(--secondary);
+}
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.packup-contact-cta-description {
+    min-width: 0;
+
+    padding-left: 25px;
+    border-left: 1px solid var(--border);
+
+    box-sizing: border-box;
+}
+
+.packup-contact-cta-description p {
+    margin: 0;
+
+    color: var(--text-light);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.9;
+}
+
+/* =====================================================
+   ACTION BUTTONS
+===================================================== */
+
+.packup-contact-cta-actions {
+    min-width: 175px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+}
+
+/* Primary button */
+
+.packup-contact-cta-primary {
+    min-height: 52px;
+    padding: 0 18px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    border: 1px solid var(--btn-primary-bg);
+    border-radius: var(--radius-sm);
+    background: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+
+    box-sizing: border-box;
+
+    transition:
+        background var(--transition),
+        color var(--transition),
+        border-color var(--transition),
+        transform var(--transition);
+}
+
+.packup-contact-cta-primary i {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+
+    transition: transform var(--transition);
+}
+
+.packup-contact-cta-primary:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    color: #fff;
+
+    transform: translateY(-2px);
+}
+
+.packup-contact-cta-primary:hover i {
+    transform: translate(3px, -3px);
+}
+
+/* Secondary button */
+
+.packup-contact-cta-secondary {
+    min-height: 52px;
+    padding: 0 18px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    border: 1px solid var(--btn-primary-bg);
+    border-radius: var(--radius-sm);
+    background: transparent; 
+    color: var(--btn-primary-bg);
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+
+    box-sizing: border-box;
+
+    transition:
+        background var(--transition),
+        color var(--transition),
+        border-color var(--transition),
+        transform var(--transition);
+}
+
+.packup-contact-cta-secondary i {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+
+    color: var(--primary);
+}
+
+.packup-contact-cta-secondary:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    color: #fff;
+
+    transform: translateY(-2px);
+}
+
+.packup-contact-cta-secondary:hover i {
+    color: #fff;
+}
+
+/* =====================================================
+   BOTTOM STRIP
+===================================================== */
+
+.packup-contact-cta-bottom {
+    width: 100%;
+
+    margin-top: 35px;
+    padding-top: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    border-top: 1px solid var(--border);
+
+    box-sizing: border-box;
+}
+
+.packup-contact-cta-bottom-left {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.packup-contact-cta-bottom-left i {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+
+    color: var(--primary);
+}
+
+.packup-contact-cta-bottom-left span,
+.packup-contact-cta-bottom-number span {
+    color: var(--text-light);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+    line-height: 1.7;
+}
+
+.packup-contact-cta-bottom-message {
+    color: var(--text-light);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.packup-contact-cta-bottom-number {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.packup-contact-cta-bottom-number i {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+
+    color: var(--secondary);
+}
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark-mode .packup-contact-cta {
+    background: var(--soft-bg);
+}
+
+body.dark-mode .packup-contact-cta-container {
+    background: var(--card-bg);
+    border-color: var(--border);
+}
+
+body.dark-mode .packup-contact-cta-heading h2 {
+    color: var(--primary);
+}
+
+body.dark-mode .packup-contact-cta-heading h2 span {
+    color: var(--secondary);
+}
+
+body.dark-mode .packup-contact-cta-eyebrow,
+body.dark-mode .packup-contact-cta-eyebrow i {
+    color: var(--secondary);
+}
+
+body.dark-mode .packup-contact-cta-eyebrow-line {
+    background: var(--secondary);
+}
+
+body.dark-mode .packup-contact-cta-secondary {
+    background: var(--card-bg);
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+body.dark-mode .packup-contact-cta-secondary:hover {
+    background: var(--secondary);
+    color: #fff;
+    border-color: var(--secondary);
+}
+
+body.dark-mode .packup-contact-cta-secondary:hover i {
+    color: #fff;
+}
+
+/* =====================================================
+   RTL SUPPORT
+===================================================== */
+
+html[dir="rtl"] .packup-contact-cta {
+    direction: rtl;
+}
+
+html[dir="rtl"] .packup-contact-cta-eyebrow,
+html[dir="rtl"] .packup-contact-cta-main,
+html[dir="rtl"] .packup-contact-cta-bottom {
+    direction: rtl;
+}
+
+html[dir="rtl"] .packup-contact-cta-description {
+    padding-right: 25px;
+    padding-left: 0;
+    border-right: 1px solid var(--border);
+    border-left: none;
+}
+
+html[dir="rtl"] .packup-contact-cta-actions {
+    direction: rtl;
+}
+
+html[dir="rtl"] .packup-contact-cta-primary,
+html[dir="rtl"] .packup-contact-cta-secondary {
+    direction: rtl;
+}
+
+html[dir="rtl"] .packup-contact-cta-primary:hover i {
+    transform: translate(-3px, -3px);
+}
+
+
+
+/* =========================================================
+   CONTACT PAGE — MATCH HOME PAGE TYPOGRAPHY & COMPONENT STYLE
+   Headings: Manrope | Content: DM Sans
+   Keep existing layout, responsive rules, colors and dark/RTL modes.
+========================================================= */
+
+/* Body/content typography */
+[class*="packup-contact"],
+.packup-store-section,
+.packup-hours-section,
+.packup-location-section {
+    font-family: "DM Sans", sans-serif;
+}
+
+/* All contact-page headings match Home page Manrope styling */
+[class*="packup-contact"] h1,
+[class*="packup-contact"] h2,
+[class*="packup-contact"] h3,
+[class*="packup-contact"] h4,
+[class*="packup-contact"] h5,
+.packup-store-section h1,
+.packup-store-section h2,
+.packup-store-section h3,
+.packup-store-section h4,
+.packup-hours-section h1,
+.packup-hours-section h2,
+.packup-hours-section h3,
+.packup-hours-section h4,
+.packup-location-section h1,
+.packup-location-section h2,
+.packup-location-section h3,
+.packup-location-section h4 {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+}
+
+/* Main section headings: match Home page's responsive heading scale */
+.packup-contact-options-heading,
+.packup-contact-form-header h2,
+.packup-store-details-header h2,
+.packup-location-heading,
+.packup-location-details-heading,
+.packup-hours-heading,
+.packup-contact-cta-heading h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(34px, 3.3vw, 52px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+}
+
+/* Contact hero retains its larger hero-heading scale */
+.packup-contact-hero-heading {
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(42px, 4.2vw, 68px);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -2px;
+}
+
+/* Descriptions, labels, form controls and supporting text use DM Sans */
+[class*="packup-contact"] p,
+[class*="packup-contact"] label,
+[class*="packup-contact"] input,
+[class*="packup-contact"] select,
+[class*="packup-contact"] textarea,
+[class*="packup-contact"] small,
+[class*="packup-contact"] li,
+.packup-store-section p,
+.packup-store-section label,
+.packup-hours-section p,
+.packup-location-section p,
+.packup-location-section label {
+    font-family: "DM Sans", sans-serif;
+}
+
+/* Buttons and button-like links match Home page typography and padding */
+[class*="packup-contact"] button,
+[class*="packup-contact"][class*="button"],
+[class*="packup-contact"] [class*="button"],
+[class*="packup-contact"] [class*="btn"],
+[class*="packup-contact"] [class*="link"],
+.packup-store-section button,
+.packup-store-section [class*="button"],
+.packup-store-section [class*="btn"],
+.packup-location-section button,
+.packup-location-section [class*="button"],
+.packup-location-section [class*="btn"],
+.packup-hours-section button,
+.packup-hours-section [class*="button"],
+.packup-hours-section [class*="btn"] {
+    font-family: "Manrope", sans-serif;
+    font-weight: 750;
+}
+
+/* Use the same established corner-radius tokens as the Home page */
+[class*="packup-contact"] button,
+[class*="packup-contact"] [class*="button"],
+[class*="packup-contact"] [class*="btn"],
+[class*="packup-contact"] [class*="input-wrap"] input,
+[class*="packup-contact"] [class*="input-wrap"] select,
+[class*="packup-contact"] textarea,
+[class*="packup-contact"] [class*="status"],
+.packup-store-section [class*="button"],
+.packup-location-section [class*="button"],
+.packup-hours-section [class*="button"] {
+    border-radius: var(--radius-sm);
+}
+
+/* Keep cards and large visual panels aligned with Home page corner radius */
+[class*="packup-contact"] [class*="card"],
+[class*="packup-contact"] [class*="panel"],
+.packup-store-section [class*="card"],
+.packup-location-section [class*="panel"],
+.packup-hours-section [class*="card"] {
+    border-radius: var(--radius-md);
+}
+
+/* Keep the existing shared theme tokens for light/dark colors.
+   This only ensures consistent focus styling for all form controls. */
+[class*="packup-contact"] input:focus-visible,
+[class*="packup-contact"] select:focus-visible,
+[class*="packup-contact"] textarea:focus-visible,
+[class*="packup-contact"] button:focus-visible,
+.packup-location-section button:focus-visible,
+.packup-store-section button:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+}
+/* =========================================================
+   PACKUP CONTACT PAGE — RESPONSIVE MEDIA QUERIES
+   1. Samsung Galaxy S8+ : 360px–740px
+   2. iPad Mini          : 768px–820px
+   3. iPad Pro 11"       : 821px–1024px
+   4. Nest Hub           : 1024px × 600px
+
+   Find Us mobile alignment and iPad Mini CTA alignment
+   are specifically adjusted.
+========================================================= */
+
+
+/* =========================================================
+   1. SAMSUNG GALAXY S8+
+   SCREEN WIDTH: 360px–740px
+========================================================= */
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+
+    /* -----------------------------------------------------
+       GLOBAL CONTACT SECTIONS
+    ----------------------------------------------------- */
+
+    .packup-contact-hero,
+    .packup-contact-options,
+    .packup-contact-form-section,
+    .packup-store-section,
+    .packup-hours-section,
+    .packup-location-section,
+    .packup-contact-cta {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 1 — CONTACT HERO
+    ----------------------------------------------------- */
+
+    .packup-contact-hero {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        max-height: none;
+
+        padding: 55px 6% 45px;
+
+        display: flex;
+        align-items: center;
+
+        overflow: hidden;
+
+        background-position: 65% center;
+    }
+
+    .packup-contact-hero-container {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0;
+
+        align-items: center;
+    }
+
+    .packup-contact-hero-content {
+        width: 100%;
+        min-width: 0;
+
+        padding: 0;
+
+        text-align: left;
+    }
+
+    .packup-contact-hero-eyebrow {
+        max-width: 100%;
+
+        margin: 0 0 16px;
+
+        gap: 9px;
+
+        font-size: 10px;
+        letter-spacing: 1.2px;
+        line-height: 1.6;
+
+        flex-wrap: wrap;
+    }
+
+    .packup-contact-hero-eyebrow::before {
+        width: 25px;
+        flex-shrink: 0;
+    }
+
+    .packup-contact-hero-heading {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0 0 16px;
+
+        font-size: clamp(30px, 8.5vw, 36px);
+        line-height: 1.16;
+        letter-spacing: -0.9px;
+
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+
+    .packup-contact-hero-heading span {
+        display: block;
+        margin-top: 3px;
+    }
+
+    .packup-contact-hero-description {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+
+        font-size: 14px;
+        line-height: 1.8;
+
+        overflow-wrap: break-word;
+    }
+
+    .packup-contact-hero-actions {
+        width: 100%;
+
+        margin-top: 22px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+
+        gap: 11px;
+    }
+
+    .packup-contact-hero-button {
+        width: 100%;
+        max-width: 100%;
+        min-height: 46px;
+
+        padding: 12px 15px;
+
+        justify-content: center;
+
+        font-size: 13px;
+        white-space: normal;
+
+        text-align: center;
+    }
+
+    .packup-contact-hero-highlights {
+        width: 100%;
+
+        margin-top: 23px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 13px;
+    }
+
+    .packup-contact-hero-highlight {
+        width: 100%;
+        min-width: 0;
+
+        display: flex;
+        align-items: center;
+
+        gap: 11px;
+    }
+
+    .packup-contact-hero-highlight-icon {
+        width: 40px;
+        height: 40px;
+
+        flex-shrink: 0;
+    }
+
+    .packup-contact-hero-highlight-icon svg {
+        width: 19px;
+        height: 19px;
+    }
+
+    .packup-contact-hero-highlight-text {
+        min-width: 0;
+
+        font-size: 12px;
+        line-height: 1.5;
+
+        overflow-wrap: anywhere;
+    }
+
+    .packup-contact-hero-highlight-text strong {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .packup-contact-hero-divider {
+        display: none;
+    }
+
+    .packup-contact-hero-visual {
+        display: none;
+    }
+
+    .packup-contact-hero-image-note {
+        display: none;
+    }
+
+
+
+
+    /* -----------------------------------------------------
+       SECTION 2 — CONTACT OPTIONS
+    ----------------------------------------------------- */
+
+    .packup-contact-options {
+        padding: 50px 18px;
+    }
+
+    .packup-contact-options-container {
+        width: 100%;
+    }
+
+    .packup-contact-options-header {
+        width: 100%;
+        margin: 0 auto 28px;
+    }
+
+    .packup-contact-options-eyebrow {
+        flex-wrap: wrap;
+
+        font-size: 11px;
+        letter-spacing: 1.3px;
+    }
+
+    .packup-contact-options-heading {
+        font-size: clamp(28px, 7vw, 36px);
+        line-height: 1.2;
+        letter-spacing: -0.7px;
+    }
+
+    .packup-contact-options-description {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .packup-contact-options-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 15px;
+    }
+
+    .packup-contact-option-card {
+        width: 100%;
+        min-width: 0;
+        min-height: 0;
+
+        padding: 21px 19px;
+    }
+
+    .packup-contact-option-top {
+        margin-bottom: 17px;
+    }
+
+    .packup-contact-option-card h3 {
+        font-size: 17px;
+    }
+
+    .packup-contact-option-card p {
+        margin-bottom: 18px;
+        font-size: 13px;
+    }
+
+    .packup-contact-options-footer {
+        align-items: flex-start;
+        gap: 12px;
+
+        margin-top: 18px;
+        padding: 17px;
+    }
+
+    .packup-contact-options-footer-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .packup-contact-options-footer-content {
+        flex: 1;
+        min-width: 0;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 3 — CONTACT FORM
+    ----------------------------------------------------- */
+
+    .packup-contact-form-section {
+        padding: 50px 18px;
+    }
+
+    .packup-contact-form-container {
+        width: 100%;
+
+        grid-template-columns: minmax(0, 1fr);
+        gap: 25px;
+    }
+
+    .packup-contact-form-visual {
+        width: 100%;
+        min-width: 0;
+        min-height: 330px;
+
+        padding: 24px 20px;
+    }
+
+    .packup-contact-form-visual-content {
+        width: 100%;
+    }
+
+    .packup-contact-form-panel {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .packup-contact-form-row {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    .packup-contact-form-field {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .packup-contact-form-input-wrap,
+    .packup-contact-form-textarea-wrap {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .packup-contact-form-input-wrap input,
+    .packup-contact-form-input-wrap select,
+    .packup-contact-form-textarea-wrap textarea {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 4 — VISIT OUR STORE
+    ----------------------------------------------------- */
+
+    .packup-store-section {
+        padding: 50px 18px;
+    }
+
+    .packup-store-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 25px;
+    }
+
+    .packup-store-details {
+        width: 100%;
+        min-width: 0;
+        gap: 13px;
+    }
+
+    .packup-store-details-header {
+        margin-bottom: 5px;
+    }
+
+    .packup-store-details-header h2 {
+        font-size: clamp(28px, 7vw, 36px);
+        line-height: 1.2;
+        letter-spacing: -0.6px;
+    }
+
+    .packup-store-details-header > p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .packup-store-info-card {
+        width: 100%;
+        min-width: 0;
+
+        padding: 14px;
+        gap: 12px;
+    }
+
+    .packup-store-visual {
+        width: 100%;
+        min-width: 0;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 5 — BUSINESS HOURS AND SERVICES
+    ----------------------------------------------------- */
+
+    .packup-hours-section {
+        padding: 50px 18px;
+    }
+
+    .packup-hours-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+    }
+
+    .packup-hours-schedule-card {
+        width: 100%;
+        min-width: 0;
+
+        padding: 20px 17px;
+        box-sizing: border-box;
+    }
+
+    .packup-hours-services {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 14px;
+    }
+
+    .packup-hours-service-card {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 6 — FIND US / LOCATION
+       IMPORTANT:
+       Content first, map below it.
+       Both are centered vertically in a single column.
+    ----------------------------------------------------- */
+
+    .packup-location-section {
+        width: 100%;
+        padding: 50px 18px;
+        box-sizing: border-box;
+    }
+
+    .packup-location-section .packup-location-container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .packup-location-header {
+        width: 100%;
+        margin: 0 auto 27px;
+
+        text-align: center;
+    }
+
+    .packup-location-eyebrow {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        text-align: center;
+    }
+
+    .packup-location-heading {
+        width: 100%;
+
+        font-size: clamp(29px, 7.5vw, 37px);
+        line-height: 1.2;
+        letter-spacing: -0.7px;
+
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    .packup-location-description {
+        width: 100%;
+        max-width: 520px;
+
+        margin: 14px auto 0;
+
+        font-size: 13px;
+        line-height: 1.8;
+        text-align: center;
+    }
+
+    .packup-location-layout {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 27px;
+    }
+
+    .packup-location-details {
+        width: 100%;
+        min-width: 0;
+
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .packup-location-details-eyebrow {
+        width: 100%;
+        margin-bottom: 12px;
+
+        text-align: center;
+    }
+
+    .packup-location-details-heading {
+        width: 100%;
+
+        font-size: clamp(26px, 7vw, 34px);
+        line-height: 1.25;
+        letter-spacing: -0.5px;
+
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    .packup-location-details-heading span {
+        display: block;
+        text-align: center;
+    }
+
+    .packup-location-details-description {
+        width: 100%;
+        max-width: 500px;
+
+        margin: 14px auto 22px;
+
+        font-size: 13px;
+        line-height: 1.8;
+        text-align: center;
+    }
+
+    .packup-location-info {
+        width: 100%;
+        min-width: 0;
+
+        text-align: left;
+        box-sizing: border-box;
+    }
+
+    .packup-location-info-content {
+        flex: 1;
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .packup-location-tip {
+        width: 100%;
+        min-width: 0;
+
+        margin: 5px 0 20px;
+        box-sizing: border-box;
+
+        text-align: left;
+    }
+
+    .packup-location-actions {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        gap: 12px;
+        margin-top: 2px;
+    }
+
+    .packup-location-button {
+        width: 100%;
+        max-width: 320px;
+        min-height: 46px;
+
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .packup-location-map-panel {
+        width: 100%;
+        min-width: 0;
+        min-height: 0;
+
+        margin: 0 auto;
+        padding: 16px;
+
+        box-sizing: border-box;
+    }
+
+    .packup-location-map-top {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .packup-location-map-placeholder {
+        width: 100%;
+        min-height: 260px;
+
+        box-sizing: border-box;
+    }
+
+    .packup-location-map-message {
+        width: 100%;
+        min-width: 0;
+
+        box-sizing: border-box;
+    }
+
+    .packup-location-map-caption {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 7 — FINAL CONTACT CTA
+    ----------------------------------------------------- */
+
+    .packup-contact-cta {
+        padding: 45px 18px;
+    }
+
+    .packup-contact-cta-container {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0 auto;
+        padding: 25px 19px;
+
+        box-sizing: border-box;
+    }
+
+    .packup-contact-cta-eyebrow {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        margin-bottom: 22px;
+
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    .packup-contact-cta-main {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 22px;
+    }
+
+    .packup-contact-cta-heading {
+        width: 100%;
+        min-width: 0;
+
+        text-align: center;
+    }
+
+    .packup-contact-cta-heading h2 {
+        font-size: clamp(28px, 7.5vw, 36px);
+        line-height: 1.22;
+        letter-spacing: -0.7px;
+
+        overflow-wrap: break-word;
+    }
+
+    .packup-contact-cta-heading h2 span {
+        display: block;
+    }
+
+    .packup-contact-cta-description {
+        width: 100%;
+        min-width: 0;
+
+        padding: 0;
+
+        border-left: none;
+        border-right: none;
+
+        text-align: center;
+    }
+
+    .packup-contact-cta-description p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .packup-contact-cta-actions {
+        width: 100%;
+        min-width: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 12px;
+    }
+
+    .packup-contact-cta-primary,
+    .packup-contact-cta-secondary {
+        width: 100%;
+        max-width: 320px;
+        min-height: 48px;
+
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .packup-contact-cta-bottom {
+        width: 100%;
+
+        margin-top: 25px;
+        padding-top: 18px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        gap: 13px;
+        text-align: center;
+    }
+
+    .packup-contact-cta-bottom-left,
+    .packup-contact-cta-bottom-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        flex-wrap: wrap;
+        gap: 8px;
+
+        text-align: center;
+    }
+
+    .packup-contact-cta-bottom-message {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* -----------------------------------------------------
+       RTL SUPPORT — MOBILE
+    ----------------------------------------------------- */
+
+    html[dir="rtl"] .packup-contact-hero-container {
+        direction: rtl;
+    }
+
+    html[dir="rtl"] .packup-contact-hero-content,
+    html[dir="rtl"] .packup-contact-options-header,
+    html[dir="rtl"] .packup-contact-cta-heading {
+        text-align: center;
+    }
+
+    html[dir="rtl"] .packup-contact-hero-actions,
+    html[dir="rtl"] .packup-contact-hero-highlights {
+        flex-direction: row;
+    }
+
+    html[dir="rtl"] .packup-location-layout {
+        direction: rtl;
+    }
+
+    html[dir="rtl"] .packup-location-details {
+        align-items: center;
+        text-align: center;
+    }
+
+    html[dir="rtl"] .packup-location-tip {
+        border-left: none;
+        border-right: 3px solid var(--secondary);
+        text-align: right;
+    }
+
+    html[dir="rtl"] .packup-contact-cta-description {
+        padding: 0;
+        border: none;
+    }
+}
+
+
+/* =========================================================
+   2. IPAD MINI
+   SCREEN WIDTH: 768px–820px
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+    /* -----------------------------------------------------
+       GLOBAL SECTION PADDING
+    ----------------------------------------------------- */
+
+    .packup-contact-hero,
+    .packup-contact-options,
+    .packup-contact-form-section,
+    .packup-store-section,
+    .packup-hours-section,
+    .packup-location-section,
+    .packup-contact-cta {
+        box-sizing: border-box;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 1 — CONTACT HERO
+    ----------------------------------------------------- */
+
+    .packup-contact-hero {
+        height: auto;
+        min-height: 650px;
+        max-height: none;
+
+        padding: 45px 28px;
+    }
+
+    .packup-contact-hero-container {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 0.75fr);
+        gap: 22px;
+    }
+
+    .packup-contact-hero-heading {
+        font-size: clamp(38px, 5vw, 48px);
+        letter-spacing: -1px;
+    }
+
+    .packup-contact-hero-description {
+        font-size: 13px;
+    }
+
+    .packup-contact-hero-actions {
+        gap: 10px;
+    }
+
+    .packup-contact-hero-button {
+        padding: 11px 13px;
+        font-size: 12px;
+    }
+
+    .packup-contact-hero-highlights {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .packup-contact-hero-highlight-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .packup-contact-hero-image-note {
+        max-width: 250px;
+        margin: 0 0 8% 0;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 2 — CONTACT OPTIONS
+    ----------------------------------------------------- */
+
+    .packup-contact-options {
+        padding: 65px 28px;
+    }
+
+    .packup-contact-options-header {
+        margin-bottom: 30px;
+    }
+
+    .packup-contact-options-heading {
+        font-size: clamp(32px, 4vw, 40px);
+    }
+
+    .packup-contact-options-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .packup-contact-option-card {
+        min-height: 250px;
+        padding: 21px 18px;
+    }
+
+    .packup-contact-options-footer {
+        padding: 19px;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 3 — CONTACT FORM
+    ----------------------------------------------------- */
+
+    .packup-contact-form-section {
+        padding: 65px 28px;
+    }
+
+    .packup-contact-form-container {
+        grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+        gap: 20px;
+    }
+
+    .packup-contact-form-visual {
+        min-height: 600px;
+        padding: 25px 20px;
+    }
+
+    .packup-contact-form-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 13px;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 4 — VISIT OUR STORE
+    ----------------------------------------------------- */
+
+    .packup-store-section {
+        padding: 65px 28px;
+    }
+
+    .packup-store-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 25px;
+    }
+
+    .packup-store-details {
+        gap: 14px;
+    }
+
+    .packup-store-details-header h2 {
+        font-size: 36px;
+    }
+
+    .packup-store-visual {
+        width: 100%;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 5 — HOURS AND SERVICES
+    ----------------------------------------------------- */
+
+    .packup-hours-section {
+        padding: 65px 28px;
+    }
+
+    .packup-hours-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+    }
+
+    .packup-hours-services {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 6 — FIND US / LOCATION
+    ----------------------------------------------------- */
+
+    .packup-location-section {
+        padding: 65px 28px;
+    }
+
+    .packup-location-layout {
+        grid-template-columns:
+            minmax(0, 0.9fr)
+            minmax(0, 1.1fr);
+
+        gap: 22px;
+    }
+
+    .packup-location-details {
+        padding: 20px 0;
+    }
+
+    .packup-location-details-heading {
+        font-size: clamp(27px, 3.6vw, 33px);
+        letter-spacing: -0.5px;
+    }
+
+    .packup-location-details-description {
+        margin: 13px 0 20px;
+        font-size: 12px;
+    }
+
+    .packup-location-info {
+        gap: 10px;
+        padding: 13px;
+    }
+
+    .packup-location-info-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .packup-location-map-panel {
+        min-height: 560px;
+        padding: 17px;
+    }
+
+    .packup-location-map-placeholder {
+        min-height: 300px;
+    }
+
+    .packup-location-actions {
+        gap: 10px;
+    }
+
+    .packup-location-button {
+        padding: 11px 13px;
+        font-size: 12px;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 7 — FINAL CONTACT CTA
+       IPAD MINI CTA ALIGNMENT FIX
+    ----------------------------------------------------- */
+
+    .packup-contact-cta {
+        padding: 48px 28px;
+    }
+
+    .packup-contact-cta-container {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0 auto;
+        padding: 30px 24px;
+
+        box-sizing: border-box;
+    }
+
+    .packup-contact-cta-eyebrow {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        margin-bottom: 23px;
+        text-align: center;
+    }
+
+    .packup-contact-cta-main {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        justify-items: center;
+
+        gap: 21px;
+        text-align: center;
+    }
+
+    .packup-contact-cta-heading {
+        width: 100%;
+        min-width: 0;
+
+        text-align: center;
+    }
+
+    .packup-contact-cta-heading h2 {
+        margin: 0 auto;
+
+        font-size: clamp(30px, 4.4vw, 37px);
+        line-height: 1.23;
+        letter-spacing: -0.7px;
+
+        overflow-wrap: break-word;
+    }
+
+    .packup-contact-cta-heading h2 span {
+        display: block;
+    }
+
+    .packup-contact-cta-description {
+        width: 100%;
+        max-width: 570px;
+        min-width: 0;
+
+        padding: 0;
+
+        border-left: none;
+        border-right: none;
+
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .packup-contact-cta-description p {
+        font-size: 14px;
+        line-height: 1.85;
+    }
+
+    .packup-contact-cta-actions {
+        width: 100%;
+        min-width: 0;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 12px;
+    }
+
+    .packup-contact-cta-primary,
+    .packup-contact-cta-secondary {
+        width: auto;
+        min-width: 190px;
+        max-width: 100%;
+
+        min-height: 49px;
+        padding: 0 17px;
+
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .packup-contact-cta-bottom {
+        width: 100%;
+
+        margin-top: 27px;
+        padding-top: 20px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 14px 20px;
+        text-align: center;
+    }
+
+    .packup-contact-cta-bottom-left,
+    .packup-contact-cta-bottom-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 8px;
+        text-align: center;
+    }
+
+    .packup-contact-cta-bottom-message {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* -----------------------------------------------------
+       RTL SUPPORT — IPAD MINI
+    ----------------------------------------------------- */
+
+    html[dir="rtl"] .packup-contact-cta {
+        direction: rtl;
+    }
+
+    html[dir="rtl"] .packup-contact-cta-main {
+        direction: rtl;
+    }
+
+    html[dir="rtl"] .packup-contact-cta-heading,
+    html[dir="rtl"] .packup-contact-cta-description {
+        text-align: center;
+    }
+
+    html[dir="rtl"] .packup-contact-cta-description {
+        padding: 0;
+        border: none;
+    }
+
+    html[dir="rtl"] .packup-contact-cta-actions {
+        flex-direction: row;
+    }
+}
+
+
+/* =========================================================
+   3. IPAD PRO 11"
+   SCREEN WIDTH: 821px–1024px
+========================================================= */
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+    /* -----------------------------------------------------
+       SECTION 1 — CONTACT HERO
+    ----------------------------------------------------- */
+
+    .packup-contact-hero {
+        height: auto;
+        min-height: 650px;
+        max-height: none;
+
+        padding: 45px 35px;
+    }
+
+    .packup-contact-hero-container {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 0.82fr);
+        gap: 25px;
+    }
+
+    .packup-contact-hero-heading {
+        font-size: clamp(42px, 4.6vw, 52px);
+    }
+
+    .packup-contact-hero-description {
+        font-size: 13px;
+    }
+
+    .packup-contact-hero-highlights {
+        gap: 12px;
+    }
+
+    .packup-contact-hero-image-note {
+        max-width: 270px;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 2 — CONTACT OPTIONS
+    ----------------------------------------------------- */
+
+    .packup-contact-options {
+        padding: 70px 35px;
+    }
+
+    .packup-contact-options-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .packup-contact-option-card {
+        min-height: 250px;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 3 — CONTACT FORM
+    ----------------------------------------------------- */
+
+    .packup-contact-form-section {
+        padding: 70px 35px;
+    }
+
+    .packup-contact-form-container {
+        grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+        gap: 24px;
+    }
+
+    .packup-contact-form-visual {
+        min-height: 640px;
+        padding: 28px 24px;
+    }
+
+    .packup-contact-form-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 4 — VISIT OUR STORE
+    ----------------------------------------------------- */
+
+    .packup-store-section {
+        padding: 70px 35px;
+    }
+
+    .packup-store-container {
+        grid-template-columns:
+            minmax(0, 1.05fr)
+            minmax(0, 0.95fr);
+
+        gap: 22px;
+    }
+
+    .packup-store-details-header h2 {
+        font-size: clamp(30px, 3.5vw, 38px);
+    }
+
+    .packup-store-info-card {
+        gap: 12px;
+        padding: 14px;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 5 — HOURS AND SERVICES
+    ----------------------------------------------------- */
+
+    .packup-hours-section {
+        padding: 70px 35px;
+    }
+
+    .packup-hours-layout {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 1fr);
+
+        gap: 22px;
+    }
+
+    .packup-hours-services {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 6 — FIND US / LOCATION
+    ----------------------------------------------------- */
+
+    .packup-location-section {
+        padding: 70px 35px;
+    }
+
+    .packup-location-layout {
+        grid-template-columns:
+            minmax(0, 0.92fr)
+            minmax(0, 1.08fr);
+
+        gap: 24px;
+    }
+
+    .packup-location-details {
+        padding: 22px 0;
+    }
+
+    .packup-location-details-heading {
+        font-size: clamp(29px, 3.2vw, 36px);
+    }
+
+    .packup-location-details-description {
+        margin: 14px 0 22px;
+    }
+
+    .packup-location-map-panel {
+        min-height: 610px;
+        padding: 20px;
+    }
+
+    .packup-location-map-placeholder {
+        min-height: 340px;
+    }
+
+    .packup-location-actions {
+        gap: 10px;
+    }
+
+    .packup-location-button {
+        padding: 12px 14px;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 7 — FINAL CONTACT CTA
+    ----------------------------------------------------- */
+
+    .packup-contact-cta {
+        padding: 55px 35px;
+    }
+
+    .packup-contact-cta-container {
+        padding: 30px 25px;
+    }
+
+    .packup-contact-cta-main {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 0.9fr);
+
+        gap: 23px;
+        align-items: center;
+    }
+
+    .packup-contact-cta-heading h2 {
+        font-size: clamp(31px, 3.5vw, 39px);
+        letter-spacing: -0.7px;
+    }
+
+    .packup-contact-cta-description {
+        padding-left: 18px;
+    }
+
+    .packup-contact-cta-description p {
+        font-size: 13px;
+        line-height: 1.85;
+    }
+
+    .packup-contact-cta-actions {
+        grid-column: 1 / -1;
+
+        width: 100%;
+        min-width: 0;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 12px;
+    }
+
+    .packup-contact-cta-primary,
+    .packup-contact-cta-secondary {
+        min-width: 190px;
+        justify-content: center;
+    }
+
+    .packup-contact-cta-bottom {
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        gap: 14px;
+        margin-top: 27px;
+    }
+
+
+    /* -----------------------------------------------------
+       RTL SUPPORT — IPAD PRO
+    ----------------------------------------------------- */
+
+    html[dir="rtl"] .packup-contact-cta-description {
+        padding-right: 18px;
+        padding-left: 0;
+
+        border-right: 1px solid var(--border);
+        border-left: none;
+    }
+
+    html[dir="rtl"] .packup-contact-cta-actions {
+        flex-direction: row;
+    }
+}
+
+
+/* =========================================================
+   4. NEST HUB
+   SCREEN SIZE: 1024px × 600px
+   Keep layout compact for the short viewport.
+========================================================= */
+
+@media screen and (width: 1024px) and (height: 600px) {
+
+    /* -----------------------------------------------------
+       SECTION 1 — CONTACT HERO
+    ----------------------------------------------------- */
+
+    .packup-contact-hero {
+        height: 90vh;
+        min-height: 540px;
+        max-height: 600px;
+
+        padding: 28px 38px;
+    }
+
+    .packup-contact-hero-container {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 0.82fr);
+        gap: 24px;
+    }
+
+    .packup-contact-hero-heading {
+        font-size: 42px;
+        line-height: 1.1;
+    }
+
+    .packup-contact-hero-description {
+        font-size: 12px;
+        line-height: 1.75;
+    }
+
+    .packup-contact-hero-actions {
+        margin-top: 20px;
+    }
+
+    .packup-contact-hero-highlights {
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+    .packup-contact-hero-highlight-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    .packup-contact-hero-image-note {
+        max-width: 240px;
+        padding: 12px;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 2 — CONTACT OPTIONS
+    ----------------------------------------------------- */
+
+    .packup-contact-options {
+        padding: 42px 38px;
+    }
+
+    .packup-contact-options-header {
+        margin-bottom: 25px;
+    }
+
+    .packup-contact-options-heading {
+        font-size: 35px;
+    }
+
+    .packup-contact-options-description {
+        font-size: 13px;
+    }
+
+    .packup-contact-options-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .packup-contact-option-card {
+        min-height: 240px;
+        padding: 17px 14px;
+    }
+
+    .packup-contact-option-top {
+        margin-bottom: 17px;
+    }
+
+    .packup-contact-option-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .packup-contact-option-card h3 {
+        font-size: 15px;
+    }
+
+    .packup-contact-option-card p {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .packup-contact-options-footer {
+        margin-top: 16px;
+        padding: 15px 18px;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 3 — CONTACT FORM
+    ----------------------------------------------------- */
+
+    .packup-contact-form-section {
+        padding: 42px 38px;
+    }
+
+    .packup-contact-form-container {
+        grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+        gap: 20px;
+    }
+
+    .packup-contact-form-visual {
+        min-height: 490px;
+        padding: 22px 20px;
+    }
+
+    .packup-contact-form-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 4 — VISIT OUR STORE
+    ----------------------------------------------------- */
+
+    .packup-store-section {
+        padding: 42px 38px;
+    }
+
+    .packup-store-container {
+        grid-template-columns:
+            minmax(0, 1.05fr)
+            minmax(0, 0.95fr);
+
+        gap: 20px;
+    }
+
+    .packup-store-details {
+        gap: 10px;
+    }
+
+    .packup-store-details-header h2 {
+        font-size: 32px;
+    }
+
+    .packup-store-details-header > p {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .packup-store-info-card {
+        padding: 12px;
+        gap: 10px;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 5 — HOURS AND SERVICES
+    ----------------------------------------------------- */
+
+    .packup-hours-section {
+        padding: 42px 38px;
+    }
+
+    .packup-hours-layout {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 1fr);
+
+        gap: 20px;
+    }
+
+    .packup-hours-services {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 6 — FIND US / LOCATION
+    ----------------------------------------------------- */
+
+    .packup-location-section {
+        padding: 42px 38px;
+    }
+
+    .packup-location-header {
+        margin-bottom: 25px;
+    }
+
+    .packup-location-heading {
+        font-size: 36px;
+    }
+
+    .packup-location-description {
+        margin-top: 12px;
+        font-size: 13px;
+    }
+
+    .packup-location-layout {
+        grid-template-columns:
+            minmax(0, 0.92fr)
+            minmax(0, 1.08fr);
+
+        gap: 20px;
+    }
+
+    .packup-location-details {
+        padding: 12px 0;
+    }
+
+    .packup-location-details-heading {
+        font-size: 30px;
+    }
+
+    .packup-location-details-description {
+        margin: 12px 0 17px;
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .packup-location-info {
+        padding: 11px;
+        gap: 10px;
+    }
+
+    .packup-location-info-icon {
+        width: 39px;
+        height: 39px;
+    }
+
+    .packup-location-map-panel {
+        min-height: 450px;
+        padding: 16px;
+    }
+
+    .packup-location-map-placeholder {
+        min-height: 250px;
+    }
+
+    .packup-location-tip {
+        margin-bottom: 16px;
+        padding: 11px;
+    }
+
+    .packup-location-actions {
+        gap: 8px;
+    }
+
+    .packup-location-button {
+        min-height: 42px;
+        padding: 9px 12px;
+        font-size: 12px;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 7 — FINAL CONTACT CTA
+    ----------------------------------------------------- */
+
+    .packup-contact-cta {
+        padding: 38px;
+    }
+
+    .packup-contact-cta-container {
+        padding: 25px;
+    }
+
+    .packup-contact-cta-eyebrow {
+        margin-bottom: 20px;
+    }
+
+    .packup-contact-cta-main {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 0.85fr)
+            minmax(155px, 0.65fr);
+
+        align-items: center;
+        gap: 20px;
+    }
+
+    .packup-contact-cta-heading h2 {
+        font-size: 31px;
+        line-height: 1.18;
+        letter-spacing: -0.6px;
+    }
+
+    .packup-contact-cta-description {
+        padding-left: 17px;
+    }
+
+    .packup-contact-cta-description p {
+        font-size: 12px;
+        line-height: 1.75;
+    }
+
+    .packup-contact-cta-actions {
+        min-width: 0;
+        gap: 9px;
+    }
+
+    .packup-contact-cta-primary,
+    .packup-contact-cta-secondary {
+        min-height: 44px;
+        padding: 0 12px;
+        gap: 8px;
+
+        font-size: 12px;
+    }
+
+    .packup-contact-cta-bottom {
+        margin-top: 22px;
+        padding-top: 15px;
+        gap: 12px;
+    }
+
+    .packup-contact-cta-bottom-message {
+        font-size: 12px;
+    }
+
+
+    /* -----------------------------------------------------
+       RTL SUPPORT — NEST HUB
+    ----------------------------------------------------- */
+
+    html[dir="rtl"] .packup-contact-cta-description {
+        padding-right: 17px;
+        padding-left: 0;
+
+        border-right: 1px solid var(--border);
+        border-left: none;
+    }
+
+    html[dir="rtl"] .packup-location-tip {
+        border-left: none;
+        border-right: 3px solid var(--secondary);
+    }
+}

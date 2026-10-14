@@ -1,0 +1,1890 @@
+
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+        name="description"
+        content="Packup offers premium luggage, travel bags, backpacks and travel accessories designed for every journey."
+    />
+
+    <meta
+        name="keywords"
+        content="Packup, luggage, travel bags, backpacks, cabin bags, travel accessories"
+    />
+
+    <meta
+        name="author"
+        content="Packup"
+    />
+
+    <meta
+        name="theme-color"
+        content="#123f46"
+    />
+
+    <title>Packup | Travel Beyond Limits</title>
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="logo_light.png"
+    />
+
+    <link
+        rel="apple-touch-icon"
+        href="logo_light.png"
+    />
+
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"
+    />
+
+    <!-- Google Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    />
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    />
+
+    <!-- Lucide -->
+    <script
+        src="https://unpkg.com/lucide@0.542.0/dist/umd/lucide.min.js"
+        defer
+    ></script>
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="main.css"
+    />
+
+    <link
+        rel="stylesheet"
+        href="warranty.css"
+    />
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-container">
+
+
+        <!-- BRAND -->
+        <div class="logo">
+
+            <a
+                href="index.html"
+                class="logo-icon-link"
+                aria-label="Packup Home"
+            >
+
+                <img
+                    src="logo_light.png"
+                    data-light-logo="logo_light.png"
+                    data-dark-logo="logo_dark.png"
+                    alt="Packup Logo"
+                    class="brand-logo"
+                    id="headerLogo"
+                >
+
+            </a>
+
+
+            <a
+                href="index.html"
+                class="brand-content"
+            >
+
+                <h1 class="brand-name">
+
+                    <span class="pack">PACK</span><span class="up">UP</span>
+
+                </h1>
+
+                <span class="subtitle-text">
+                    TRAVEL BEYOND LIMITS
+                </span>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- NAVIGATION -->
+        <nav
+            class="navbar"
+            aria-label="Primary navigation"
+        >
+
+            <ul
+                class="nav-links"
+                id="navLinks"
+            >
+
+
+                <!-- HOME -->
+                <li class="dropdown">
+
+                    <a
+                        href="index.html"
+                        class="dropdown-trigger"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+
+                        <span>Home</span>
+
+                        <i data-lucide="chevron-down"></i>
+
+                    </a>
+
+
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a href="index.html">
+                                Home 1
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="home2.html">
+                                Home 2
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- ABOUT -->
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+
+                <!-- PRODUCTS -->
+                <li>
+                    <a href="products.html">
+                        Products
+                    </a>
+                </li>
+
+
+                <!-- WARRANTY -->
+                <li>
+                    <a href="warranty.html">
+                        Warranty &amp; Repair
+                    </a>
+                </li>
+
+
+                <!-- CONTACT -->
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- MOBILE CTA -->
+            <div class="mobile-action">
+
+                <a
+                    href="contact.html#contact-form"
+                    class="header-cta"
+                >
+
+                    <i data-lucide="shopping-bag"></i>
+
+                    <span>
+                        Explore Bags
+                    </span>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+
+        <!-- HEADER CONTROLS -->
+        <div class="header-controls">
+
+
+            <!-- RTL -->
+            <button
+                type="button"
+                class="icon-btn rtl-btn"
+                id="rtlToggle"
+                title="RTL Mode"
+                aria-label="Switch to right-to-left mode"
+                aria-pressed="false"
+            >
+
+                <i data-lucide="arrow-left-right"></i>
+
+            </button>
+
+
+            <!-- DARK MODE -->
+            <button
+                type="button"
+                class="icon-btn dark-btn"
+                id="darkToggle"
+                title="Dark Mode"
+                aria-label="Switch to dark mode"
+                aria-pressed="false"
+            >
+
+                <i data-lucide="moon"></i>
+
+            </button>
+
+
+            <!-- DESKTOP CTA -->
+            <a
+                href="contact.html#contact-form"
+                class="header-cta desktop-cta"
+            >
+
+                <i data-lucide="shopping-bag"></i>
+
+                <span>
+                    Explore Bags
+                </span>
+
+            </a>
+
+
+            <!-- MOBILE MENU -->
+            <button
+                type="button"
+                class="icon-btn menu-btn"
+                id="menuToggle"
+                title="Open Menu"
+                aria-label="Open menu"
+                aria-expanded="false"
+                aria-controls="navLinks"
+            >
+
+                <i data-lucide="menu"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+<main>
+
+    <!-- Page-specific content goes here -->
+<!-- =====================================================
+     PACKUP — WARRANTY & REPAIR HERO
+===================================================== -->
+
+<section class="packup-warranty-hero" id="warranty-hero">
+
+    <!-- Background image -->
+    <div class="packup-warranty-background"></div>
+
+    <!-- Theme-aware overlay -->
+    <div class="packup-warranty-overlay"></div>
+
+    <!-- Hero content -->
+    <div class="packup-warranty-hero-container">
+
+        <div class="packup-warranty-content">
+
+            <span class="packup-warranty-eyebrow">
+                WARRANTY &amp; REPAIR
+            </span>
+
+            <h1 class="packup-warranty-heading">
+                Support for the
+                <span>Journeys Ahead</span>
+            </h1>
+
+            <p class="packup-warranty-description">
+                Your luggage travels with you through many experiences.
+                Packup's Warranty &amp; Repair page helps you understand
+                available product support, care guidance, and the steps
+                to enquire about a luggage issue.
+            </p>
+
+            <!-- Action buttons -->
+            <div class="packup-warranty-actions">
+
+                <a
+                    href="#warranty-information"
+                    class="packup-warranty-button packup-warranty-button-primary"
+                >
+                    <span>Explore Warranty Information</span>
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+
+               
+
+            </div>
+
+            <!-- Feature highlights -->
+            <div class="packup-warranty-features">
+
+                <div class="packup-warranty-feature">
+
+                    <span class="packup-warranty-feature-icon">
+                        <i data-lucide="shield-check"></i>
+                    </span>
+
+                    <div class="packup-warranty-feature-text">
+                        <h3>Product Warranty</h3>
+                        <p>Peace of mind</p>
+                    </div>
+
+                </div>
+
+                <div class="packup-warranty-feature">
+
+                    <span class="packup-warranty-feature-icon">
+                        <i data-lucide="wrench"></i>
+                    </span>
+
+                    <div class="packup-warranty-feature-text">
+                        <h3>Repair Services</h3>
+                        <p>Get it back on the move</p>
+                    </div>
+
+                </div>
+
+                <div class="packup-warranty-feature">
+
+                    <span class="packup-warranty-feature-icon">
+                        <i data-lucide="book-open"></i>
+                    </span>
+
+                    <div class="packup-warranty-feature-text">
+                        <h3>Care Guidance</h3>
+                        <p>Keep it in great shape</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     PACKUP — WARRANTY INFORMATION
+===================================================== -->
+
+<section class="packup-coverage-section" id="warranty-information">
+
+    <div class="packup-coverage-container">
+
+        <!-- SECTION INTRO -->
+        <div class="packup-coverage-intro">
+
+            <span class="packup-coverage-eyebrow">
+                WARRANTY INFORMATION
+            </span>
+
+            <h2 class="packup-coverage-heading">
+                Understand Your
+                <span>Product Coverage</span>
+            </h2>
+
+            <p class="packup-coverage-description">
+                Warranty coverage can vary by product and manufacturer.
+                Review the warranty period, eligible components,
+                exclusions, and claim requirements listed in the
+                applicable product documentation before submitting a request.
+            </p>
+
+            <div class="packup-coverage-note">
+
+                <span class="packup-coverage-note-icon">
+                    <i data-lucide="info"></i>
+                </span>
+
+                <div>
+                    <h3>Check Before You Claim</h3>
+                    <p>
+                        Refer to the applicable product warranty
+                        documentation for verified terms and conditions.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- COVERAGE DETAILS -->
+        <div class="packup-coverage-details">
+
+            <!-- Warranty period -->
+            <article class="packup-coverage-card">
+
+                <div class="packup-coverage-card-top">
+
+                    <span class="packup-coverage-card-icon">
+                        <i data-lucide="calendar-check"></i>
+                    </span>
+
+                    <span class="packup-coverage-card-number">01</span>
+
+                </div>
+
+                <h3>Warranty Period</h3>
+
+                <p>
+                    Check the applicable warranty duration in the
+                    documentation provided for your product.
+                </p>
+
+                <div class="packup-coverage-card-footer">
+                    <i data-lucide="file-check-2"></i>
+                    <span>Verify product documents</span>
+                </div>
+
+            </article>
+
+
+            <!-- Eligible components -->
+            <article class="packup-coverage-card">
+
+                <div class="packup-coverage-card-top">
+
+                    <span class="packup-coverage-card-icon">
+                        <i data-lucide="shield-check"></i>
+                    </span>
+
+                    <span class="packup-coverage-card-number">02</span>
+
+                </div>
+
+                <h3>Eligible Components</h3>
+
+                <p>
+                    Review which parts, materials, or product issues
+                    are included under the applicable warranty.
+                </p>
+
+                <div class="packup-coverage-card-footer">
+                    <i data-lucide="clipboard-check"></i>
+                    <span>Check coverage details</span>
+                </div>
+
+            </article>
+
+
+            <!-- Exclusions -->
+            <article class="packup-coverage-card">
+
+                <div class="packup-coverage-card-top">
+
+                    <span class="packup-coverage-card-icon">
+                        <i data-lucide="list-check"></i>
+                    </span>
+
+                    <span class="packup-coverage-card-number">03</span>
+
+                </div>
+
+                <h3>Warranty Exclusions</h3>
+
+                <p>
+                    Read the stated exclusions and limitations
+                    before deciding whether to submit a claim.
+                </p>
+
+                <div class="packup-coverage-card-footer">
+                    <i data-lucide="book-open"></i>
+                    <span>Review exclusions</span>
+                </div>
+
+            </article>
+
+
+            <!-- Claim requirements -->
+            <article class="packup-coverage-card">
+
+                <div class="packup-coverage-card-top">
+
+                    <span class="packup-coverage-card-icon">
+                        <i data-lucide="clipboard-list"></i>
+                    </span>
+
+                    <span class="packup-coverage-card-number">04</span>
+
+                </div>
+
+                <h3>Claim Requirements</h3>
+
+                <p>
+                    Confirm the required proof of purchase,
+                    product details, and submission steps.
+                </p>
+
+                <div class="packup-coverage-card-footer">
+                    <i data-lucide="file-text"></i>
+                    <span>Prepare required details</span>
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- BOTTOM INFORMATION STRIP -->
+        <div class="packup-coverage-bottom">
+
+            <div class="packup-coverage-bottom-icon">
+                <i data-lucide="search-check"></i>
+            </div>
+
+            <div class="packup-coverage-bottom-content">
+                <h3>Every Product Has Its Own Terms</h3>
+                <p>
+                    Use the warranty documentation applicable to your
+                    specific luggage product. Coverage should not be
+                    assumed without verifying the stated terms.
+                </p>
+            </div>
+
+            <a
+                href="contact.html"
+                class="packup-coverage-contact-button"
+            >
+                <span>Contact Us</span>
+                <i data-lucide="arrow-up-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     PACKUP — REPAIR SERVICES
+===================================================== -->
+
+<section class="packup-repair-section" id="repair-support">
+
+    <div class="packup-repair-container">
+
+        <!-- CENTERED SECTION HEADING -->
+        <div class="packup-repair-header">
+
+            <span class="packup-repair-eyebrow">
+                REPAIR SERVICES
+            </span>
+
+            <h2 class="packup-repair-heading">
+                Get Help with <span>Your Luggage</span>
+            </h2>
+
+            <p class="packup-repair-description">
+                If your bag develops a problem, start by identifying the
+                affected part and reviewing the available support options.
+                Depending on product eligibility and repair availability,
+                assistance may be possible for certain luggage components.
+            </p>
+
+        </div>
+
+
+        <!-- MAIN CONTENT -->
+        <div class="packup-repair-layout">
+
+            <!-- LEFT: FOUR REPAIR CARDS -->
+            <div class="packup-repair-grid">
+
+                <!-- WHEELS -->
+                <article class="packup-repair-card">
+
+                    <div class="packup-repair-card-top">
+
+                        <span class="packup-repair-icon">
+                            <i data-lucide="circle-dot"></i>
+                        </span>
+
+                        <span class="packup-repair-number">01</span>
+
+                    </div>
+
+                    <h3>Wheels</h3>
+
+                    <p>
+                        Identify damaged wheels, restricted movement,
+                        or unusual rolling behaviour.
+                    </p>
+
+                    <div class="packup-repair-card-footer">
+                        <i data-lucide="check-circle-2"></i>
+                        <span>Wheel inspection</span>
+                    </div>
+
+                </article>
+
+
+                <!-- HANDLES -->
+                <article class="packup-repair-card">
+
+                    <div class="packup-repair-card-top">
+
+                        <span class="packup-repair-icon">
+                            <i data-lucide="grip"></i>
+                        </span>
+
+                        <span class="packup-repair-number">02</span>
+
+                    </div>
+
+                    <h3>Handles</h3>
+
+                    <p>
+                        Check loose grips, damaged handles,
+                        or extension mechanism issues.
+                    </p>
+
+                    <div class="packup-repair-card-footer">
+                        <i data-lucide="check-circle-2"></i>
+                        <span>Handle inspection</span>
+                    </div>
+
+                </article>
+
+
+                <!-- ZIPPERS -->
+                <article class="packup-repair-card">
+
+                    <div class="packup-repair-card-top">
+
+                        <span class="packup-repair-icon">
+                            <i data-lucide="layers"></i>
+                        </span>
+
+                        <span class="packup-repair-number">03</span>
+
+                    </div>
+
+                    <h3>Zippers</h3>
+
+                    <p>
+                        Look for stuck sliders, separated teeth,
+                        or visible zipper damage.
+                    </p>
+
+                    <div class="packup-repair-card-footer">
+                        <i data-lucide="check-circle-2"></i>
+                        <span>Zipper inspection</span>
+                    </div>
+
+                </article>
+
+
+                <!-- LOCKS -->
+                <article class="packup-repair-card">
+
+                    <div class="packup-repair-card-top">
+
+                        <span class="packup-repair-icon">
+                            <i data-lucide="lock-keyhole"></i>
+                        </span>
+
+                        <span class="packup-repair-number">04</span>
+
+                    </div>
+
+                    <h3>Locks &amp; Exterior</h3>
+
+                    <p>
+                        Identify lock mechanism problems, shell cracks,
+                        dents, fabric tears, or other visible damage.
+                    </p>
+
+                    <div class="packup-repair-card-footer">
+                        <i data-lucide="check-circle-2"></i>
+                        <span>Component inspection</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- RIGHT: REPAIR IMAGE -->
+            <div class="packup-repair-visual">
+
+                <img
+                    class="packup-repair-image"
+                    src="https://plus.unsplash.com/premium_photo-1664368832311-7fe635e32c7c?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                    alt="Travel backpack and luggage equipment"
+                    loading="lazy"
+                >
+
+                <div class="packup-repair-image-overlay"></div>
+
+                <div class="packup-repair-image-content">
+
+                    <span class="packup-repair-image-tag">
+                        <i data-lucide="wrench"></i>
+                        LUGGAGE CARE
+                    </span>
+
+                    <h3>
+                        Every Journey Deserves
+                        <span>Reliable Gear</span>
+                    </h3>
+
+                    <p>
+                        Identify the affected component and review
+                        the support options available for your product.
+                    </p>
+
+                </div>
+
+                <!-- IMAGE BOTTOM INFO -->
+                <div class="packup-repair-image-footer">
+
+                    <span class="packup-repair-footer-icon">
+                        <i data-lucide="shield-check"></i>
+                    </span>
+
+                    <div>
+                        <strong>Support Based on Eligibility</strong>
+                        <p>
+                            Repair availability depends on product
+                            terms and service options.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="packup-process-section" id="support-process">
+
+    <div class="packup-process-container">
+
+        <!-- SECTION HEADER -->
+        <div class="packup-process-header">
+
+            <span class="packup-process-eyebrow">
+                HOW IT WORKS
+            </span>
+
+            <h2 class="packup-process-title">
+                A Clear Path to <span>Support</span>
+            </h2>
+
+            <p class="packup-process-description">
+                Start by submitting your product details and explaining
+                the issue. Our support team can review the information,
+                clarify eligibility, and provide the next steps according
+                to the applicable warranty or repair policy.
+            </p>
+
+        </div>
+
+
+        <!-- CENTER TIMELINE -->
+        <div class="packup-process-timeline">
+
+            <div class="packup-process-center-line"></div>
+
+
+            <!-- STEP 1 - LEFT -->
+            <article class="packup-process-step packup-process-left">
+
+                <div class="packup-process-card">
+
+                    <span class="packup-process-step-label">
+                        STEP 01
+                    </span>
+
+                    <div class="packup-process-card-heading">
+
+                        <div class="packup-process-card-icon">
+                            <i data-lucide="message-square-text"></i>
+                        </div>
+
+                        <h3>Submit an Enquiry</h3>
+
+                    </div>
+
+                    <p>
+                        Tell us about the issue with your luggage and
+                        describe the assistance you need. Include a clear
+                        explanation so the team can understand your request.
+                    </p>
+
+                </div>
+
+                <div class="packup-process-marker">
+                    <span>01</span>
+                </div>
+
+            </article>
+
+
+            <!-- STEP 2 - RIGHT -->
+            <article class="packup-process-step packup-process-right">
+
+                <div class="packup-process-card">
+
+                    <span class="packup-process-step-label">
+                        STEP 02
+                    </span>
+
+                    <div class="packup-process-card-heading">
+
+                        <div class="packup-process-card-icon">
+                            <i data-lucide="package-search"></i>
+                        </div>
+
+                        <h3>Share Product Details</h3>
+
+                    </div>
+
+                    <p>
+                        Provide the product name, purchase information,
+                        available warranty documents, and photos of the
+                        affected area when requested.
+                    </p>
+
+                </div>
+
+                <div class="packup-process-marker">
+                    <span>02</span>
+                </div>
+
+            </article>
+
+
+            <!-- STEP 3 - LEFT -->
+            <article class="packup-process-step packup-process-left">
+
+                <div class="packup-process-card">
+
+                    <span class="packup-process-step-label">
+                        STEP 03
+                    </span>
+
+                    <div class="packup-process-card-heading">
+
+                        <div class="packup-process-card-icon">
+                            <i data-lucide="clipboard-check"></i>
+                        </div>
+
+                        <h3>Receive a Review</h3>
+
+                    </div>
+
+                    <p>
+                        The submitted information can be reviewed to
+                        understand the issue and determine the applicable
+                        warranty coverage or available repair options.
+                    </p>
+
+                </div>
+
+                <div class="packup-process-marker">
+                    <span>03</span>
+                </div>
+
+            </article>
+
+
+            <!-- STEP 4 - RIGHT -->
+            <article class="packup-process-step packup-process-right">
+
+                <div class="packup-process-card">
+
+                    <span class="packup-process-step-label">
+                        STEP 04
+                    </span>
+
+                    <div class="packup-process-card-heading">
+
+                        <div class="packup-process-card-icon">
+                            <i data-lucide="check-circle-2"></i>
+                        </div>
+
+                        <h3>Follow the Next Steps</h3>
+
+                    </div>
+
+                    <p>
+                        Follow the instructions provided by the support
+                        team. The next steps will depend on product
+                        eligibility, warranty terms, and repair availability.
+                    </p>
+
+                </div>
+
+                <div class="packup-process-marker">
+                    <span>04</span>
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- BOTTOM NOTE -->
+        <div class="packup-process-note">
+
+            <div class="packup-process-note-icon">
+                <i data-lucide="info"></i>
+            </div>
+
+            <p>
+                Warranty coverage, review times, and repair options may
+                vary depending on the product and its applicable policy.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="packup-prepare-section" id="prepare-details">
+
+    <div class="packup-prepare-container">
+
+        <!-- SECTION HEADER -->
+        <div class="packup-prepare-header">
+
+            <span class="packup-prepare-eyebrow">
+                BEFORE YOU BEGIN
+            </span>
+
+            <h2 class="packup-prepare-title">
+                Have Your Product <span>Details Ready</span>
+            </h2>
+
+            <p class="packup-prepare-description">
+                Providing clear information can help the support team
+                understand your request. Prepare the purchase details,
+                product model, description of the issue, and photographs
+                if requested.
+            </p>
+
+        </div>
+
+
+        <!-- MAIN LAYOUT -->
+        <div class="packup-prepare-layout">
+
+            <!-- LEFT IMAGE CARD -->
+            <div class="packup-prepare-visual">
+
+                <img
+                    src="https://images.unsplash.com/photo-1575844264771-892081089af5?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                    alt="Travel backpack and luggage essentials"
+                    class="packup-prepare-image"
+                    loading="lazy"
+                >
+
+                <div class="packup-prepare-image-overlay"></div>
+
+                <div class="packup-prepare-image-content">
+
+                    <span class="packup-prepare-image-eyebrow">
+                        YOUR SUPPORT CHECKLIST
+                    </span>
+
+                    <h3>
+                        A Little Preparation
+                        <span>Goes a Long Way</span>
+                    </h3>
+
+                    <p>
+                        Keep your product and purchase information ready
+                        to help the support team understand your request.
+                    </p>
+
+                    <div class="packup-prepare-image-tip">
+
+                        <i data-lucide="lightbulb"></i>
+
+                        <span>
+                            Clear details can make your enquiry easier
+                            to review.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT CHECKLIST CARD -->
+            <div class="packup-prepare-checklist-card">
+
+                <div class="packup-prepare-checklist-header">
+
+                    <div>
+                        <span class="packup-prepare-checklist-label">
+                            YOUR CHECKLIST
+                        </span>
+
+                        <h3>What to Keep Ready</h3>
+                    </div>
+
+                    <div class="packup-prepare-count">
+                        <span id="packupPrepareCount">0/5</span>
+                    </div>
+
+                </div>
+
+
+                <!-- PROGRESS BAR -->
+                <div
+                    class="packup-prepare-progress-track"
+                    id="packupPrepareProgress"
+                    role="progressbar"
+                    aria-label="Preparation checklist progress"
+                    aria-valuemin="0"
+                    aria-valuemax="5"
+                    aria-valuenow="0"
+                >
+                    <span
+                        class="packup-prepare-progress-fill"
+                        id="packupPrepareProgressFill"
+                    ></span>
+                </div>
+
+
+                <!-- CHECKLIST ITEMS -->
+                <div class="packup-prepare-items">
+
+                    <label class="packup-prepare-item">
+
+                        <input
+                            type="checkbox"
+                            class="packup-prepare-checkbox"
+                            value="product-name"
+                        >
+
+                        <span class="packup-prepare-custom-check">
+                            <i data-lucide="check"></i>
+                        </span>
+
+                        <span class="packup-prepare-item-icon">
+                            <i data-lucide="package"></i>
+                        </span>
+
+                        <span class="packup-prepare-item-content">
+                            <strong>Product Name or Model</strong>
+                            <small>Identify the luggage or bag</small>
+                        </span>
+
+                    </label>
+
+
+                    <label class="packup-prepare-item">
+
+                        <input
+                            type="checkbox"
+                            class="packup-prepare-checkbox"
+                            value="purchase-proof"
+                        >
+
+                        <span class="packup-prepare-custom-check">
+                            <i data-lucide="check"></i>
+                        </span>
+
+                        <span class="packup-prepare-item-icon">
+                            <i data-lucide="receipt-text"></i>
+                        </span>
+
+                        <span class="packup-prepare-item-content">
+                            <strong>Purchase Proof</strong>
+                            <small>Keep the receipt or invoice</small>
+                        </span>
+
+                    </label>
+
+
+                    <label class="packup-prepare-item">
+
+                        <input
+                            type="checkbox"
+                            class="packup-prepare-checkbox"
+                            value="purchase-date"
+                        >
+
+                        <span class="packup-prepare-custom-check">
+                            <i data-lucide="check"></i>
+                        </span>
+
+                        <span class="packup-prepare-item-icon">
+                            <i data-lucide="calendar-days"></i>
+                        </span>
+
+                        <span class="packup-prepare-item-content">
+                            <strong>Purchase Date</strong>
+                            <small>Know when the item was purchased</small>
+                        </span>
+
+                    </label>
+
+
+                    <label class="packup-prepare-item">
+
+                        <input
+                            type="checkbox"
+                            class="packup-prepare-checkbox"
+                            value="issue-description"
+                        >
+
+                        <span class="packup-prepare-custom-check">
+                            <i data-lucide="check"></i>
+                        </span>
+
+                        <span class="packup-prepare-item-icon">
+                            <i data-lucide="file-text"></i>
+                        </span>
+
+                        <span class="packup-prepare-item-content">
+                            <strong>Issue Description</strong>
+                            <small>Explain the problem clearly</small>
+                        </span>
+
+                    </label>
+
+
+                    <label class="packup-prepare-item">
+
+                        <input
+                            type="checkbox"
+                            class="packup-prepare-checkbox"
+                            value="relevant-photos"
+                        >
+
+                        <span class="packup-prepare-custom-check">
+                            <i data-lucide="check"></i>
+                        </span>
+
+                        <span class="packup-prepare-item-icon">
+                            <i data-lucide="images"></i>
+                        </span>
+
+                        <span class="packup-prepare-item-content">
+                            <strong>Relevant Photos</strong>
+                            <small>Include clear images if requested</small>
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- COMPLETION MESSAGE -->
+                <div
+                    class="packup-prepare-complete"
+                    id="packupPrepareComplete"
+                    aria-live="polite"
+                    hidden
+                >
+                    <i data-lucide="check-circle-2"></i>
+                    <span>Everything on your checklist is ready!</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="packup-care-section" id="luggage-care">
+
+    <div class="packup-care-container">
+
+        <!-- SECTION HEADER -->
+        <div class="packup-care-header">
+
+            <span class="packup-care-eyebrow">
+                LUGGAGE CARE GUIDE
+            </span>
+
+            <h2 class="packup-care-title">
+                Simple Care for <span>Longer Use</span>
+            </h2>
+
+            <p class="packup-care-description">
+                Regular care can help maintain your bag's appearance and
+                functionality. Clean materials according to their care
+                instructions, avoid overpacking, keep wheels and zippers
+                free of debris, and store luggage in a clean, dry place.
+            </p>
+
+        </div>
+
+
+        <!-- HORIZONTAL CARE CARDS -->
+        <div class="packup-care-grid">
+
+            <!-- CARD 1 -->
+            <article class="packup-care-card">
+
+                <div class="packup-care-card-top">
+
+                    <div class="packup-care-icon">
+                        <i data-lucide="spray-can"></i>
+                    </div>
+
+                    <span class="packup-care-number">01</span>
+
+                </div>
+
+                <h3>Clean Carefully</h3>
+
+                <p>
+                    Follow the material's care instructions and use
+                    suitable cleaning methods to remove dirt gently.
+                </p>
+
+                <div class="packup-care-card-footer">
+                    <i data-lucide="check-circle-2"></i>
+                    <span>Gentle cleaning</span>
+                </div>
+
+            </article>
+
+
+            <!-- CARD 2 -->
+            <article class="packup-care-card">
+
+                <div class="packup-care-card-top">
+
+                    <div class="packup-care-icon">
+                        <i data-lucide="package"></i>
+                    </div>
+
+                    <span class="packup-care-number">02</span>
+
+                </div>
+
+                <h3>Pack Sensibly</h3>
+
+                <p>
+                    Distribute items evenly and avoid overpacking
+                    to help protect your bag, handles, and closures.
+                </p>
+
+                <div class="packup-care-card-footer">
+                    <i data-lucide="check-circle-2"></i>
+                    <span>Balanced packing</span>
+                </div>
+
+            </article>
+
+
+            <!-- CARD 3 -->
+            <article class="packup-care-card">
+
+                <div class="packup-care-card-top">
+
+                    <div class="packup-care-icon">
+                        <i data-lucide="settings-2"></i>
+                    </div>
+
+                    <span class="packup-care-number">03</span>
+
+                </div>
+
+                <h3>Check Moving Parts</h3>
+
+                <p>
+                    Keep wheels, zippers, and handles free of debris
+                    and check them periodically for visible issues.
+                </p>
+
+                <div class="packup-care-card-footer">
+                    <i data-lucide="check-circle-2"></i>
+                    <span>Routine inspection</span>
+                </div>
+
+            </article>
+
+
+            <!-- CARD 4 -->
+            <article class="packup-care-card">
+
+                <div class="packup-care-card-top">
+
+                    <div class="packup-care-icon">
+                        <i data-lucide="warehouse"></i>
+                    </div>
+
+                    <span class="packup-care-number">04</span>
+
+                </div>
+
+                <h3>Store Properly</h3>
+
+                <p>
+                    Store your luggage in a clean, dry place and
+                    make sure it is dry before putting it away.
+                </p>
+
+                <div class="packup-care-card-footer">
+                    <i data-lucide="check-circle-2"></i>
+                    <span>Dry storage</span>
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- BOTTOM NOTE -->
+        <div class="packup-care-note">
+
+            <div class="packup-care-note-icon">
+                <i data-lucide="info"></i>
+            </div>
+
+            <p>
+                <strong>Care tip:</strong>
+                Always follow the care instructions provided with
+                your specific luggage or travel bag.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =====================================================
+     WARRANTY PAGE — REPAIR ENQUIRY CTA
+===================================================== -->
+
+<section class="packup-warranty-cta">
+
+    <div class="packup-warranty-cta-container">
+
+        <!-- LEFT CONTENT -->
+
+        <div class="packup-warranty-cta-content">
+
+            <span class="packup-warranty-cta-eyebrow">
+                <span class="packup-warranty-cta-line"></span>
+                
+                <span>WARRANTY & REPAIR SUPPORT</span>
+            </span>
+
+            <h2>
+                Need Help with
+                <span>Your Bag?</span>
+            </h2>
+
+            <p>
+                Tell us about your luggage and the issue you're
+                experiencing. Contact our team to learn about the
+                available support options and the next steps for
+                your product.
+            </p>
+
+            <div class="packup-warranty-cta-divider"></div>
+
+            <div class="packup-warranty-cta-points">
+
+                <div class="packup-warranty-cta-point">
+                    <i data-lucide="clipboard-check"></i>
+
+                    <span>
+                        <strong>Describe Your Issue</strong>
+                        <small>Share your bag's repair requirements.</small>
+                    </span>
+                </div>
+
+                <div class="packup-warranty-cta-point">
+                    <i data-lucide="headset"></i>
+
+                    <span>
+                        <strong>Explore Support Options</strong>
+                        <small>Understand the available next steps.</small>
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT ACTION PANEL -->
+
+        <div class="packup-warranty-cta-panel">
+
+            <div class="packup-warranty-cta-panel-top">
+
+                <span class="packup-warranty-cta-panel-label">
+                    REPAIR ASSISTANCE
+                </span>
+
+                <div class="packup-warranty-cta-panel-icon">
+                    <i data-lucide="briefcase-business"></i>
+                </div>
+
+            </div>
+
+            <div class="packup-warranty-cta-panel-heading">
+                <span>YOUR NEXT STEP</span>
+
+                <h3>
+                    Let's Find the
+                    <span>Right Support.</span>
+                </h3>
+            </div>
+
+            <p>
+                Choose how you'd like to get assistance with your
+                luggage or travel bag.
+            </p>
+
+            <div class="packup-warranty-cta-actions">
+
+                <a
+                    href="contact.html?enquiry=repair"
+                    class="packup-warranty-cta-primary"
+                >
+                    <span>Submit Repair Enquiry</span>
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+
+                <a
+                    href="contact.html"
+                    class="packup-warranty-cta-secondary"
+                >
+                    <i data-lucide="message-circle"></i>
+                    <span>Contact Support</span>
+                </a>
+
+            </div>
+
+            <div class="packup-warranty-cta-panel-footer">
+                <i data-lucide="shield-check"></i>
+
+                <span>
+                    Support for your luggage, every step of the way.
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+
+        <!-- BRAND -->
+        <div class="footer-col footer-brand-col">
+
+            <div class="footer-logo">
+
+                <a
+                    href="index.html"
+                    class="logo-icon-link"
+                    aria-label="Packup Home"
+                >
+
+                    <img
+                        src="logo_light.png"
+                        data-light-logo="logo_light.png"
+                        data-dark-logo="logo_dark.png"
+                        alt="Packup Logo"
+                        class="brand-logo"
+                        id="footerLogo"
+                    >
+
+                </a>
+
+
+                <a
+                    href="index.html"
+                    class="brand-content footer-branding"
+                >
+
+                    <h2 class="brand-name">
+
+                        <span class="pack">PACK</span><span class="up">UP</span>
+
+                    </h2>
+
+                    <span class="subtitle-text">
+                        TRAVEL BEYOND LIMITS
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <p class="footer-about">
+
+                Discover thoughtfully designed luggage and travel bags
+                built for every journey. From weekend escapes to long
+                adventures, Packup helps you travel with confidence and style.
+
+            </p>
+
+
+            <!-- SOCIAL -->
+            <div class="social">
+
+                <a
+                    href="#"
+                    aria-label="Instagram"
+                    title="Instagram"
+                >
+                    <i data-lucide="instagram"></i>
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="Facebook"
+                    title="Facebook"
+                >
+                    <i data-lucide="facebook"></i>
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="Twitter"
+                    title="Twitter"
+                >
+                    <i data-lucide="twitter"></i>
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="YouTube"
+                    title="YouTube"
+                >
+                    <i data-lucide="youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QUICK LINKS -->
+        <div class="footer-col">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Products
+                    </a>
+                </li>
+
+                <li>
+                    <a href="warranty.html">
+                        Warranty &amp; Repair
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- PRODUCTS -->
+        <div class="footer-col">
+
+            <h3>
+                Our Products
+            </h3>
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="products.html">
+                        Luggage
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Travel Bags
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Backpacks
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Cabin Bags
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Travel Accessories
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- ADDITIONAL -->
+        <div class="footer-col">
+
+            <h3>
+                Additional Pages
+            </h3>
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="error.html">
+                        404 Error
+                    </a>
+                </li>
+
+                <li>
+                    <a href="soon.html">
+                        Coming Soon
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Support
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Explore Collections
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+        <div class="footer-col">
+
+            <h3>
+                Contact Us
+            </h3>
+
+            <ul class="contact">
+
+                <li>
+
+                    <span class="contact-icon">
+                        <i data-lucide="map-pin"></i>
+                    </span>
+
+                    <span>
+                        Hyderabad, Telangana, India
+                    </span>
+
+                </li>
+
+
+                <li>
+
+                    <span class="contact-icon">
+                        <i data-lucide="phone"></i>
+                    </span>
+
+                    <a href="tel:+919876543210">
+                        +91 98765 43210
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <span class="contact-icon">
+                        <i data-lucide="mail"></i>
+                    </span>
+
+                    <a href="mailto:hello@packup.com">
+                        hello@packup.com
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <span class="contact-icon">
+                        <i data-lucide="clock"></i>
+                    </span>
+
+                    <span>
+                        Mon – Sat: 9:00 AM – 7:00 PM
+                    </span>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER BOTTOM -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Packup. All Rights Reserved.
+        </p>
+
+
+        <div class="footer-bottom-links">
+
+            <a href="policy.html">
+                Privacy Policy
+            </a>
+
+            <a href="conditions.html">
+                Terms &amp; Conditions
+            </a>
+
+            <a href="cookies.html">
+                Cookies
+            </a>
+
+
+            <!-- GO TO TOP -->
+            <a
+                href="#"
+                class="top-btn"
+                aria-label="Back to top"
+                title="Back to top"
+            >
+
+                <i data-lucide="arrow-up"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+<script src="main.js"></script>
+<script src="warranty.js"></script>
+</body>
+</html>

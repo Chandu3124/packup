@@ -1,0 +1,2164 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+        name="description"
+        content="Packup offers premium luggage, travel bags, backpacks and travel accessories designed for every journey."
+    />
+
+    <meta
+        name="keywords"
+        content="Packup, luggage, travel bags, backpacks, cabin bags, travel accessories"
+    />
+
+    <meta
+        name="author"
+        content="Packup"
+    />
+
+    <meta
+        name="theme-color"
+        content="#123f46"
+    />
+
+    <title>Packup | Travel Beyond Limits</title>
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="logo_light.png"
+    />
+
+    <link
+        rel="apple-touch-icon"
+        href="logo_light.png"
+    />
+
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"
+    />
+
+    <!-- Google Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    />
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    />
+
+    <!-- Lucide -->
+    <script
+        src="https://unpkg.com/lucide@0.542.0/dist/umd/lucide.min.js"
+        defer
+    ></script>
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="main.css"
+    />
+
+    <link
+        rel="stylesheet"
+        href="index.css"
+    />
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-container">
+
+
+        <!-- BRAND -->
+        <div class="logo">
+
+            <a
+                href="index.html"
+                class="logo-icon-link"
+                aria-label="Packup Home"
+            >
+
+                <img
+                    src="logo_light.png"
+                    data-light-logo="logo_light.png"
+                    data-dark-logo="logo_dark.png"
+                    alt="Packup Logo"
+                    class="brand-logo"
+                    id="headerLogo"
+                >
+
+            </a>
+
+
+            <a
+                href="index.html"
+                class="brand-content"
+            >
+
+                <h1 class="brand-name">
+
+                    <span class="pack">PACK</span><span class="up">UP</span>
+
+                </h1>
+
+                <span class="subtitle-text">
+                    TRAVEL BEYOND LIMITS
+                </span>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- NAVIGATION -->
+        <nav
+            class="navbar"
+            aria-label="Primary navigation"
+        >
+
+            <ul
+                class="nav-links"
+                id="navLinks"
+            >
+
+
+                <!-- HOME -->
+                <li class="dropdown">
+
+                    <a
+                        href="index.html"
+                        class="dropdown-trigger"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+
+                        <span>Home</span>
+
+                        <i data-lucide="chevron-down"></i>
+
+                    </a>
+
+
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a href="index.html">
+                                Home 1
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="home2.html">
+                                Home 2
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- ABOUT -->
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+
+                <!-- PRODUCTS -->
+                <li>
+                    <a href="products.html">
+                        Products
+                    </a>
+                </li>
+
+
+                <!-- WARRANTY -->
+                <li>
+                    <a href="warranty.html">
+                        Warranty &amp; Repair
+                    </a>
+                </li>
+
+
+                <!-- CONTACT -->
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- MOBILE CTA -->
+            <div class="mobile-action">
+
+                <a
+                    href="contact.html#contact-form"
+                    class="header-cta"
+                >
+
+                    <i data-lucide="shopping-bag"></i>
+
+                    <span>
+                        Explore Bags
+                    </span>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+
+        <!-- HEADER CONTROLS -->
+        <div class="header-controls">
+
+
+            <!-- RTL -->
+            <button
+                type="button"
+                class="icon-btn rtl-btn"
+                id="rtlToggle"
+                title="RTL Mode"
+                aria-label="Switch to right-to-left mode"
+                aria-pressed="false"
+            >
+
+                <i data-lucide="arrow-left-right"></i>
+
+            </button>
+
+
+            <!-- DARK MODE -->
+            <button
+                type="button"
+                class="icon-btn dark-btn"
+                id="darkToggle"
+                title="Dark Mode"
+                aria-label="Switch to dark mode"
+                aria-pressed="false"
+            >
+
+                <i data-lucide="moon"></i>
+
+            </button>
+
+
+            <!-- DESKTOP CTA -->
+            <a
+                href="contact.html#contact-form"
+                class="header-cta desktop-cta"
+            >
+
+                <i data-lucide="shopping-bag"></i>
+
+                <span>
+                    Explore Bags
+                </span>
+
+            </a>
+
+
+            <!-- MOBILE MENU -->
+            <button
+                type="button"
+                class="icon-btn menu-btn"
+                id="menuToggle"
+                title="Open Menu"
+                aria-label="Open menu"
+                aria-expanded="false"
+                aria-controls="navLinks"
+            >
+
+                <i data-lucide="menu"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+<main>
+
+    <!-- Page-specific content goes here -->
+<!-- =====================================================
+     PACKUP HOME 1 — HERO SECTION
+===================================================== -->
+
+<section class="packup-hero" id="packupHero">
+
+    <div class="packup-hero-container">
+
+        <!-- LEFT CONTENT -->
+
+        <div class="packup-hero-content">
+
+            <div class="packup-hero-eyebrow">
+                <span class="packup-eyebrow-line"></span>
+                <span>TRAVEL / EXPLORE / DISCOVER</span>
+            </div>
+
+            <h1 class="packup-hero-title">
+                Packup for
+                <span>Every Journey</span>
+            </h1>
+
+            <p class="packup-hero-description">
+                Discover premium luggage and travel bags designed
+                to make every journey easier, more organized, and
+                more comfortable. From short weekend getaways to
+                long international adventures, find your perfect
+                travel companion at Packup.
+            </p>
+
+            <!-- CTA BUTTONS -->
+
+            <div class="packup-hero-actions">
+
+                <a href="products.html" class="packup-hero-btn packup-btn-primary">
+                    <span>Shop Now</span>
+                    <i data-lucide="arrow-right"></i>
+                </a>
+
+                <a href="products.html" class="packup-hero-btn packup-btn-secondary">
+                    <span>Explore Collections</span>
+                </a>
+
+            </div>
+
+            <!-- HORIZONTAL FEATURES -->
+
+            <div class="packup-hero-features">
+
+                <div class="packup-hero-feature">
+
+                    <span class="packup-feature-icon">
+                        <i data-lucide="truck"></i>
+                    </span>
+
+                    <div class="packup-feature-text">
+                        <h3>Free Shipping</h3>
+                        <p>On eligible orders</p>
+                    </div>
+
+                </div>
+
+                <span class="packup-feature-divider"></span>
+
+                <div class="packup-hero-feature">
+
+                    <span class="packup-feature-icon">
+                        <i data-lucide="shield-check"></i>
+                    </span>
+
+                    <div class="packup-feature-text">
+                        <h3>Secure Payment</h3>
+                        <p>Safe checkout</p>
+                    </div>
+
+                </div>
+
+                <span class="packup-feature-divider"></span>
+
+                <div class="packup-hero-feature">
+
+                    <span class="packup-feature-icon">
+                        <i data-lucide="headset"></i>
+                    </span>
+
+                    <div class="packup-feature-text">
+                        <h3>Expert Support</h3>
+                        <p>We're here to help</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     SECTION 2 — BESTSELLING LUGGAGE
+===================================================== -->
+
+<section class="packup-bestsellers" id="bestsellers">
+
+    <div class="packup-bestsellers-container">
+
+        <!-- SECTION HEADING -->
+        <div class="packup-bestsellers-heading">
+
+            <div class="packup-section-eyebrow">
+                <span class="packup-section-line"></span>
+                TRAVEL FAVORITES
+                <span class="packup-section-line"></span>
+            </div>
+
+            <h2 class="packup-section-title">
+                Travel Favorites,
+                <span>Loved by Everyone</span>
+            </h2>
+
+            <p class="packup-section-description">
+                Explore our popular luggage collections, selected for their
+                practical design, travel-friendly features, and timeless
+                appearance. Find dependable options for every journey.
+            </p>
+
+        </div>
+
+
+        <!-- PRODUCT CATEGORY CARDS -->
+        <div class="packup-bestsellers-grid">
+
+            <!-- CARD 1 -->
+            <article class="packup-product-card">
+
+                <div class="packup-product-image">
+
+                    <span class="packup-product-label">
+                        BESTSELLER
+                    </span>
+
+                    <img
+                        src="https://images.openai.com/static-rsc-4/aPnaFhTQldJZreAOV-k5ZH1NMoQFdwYdHokiDIv5W5UZX-g2qa1zdP6WT1iia6Y7qQvy1Zgr8-hOTpBPzVBqaEpasL4My_pixmyQwLpqTzXT_IRXRWCV3LAzt4HIAc7TX3UmABvXJTKyRTj_rPBb-8mcEu4JmrHwYgnxCdE5zPB2cvl1aQ_qtyQN5WbAhbrG?purpose=fullsize"
+                        alt="Premium hard-shell suitcase"
+                        loading="lazy"
+                    >
+
+                    <a
+                        href="products.html?category=hard-shell"
+                        class="packup-product-image-link"
+                        aria-label="Explore hard-shell suitcases"
+                    >
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="packup-product-content">
+
+                    <span class="packup-product-number">
+                        COLLECTION 01
+                    </span>
+
+                    <h3>Hard-Shell Suitcases</h3>
+
+                    <p>
+                       Durable protection and a sleek finish for comfortable, confident everyday travel.
+                    </p>
+
+                    <a
+                        href="products.html?category=hard-shell"
+                        class="packup-product-link"
+                    >
+                        Explore Collection
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD 2 -->
+            <article class="packup-product-card">
+
+                <div class="packup-product-image">
+
+                    <span class="packup-product-label">
+                        TRAVEL ESSENTIAL
+                    </span>
+
+                    <img
+                        src="https://images.openai.com/static-rsc-4/0dIAa99-NO53VyaEtEiJLtrfN5zBB8wpxE6VnZ4bQWDgu1m4MUUHy5dE_yFWmCvluk6REiGT4MehWLhifMdQlS693bLHskcsTvEbBi91bMekuFIeRDeVB-LkGXl7qgebVU14pdZWqVlKvtXu_BoIXNPJAKkIauARLUTh1yKPZXQ-SigvI_mcjT9VXs8jIDq6?purpose=fullsize"
+                        alt="Compact cabin travel luggage"
+                        loading="lazy"
+                    >
+
+                    <a
+                        href="products.html?category=cabin"
+                        class="packup-product-image-link"
+                        aria-label="Explore cabin luggage"
+                    >
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="packup-product-content">
+
+                    <span class="packup-product-number">
+                        COLLECTION 02
+                    </span>
+
+                    <h3>Cabin Luggage</h3>
+
+                    <p>
+                        Compact travel companions designed for quick
+                        getaways and convenient carry-on packing.
+                    </p>
+
+                    <a
+                        href="products.html?category=cabin"
+                        class="packup-product-link"
+                    >
+                        Explore Collection
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD 3 -->
+            <article class="packup-product-card">
+
+                <div class="packup-product-image">
+
+                    <span class="packup-product-label">
+                        LONG JOURNEYS
+                    </span>
+
+                    <img
+                        src="https://images.openai.com/static-rsc-4/9RD9CTRlRxv8j_7S90X1S_guyPNE5lPWCrGzMukQc3GguphIU1kNrB_bWDaqJYR2dJMKGC--BwZYQPNiRsf1GmBCpsuQE6FluR8kMEZYZT48deniqktbpUpf1WexrDbtpqvoryPzJXuaHkqjaOGyph7qWraSud9FhXVFP3bIY5hKzHHCpyv76UO_St3KarAC?purpose=fullsize"
+                        alt="Spacious travel backpack and luggage"
+                        loading="lazy"
+                    >
+
+                    <a
+                        href="products.html?category=checked"
+                        class="packup-product-image-link"
+                        aria-label="Explore checked luggage"
+                    >
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="packup-product-content">
+
+                    <span class="packup-product-number">
+                        COLLECTION 03
+                    </span>
+
+                    <h3>Checked Luggage</h3>
+
+                    <p>
+                        Spacious storage for extended holidays,
+                        international trips, and family adventures.
+                    </p>
+
+                    <a
+                        href="products.html?category=checked"
+                        class="packup-product-link"
+                    >
+                        Explore Collection
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD 4 -->
+            <article class="packup-product-card">
+
+                <div class="packup-product-image">
+
+                    <span class="packup-product-label">
+                        SMART VALUE
+                    </span>
+
+                    <img
+                        src="https://images.openai.com/static-rsc-4/Lir8-geqWMG77NGg-B-3sIoFamXCGQ8tqEp8VIZZ3ZEIanZr6yrIrmoyp2lKEVzGhWkQ-yWUcRUe4QFX-FY0WCHHARVYjkMPKM4HFexnkRmVMikH8EAhmj_Ykgr_AsiQy5mpxl5mS6A8bxyoGC3ifnSdA9aFCgRY26sobvsSE0hozUZI4kS22CdT5b6kSY32?purpose=fullsize"
+                        alt="Travel-ready luggage collection inspiration"
+                        loading="lazy"
+                    >
+
+                    <a
+                        href="products.html?category=sets"
+                        class="packup-product-image-link"
+                        aria-label="Explore luggage sets"
+                    >
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="packup-product-content">
+
+                    <span class="packup-product-number">
+                        COLLECTION 04
+                    </span>
+
+                    <h3>Luggage Sets</h3>
+
+                    <p>
+                        Coordinated luggage options offering versatile
+                        sizes for different travel needs.
+                    </p>
+
+                    <a
+                        href="products.html?category=sets"
+                        class="packup-product-link"
+                    >
+                        Explore Collection
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- BOTTOM CTA -->
+        <div class="packup-bestsellers-footer">
+
+            <p>
+                Find the right bag for your next destination.
+            </p>
+
+            <a href="products.html" class="packup-all-products-btn">
+                View All Products
+                <i data-lucide="arrow-up-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SECTION 3: EXPLORE BAGS BY TYPE -->
+<section class="packup-explore" id="explore-bags">
+
+    <div class="packup-explore-container">
+
+        <div class="packup-explore-heading">
+
+            <p class="packup-explore-eyebrow">
+                <span class="packup-explore-line"></span>
+                Explore Bags by Type
+            </p>
+
+            <h2 class="packup-explore-title">
+                The Right Bag for <span>Every Plan</span>
+            </h2>
+
+            <p class="packup-explore-description">
+                Every journey needs a different kind of bag. Explore versatile
+                travel essentials that suit your destination, packing needs,
+                and personal style.
+            </p>
+
+        </div>
+
+        <div class="packup-explore-grid">
+
+            <a href="products.html?category=backpacks"
+               class="packup-category-card">
+
+                <div class="packup-category-image">
+                    <img
+                        src="https://images.openai.com/static-rsc-4/IRHo2sc38FgACQyeeBjofB6wJA2n-O0FFBxTyguXeC2CiSCyh9TQXltWEknYI1uo0MyrB0IGzhdGgnIhXminHvpU1G9qUQ8jViQG2szXcji9-AkWDNe_QHlNJcqRiJZ_kNpdQT3eJAAy0JRCwk_A1rDc-3HAhA1HvRlAxfoqkojd08skZvipuQTfW9IvrL3V?purpose=fullsize"
+                        alt="Travel backpack"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="packup-category-info">
+                    <div class="packup-category-text">
+                        <h3>Backpacks</h3>
+                        <p>Everyday travel essentials</p>
+                    </div>
+
+                    <span class="packup-category-arrow" aria-hidden="true">
+                        <i data-lucide="arrow-up-right"></i>
+                    </span>
+                </div>
+
+            </a>
+
+            <a href="products.html?category=duffel-bags"
+               class="packup-category-card">
+
+                <div class="packup-category-image">
+                    <img
+                        src="https://images.openai.com/static-rsc-4/wZoK2gkfsyCbH9gSk7maifay38Fdw5PEo8ZMowZNy8v9EizwtNWGGXhmHPL8CB9h-rmHMuORXIjup9ltYQ0OFYR3xhYhvbXalQKKbTsx6fxPEdccT1Nlsmkb3J-WDv4MOZIKmNFqaNzPAkGPNtgtIraRg6aYu-suegLFcNpu6P5iU5R3oRqji9YSrewvRFe5?purpose=fullsize"
+                        alt="Duffel and carry bags"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="packup-category-info">
+                    <div class="packup-category-text">
+                        <h3>Duffel Bags</h3>
+                        <p>Ready for quick getaways</p>
+                    </div>
+
+                    <span class="packup-category-arrow" aria-hidden="true">
+                        <i data-lucide="arrow-up-right"></i>
+                    </span>
+                </div>
+
+            </a>
+
+            <a href="products.html?category=travel-trolleys"
+               class="packup-category-card">
+
+                <div class="packup-category-image">
+                    <img
+                        src="https://images.openai.com/static-rsc-4/oQtOiHPhLozIG5oaf4v7vnFleyF_XM4Ua6z0CKMS_iZIsKkFgJJrjj1YmIWbE83pc6wxOxkPa80USWDlrYyPnbulJi4dQq8mni-y5AyzbkDXhPP86M48t6Rq_fHTuKj2SzllZo0u79fRT9gpqvUPDP45vo8sUlZZP-ZpvpZs0dVtF7xu8XOiY1CCqksZxhLU?purpose=fullsize"
+                        alt="Travel trolley suitcase"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="packup-category-info">
+                    <div class="packup-category-text">
+                        <h3>Travel Trolleys</h3>
+                        <p>Smooth journeys, smarter packing</p>
+                    </div>
+
+                    <span class="packup-category-arrow" aria-hidden="true">
+                        <i data-lucide="arrow-up-right"></i>
+                    </span>
+                </div>
+
+            </a>
+
+            <a href="products.html?category=laptop-bags"
+               class="packup-category-card">
+
+                <div class="packup-category-image">
+                    <img
+                        src="https://images.openai.com/static-rsc-4/G_YdF1o_nLhaGSxJm93huiXb6MUfiOxwbMp9JQ4IATp4ErMSwhmAMPBf8pmkykCFor2XE2ddGkHT7UNn8ebHR7FzIVZDQ-68q8NtINM1jq6fYThG6LXLdiegPN8yGKiKOgqCcLDEGjSkG0q3uJvSfkMCzhQjAwvy5fFeEcmchRMe7FSFD9--f9JYOwhqGhcJ?purpose=fullsize"
+                        alt="Laptop work bag"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="packup-category-info">
+                    <div class="packup-category-text">
+                        <h3>Laptop Bags</h3>
+                        <p>Work and travel together</p>
+                    </div>
+
+                    <span class="packup-category-arrow" aria-hidden="true">
+                        <i data-lucide="arrow-up-right"></i>
+                    </span>
+                </div>
+
+            </a>
+
+            <a href="products.html?category=weekender-bags"
+               class="packup-category-card">
+
+                <div class="packup-category-image">
+                    <img
+                        src="https://images.openai.com/static-rsc-4/f8jktiwG6YsFFcC_t1G3x-EHUKUX02KHsmYY1-JBkYNDOHvSHimwhFctavivqiLYkaIZerr-FtV_MHogSExgbk1u0637q-rd8HkF3MFVGWMFxdWGRFc49pB4kHVXIKqiPiHE16soMtIwbe0Z8APoqtU-nKdpPmnVK6Ivy9WwH3Lc3jmp9ApkR3igcTEy5JJM?purpose=fullsize"
+                        alt="Weekender travel bag"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="packup-category-info">
+                    <div class="packup-category-text">
+                        <h3>Weekender Bags</h3>
+                        <p>Made for short escapes</p>
+                    </div>
+
+                    <span class="packup-category-arrow" aria-hidden="true">
+                        <i data-lucide="arrow-up-right"></i>
+                    </span>
+                </div>
+
+            </a>
+
+            <a href="products.html?category=travel-accessories"
+               class="packup-category-card">
+
+                <div class="packup-category-image">
+                    <img
+                        src="https://images.openai.com/static-rsc-4/QvjxmDsmrnawVe4f3kuzZchzcJxacdxWQh2pShmjHoz7kDLu0i8DG1HyxaL4znV1Qbt3yRtFbeVFczsJafla8hRpK-q3vJ1E0ajZWkX6xSdE7yF1mhHwO8JlJRyqZByKlgFvvWhjVgVX8a8LEmiX9CD8h2mQHetABOgvqzM76PA3JmiON11oJj_eOqWGSIsP?purpose=fullsize"
+                        alt="Travel packing accessories"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="packup-category-info">
+                    <div class="packup-category-text">
+                        <h3>Travel Accessories</h3>
+                        <p>Little essentials, big difference</p>
+                    </div>
+
+                    <span class="packup-category-arrow" aria-hidden="true">
+                        <i data-lucide="arrow-up-right"></i>
+                    </span>
+                </div>
+
+            </a>
+
+        </div>
+
+        <div class="packup-explore-action">
+            <a href="products.html" class="packup-explore-button">
+                <span>Explore All Bags</span>
+                <i data-lucide="arrow-right" aria-hidden="true"></i>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SECTION 4: DESIGNED FOR BETTER TRAVEL -->
+<section class="packup-better-travel" id="better-travel">
+
+    <div class="packup-better-container">
+
+        <div class="packup-better-main">
+
+            <!-- LEFT: CONTENT -->
+            <div class="packup-better-content">
+
+                <p class="packup-better-eyebrow">
+                    <span class="packup-better-line"></span>
+                    Designed for Better Travel
+                </p>
+
+                <h2 class="packup-better-title">
+                    Smart Features.
+                    <span>Smoother Journeys.</span>
+                </h2>
+
+                <p class="packup-better-description">
+                    The right luggage makes travel simpler. Explore bags
+                    with useful compartments, convenient handles, organized
+                    storage, smooth-rolling wheels, and practical designs
+                    that help keep your belongings accessible.
+                </p>
+
+                <a href="products.html" class="packup-better-button">
+                    <span>Find Your Travel Bag</span>
+                    <i data-lucide="arrow-right" aria-hidden="true"></i>
+                </a>
+
+            </div>
+
+            <!-- RIGHT: FEATURE VISUAL -->
+            <div class="packup-better-visual">
+
+                <div class="packup-better-image-wrap">
+
+                    <img
+                        src="https://images.openai.com/static-rsc-4/_B5WVurw_z-i0T_-e_eriwV9-hjVzUjR4aI5sHsxbZ9DVTJgE9RtchCbZrYtBjuN-vNiFRcRk7Q6YAJt_QMdiABZs4fRrbxz1ig79f0EkeOxwf9x0ODQfXbskIj3q1O3xOjIYIr_aZJt-I4R2IPMXuk-wNONlZZNNJ_MsKd1IfDlF_Hvmz1gEStLsEvx3IjB?purpose=fullsize"
+                        alt="Travel backpack designed for organized journeys"
+                        loading="lazy"
+                    >
+
+                    <div class="packup-better-image-overlay"></div>
+
+                    <div class="packup-better-image-caption">
+                        <span class="packup-better-caption-icon">
+                            <i data-lucide="compass" aria-hidden="true"></i>
+                        </span>
+
+                        <div>
+                            <span class="packup-better-caption-label">
+                                YOUR NEXT ADVENTURE
+                            </span>
+
+                            <p>Pack smart. Travel easy.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="packup-better-floating-note">
+                    <span class="packup-better-note-icon">
+                        <i data-lucide="check-check" aria-hidden="true"></i>
+                    </span>
+
+                    <div>
+                        <strong>Made for the journey</strong>
+                        <p>Practical details, everyday comfort</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- FEATURE HIGHLIGHTS -->
+        <div class="packup-better-features">
+
+            <article class="packup-better-feature">
+
+                <span class="packup-better-feature-icon">
+                    <i data-lucide="layers-3" aria-hidden="true"></i>
+                </span>
+
+                <div class="packup-better-feature-copy">
+                    <h3>Organized Storage</h3>
+                    <p>Keep essentials neatly arranged.</p>
+                </div>
+
+            </article>
+
+            <article class="packup-better-feature">
+
+                <span class="packup-better-feature-icon">
+                    <i data-lucide="move" aria-hidden="true"></i>
+                </span>
+
+                <div class="packup-better-feature-copy">
+                    <h3>Easy Mobility</h3>
+                    <p>Move comfortably from place to place.</p>
+                </div>
+
+            </article>
+
+            <article class="packup-better-feature">
+
+                <span class="packup-better-feature-icon">
+                    <i data-lucide="shield-check" aria-hidden="true"></i>
+                </span>
+
+                <div class="packup-better-feature-copy">
+                    <h3>Durable Construction</h3>
+                    <p>Built with everyday travel in mind.</p>
+                </div>
+
+            </article>
+
+            <article class="packup-better-feature">
+
+                <span class="packup-better-feature-icon">
+                    <i data-lucide="plane" aria-hidden="true"></i>
+                </span>
+
+                <div class="packup-better-feature-copy">
+                    <h3>Travel-Friendly Design</h3>
+                    <p>Thoughtful details for easier trips.</p>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SECTION 5: BAGS FOR EVERY JOURNEY -->
+<section class="packup-journey" id="bags-for-journey">
+
+    <div class="packup-journey-container">
+
+        <!-- INTRO COLUMN -->
+        <div class="packup-journey-intro">
+
+            <p class="packup-journey-eyebrow">
+                <span class="packup-journey-line"></span>
+                Bags for Every Journey
+            </p>
+
+            <h2 class="packup-journey-title">
+                Find Your Perfect
+                <span>Travel Match</span>
+            </h2>
+
+            <p class="packup-journey-description">
+                Whether you're packing for a quick escape or an extended
+                holiday, discover luggage that fits your plans. Choose
+                compact cabin bags for short trips, spacious suitcases
+                for longer stays, or versatile backpacks for everyday
+                adventures.
+            </p>
+
+            <a href="products.html" class="packup-journey-button">
+                <span>Find Your Travel Bag</span>
+                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+
+            <div class="packup-journey-note">
+                <span class="packup-journey-note-icon">
+                    <i data-lucide="map-pin" aria-hidden="true"></i>
+                </span>
+
+                <p>Every destination starts with the right bag.</p>
+            </div>
+
+        </div>
+
+        <!-- JOURNEY OPTIONS -->
+        <div class="packup-journey-options">
+
+            <a href="products.html?journey=weekend"
+               class="packup-journey-card packup-journey-weekend">
+
+                <span class="packup-journey-number">01</span>
+
+                <span class="packup-journey-icon">
+                    <i data-lucide="sun" aria-hidden="true"></i>
+                </span>
+
+                <div class="packup-journey-card-content">
+                    <span class="packup-journey-card-label">
+                        SHORT GETAWAYS
+                    </span>
+
+                    <h3>Weekend Trips</h3>
+
+                    <p>Light packing. More exploring.</p>
+                </div>
+
+                <span class="packup-journey-arrow">
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                </span>
+
+            </a>
+
+            <a href="products.html?journey=business"
+               class="packup-journey-card packup-journey-business">
+
+                <span class="packup-journey-number">02</span>
+
+                <span class="packup-journey-icon">
+                    <i data-lucide="briefcase-business" aria-hidden="true"></i>
+                </span>
+
+                <div class="packup-journey-card-content">
+                    <span class="packup-journey-card-label">
+                        WORK ON THE GO
+                    </span>
+
+                    <h3>Business Travel</h3>
+
+                    <p>Stay organized wherever work takes you.</p>
+                </div>
+
+                <span class="packup-journey-arrow">
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                </span>
+
+            </a>
+
+            <a href="products.html?journey=family"
+               class="packup-journey-card packup-journey-family">
+
+                <span class="packup-journey-number">03</span>
+
+                <span class="packup-journey-icon">
+                    <i data-lucide="users" aria-hidden="true"></i>
+                </span>
+
+                <div class="packup-journey-card-content">
+                    <span class="packup-journey-card-label">
+                        TOGETHER IS BETTER
+                    </span>
+
+                    <h3>Family Holidays</h3>
+
+                    <p>Space for everyone and everything.</p>
+                </div>
+
+                <span class="packup-journey-arrow">
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                </span>
+
+            </a>
+
+            <a href="products.html?journey=international"
+               class="packup-journey-card packup-journey-international">
+
+                <span class="packup-journey-number">04</span>
+
+                <span class="packup-journey-icon">
+                    <i data-lucide="plane" aria-hidden="true"></i>
+                </span>
+
+                <div class="packup-journey-card-content">
+                    <span class="packup-journey-card-label">
+                        GO FURTHER
+                    </span>
+
+                    <h3>International Travel</h3>
+
+                    <p>Ready for adventures beyond borders.</p>
+                </div>
+
+                <span class="packup-journey-arrow">
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="packup-style">
+    <div class="packup-style-container">
+
+        <div class="packup-style-intro">
+            <div class="packup-style-eyebrow">
+                <span class="packup-style-line"></span>
+                <span>STYLE MEETS FUNCTION</span>
+            </div>
+
+            <h2 class="packup-style-title">
+                Make Every Journey
+                <span>Your Style</span>
+            </h2>
+
+            <p class="packup-style-description">
+                Discover travel bags that combine modern design,
+                everyday comfort and practical functionality.
+                Find a style that fits every journey.
+            </p>
+        </div>
+
+        <div class="packup-style-gallery">
+
+            <article class="packup-style-card">
+                <img
+                    src="https://images.openai.com/static-rsc-4/SwA5DIFpbpGSKzyuLzvq5n2opKnFoTztNR5L9N-Gu4CjLxPQTXDJsrdHNSNcESdLrcnLi_dw2SXhQwSADNjoxFsn_BNA6GXJKNifGRAsioKPPAShXHn_nW9rbBeXDREd8wNorgMVxI29gR6qQ1AVL2nszxaorJFd7uOzBeT1Rrh5K-5uS5I0qio3pXjEPKyd?purpose=fullsize"
+                    alt="Modern travel backpack"
+                    class="packup-style-image"
+                    loading="lazy"
+                >
+
+                <div class="packup-style-overlay">
+                    <span class="packup-style-tag">EVERYDAY ESSENTIALS</span>
+                    <h3>Ready for Every Day</h3>
+                    <a href="products.html" class="packup-style-link">
+                        Explore Bags
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="packup-style-card">
+                <img
+                    src="https://images.openai.com/static-rsc-4/ZmZP2ErxSkjkPeL0hWz0cmvtG1WXr5PpgDMCPvwAzfWGN1diAvKmkVUHsgGuq3C1iVG_BX3z7A-eB1vyasbZWqeYpbREn2lFS0p7F6RQfkCSjIxYaE31EBqSavqHgmstf3J107iylPfGhbR4JW9s5_GaZevn0erki1QVyoYlzQO9EBtGq1uxPSls447XtLkp?purpose=fullsize"
+                    alt="Stylish everyday bag"
+                    class="packup-style-image"
+                    loading="lazy"
+                >
+
+                <div class="packup-style-overlay">
+                    <span class="packup-style-tag">MODERN COLLECTION</span>
+                    <h3>Style That Travels</h3>
+                    <a href="products.html" class="packup-style-link">
+                        View Collection
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="packup-style-card">
+                <img
+                    src="https://images.openai.com/static-rsc-4/TS0psSrh5cERUQbvcsFlTa1kikH1_zG_immuoBZAjXZfWiuSdROdTj2P8F9Sj2zC7ns4rzIKbb6KfMuij169sJzaO-WYo2NJbN0EzymYtku2yiphNis2R30M-GvLpv7eNxt2EkEE9HRk5_ShBbYvir9xSrzQgBiKsITXDbKo-S6ja3-qz9NaGDcAjZYs1c9-?purpose=fullsize"
+                    alt="Versatile travel backpack"
+                    class="packup-style-image"
+                    loading="lazy"
+                >
+
+                <div class="packup-style-overlay">
+                    <span class="packup-style-tag">TRAVEL COMPANIONS</span>
+                    <h3>Made to Go Further</h3>
+                    <a href="products.html" class="packup-style-link">
+                        Discover More
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="packup-style-features">
+
+            <div class="packup-style-feature">
+                <i data-lucide="sparkles"></i>
+                <div>
+                    <h4>Modern Designs</h4>
+                    <p>Clean looks for every journey.</p>
+                </div>
+            </div>
+
+            <div class="packup-style-feature">
+                <i data-lucide="palette"></i>
+                <div>
+                    <h4>Versatile Colours</h4>
+                    <p>Find the look that suits you.</p>
+                </div>
+            </div>
+
+            <div class="packup-style-feature">
+                <i data-lucide="feather"></i>
+                <div>
+                    <h4>Everyday Comfort</h4>
+                    <p>Designed around your routine.</p>
+                </div>
+            </div>
+
+            <div class="packup-style-feature">
+                <i data-lucide="layers"></i>
+                <div>
+                    <h4>Coordinated Collections</h4>
+                    <p>Bags for every kind of trip.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="packup-style-bottom">
+            <p>Find your perfect travel companion.</p>
+
+            <a href="products.html" class="packup-style-button">
+                Explore Bags
+                <i data-lucide="arrow-up-right"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- =====================================================
+     SECTION 7 — WHY CHOOSE PACKUP?
+===================================================== -->
+
+<section class="packup-trust">
+    <div class="packup-trust-container">
+
+        <div class="packup-trust-layout">
+
+            <!-- LEFT CONTENT -->
+
+            <div class="packup-trust-intro">
+
+                <div class="packup-trust-eyebrow">
+                    <span class="packup-trust-line"></span>
+                    <span>WHY CHOOSE PACKUP</span>
+                </div>
+
+                <h2 class="packup-trust-title">
+                    Travel with
+                    <span>Confidence</span>
+                </h2>
+
+                <p class="packup-trust-description">
+                    At Packup, we believe choosing luggage should be simple.
+                    Our collections bring together practical features,
+                    considered designs, and options for different travel
+                    needs, helping you make a more informed choice.
+                </p>
+
+                <a href="products.html" class="packup-trust-button">
+                    Explore Our Bags
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+
+                <div class="packup-trust-note">
+                    <i data-lucide="check-circle-2"></i>
+                    <span>Make your next bag choice with confidence.</span>
+                </div>
+
+            </div>
+
+            <!-- RIGHT HIGHLIGHTS -->
+
+            <div class="packup-trust-highlights">
+
+                <article class="packup-trust-card">
+                    <div class="packup-trust-card-top">
+                        <span class="packup-trust-number">01</span>
+                        <span class="packup-trust-icon">
+                            <i data-lucide="badge-check"></i>
+                        </span>
+                    </div>
+
+                    <h3>Carefully Selected Collections</h3>
+
+                    <p>
+                        Explore thoughtfully selected bags for
+                        different journeys and travel preferences.
+                    </p>
+                </article>
+
+                <article class="packup-trust-card">
+                    <div class="packup-trust-card-top">
+                        <span class="packup-trust-number">02</span>
+                        <span class="packup-trust-icon">
+                            <i data-lucide="info"></i>
+                        </span>
+                    </div>
+
+                    <h3>Helpful Product Information</h3>
+
+                    <p>
+                        Understand product features and details
+                        before deciding which bag suits you.
+                    </p>
+                </article>
+
+                <article class="packup-trust-card">
+                    <div class="packup-trust-card-top">
+                        <span class="packup-trust-number">03</span>
+                        <span class="packup-trust-icon">
+                            <i data-lucide="luggage"></i>
+                        </span>
+                    </div>
+
+                    <h3>Multiple Bag Styles</h3>
+
+                    <p>
+                        Discover different styles and options
+                        for your everyday needs and travels.
+                    </p>
+                </article>
+
+                <article class="packup-trust-card">
+                    <div class="packup-trust-card-top">
+                        <span class="packup-trust-number">04</span>
+                        <span class="packup-trust-icon">
+                            <i data-lucide="shield-check"></i>
+                        </span>
+                    </div>
+
+                    <h3>Warranty and Repair Information</h3>
+
+                    <p>
+                        Find useful warranty and repair information
+                        to help you understand available support.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+
+        <!-- BOTTOM TRUST STRIP -->
+
+        <div class="packup-trust-bottom">
+            <span class="packup-trust-bottom-icon">
+                <i data-lucide="compass"></i>
+            </span>
+
+            <p>
+                The right bag makes every journey easier to plan.
+            </p>
+
+            <a href="warranty.html" class="packup-trust-bottom-link">
+                Warranty &amp; Repair
+                <i data-lucide="arrow-up-right"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+<!-- =====================================================
+     PACKUP — CUSTOMER REVIEWS V2
+===================================================== -->
+
+<section class="packup-home-reviews" id="home-customer-reviews">
+
+    <div class="packup-home-reviews-container">
+
+        <!-- HEADER -->
+        <div class="packup-home-reviews-header">
+
+            <div class="packup-home-reviews-eyebrow">
+                <span class="packup-home-reviews-eyebrow-line"></span>
+                <span>REAL TRAVEL INSPIRATION</span>
+            </div>
+
+            <h2 class="packup-home-reviews-title">
+                Every Journey Has a Story.
+                <span>Here's What Travelers Say.</span>
+            </h2>
+
+            <p class="packup-home-reviews-description">
+                From spontaneous weekend escapes to long-awaited adventures,
+                discover the little things travelers love about finding
+                the right bag.
+            </p>
+
+        </div>
+
+        <!-- REVIEW FEATURE -->
+        <div class="packup-home-reviews-layout">
+
+            <!-- FEATURED REVIEW -->
+            <article class="packup-home-review-featured">
+
+                <div class="packup-home-review-featured-top">
+                    <span class="packup-home-review-label">
+                        TRAVELER SPOTLIGHT
+                    </span>
+
+                    <i data-lucide="quote"
+                       class="packup-home-review-featured-quote"></i>
+                </div>
+
+                <div class="packup-home-review-featured-stars"
+                     aria-label="5 out of 5 stars">
+                    <i data-lucide="star" class="is-filled"></i>
+                    <i data-lucide="star" class="is-filled"></i>
+                    <i data-lucide="star" class="is-filled"></i>
+                    <i data-lucide="star" class="is-filled"></i>
+                    <i data-lucide="star" class="is-filled"></i>
+                </div>
+
+                <blockquote>
+                    “The right bag makes a difference. I love having
+                    everything organized and easy to reach, especially
+                    when I'm moving between destinations.”
+                </blockquote>
+
+                <div class="packup-home-review-featured-customer">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=180&h=180&q=85"
+                        alt="Traveler portrait"
+                        loading="lazy"
+                    >
+
+                    <div class="packup-home-review-customer-details">
+                        <strong>Travel Enthusiast</strong>
+                        <span>
+                            <i data-lucide="map-pin"></i>
+                            Weekend Explorer
+                        </span>
+                    </div>
+
+                    <span class="packup-home-review-featured-mark">
+                        <i data-lucide="compass"></i>
+                    </span>
+
+                </div>
+
+            </article>
+
+            <!-- CUSTOMER REVIEW CARDS -->
+            <div class="packup-home-reviews-list">
+
+                <!-- REVIEW 1 -->
+                <article class="packup-home-review-card">
+
+                    <img
+                        class="packup-home-review-photo"
+                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=180&h=180&q=85"
+                        alt="Customer portrait"
+                        loading="lazy"
+                    >
+
+                    <div class="packup-home-review-content">
+
+                        <div class="packup-home-review-card-top">
+                            <div class="packup-home-review-stars"
+                                 aria-label="5 out of 5 stars">
+                                <i data-lucide="star" class="is-filled"></i>
+                                <i data-lucide="star" class="is-filled"></i>
+                                <i data-lucide="star" class="is-filled"></i>
+                                <i data-lucide="star" class="is-filled"></i>
+                                <i data-lucide="star" class="is-filled"></i>
+                            </div>
+
+                            <span class="packup-home-review-category">
+                                BUSINESS
+                            </span>
+                        </div>
+
+                        <h3>Ready for every work trip.</h3>
+
+                        <p>
+                            A practical design with space for my travel
+                            essentials. It makes business trips feel
+                            more organized.
+                        </p>
+
+                        <div class="packup-home-review-meta">
+                            <strong>Business Traveler</strong>
+                            <span>
+                                <i data-lucide="briefcase-business"></i>
+                                Work travel
+                            </span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- REVIEW 2 -->
+                <article class="packup-home-review-card">
+
+                    <img
+                        class="packup-home-review-photo"
+                        src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=180&h=180&q=85"
+                        alt="Customer portrait"
+                        loading="lazy"
+                    >
+
+                    <div class="packup-home-review-content">
+
+                        <div class="packup-home-review-card-top">
+                            <div class="packup-home-review-stars"
+                                 aria-label="5 out of 5 stars">
+                                <i data-lucide="star" class="is-filled"></i>
+                                <i data-lucide="star" class="is-filled"></i>
+                                <i data-lucide="star" class="is-filled"></i>
+                                <i data-lucide="star" class="is-filled"></i>
+                                <i data-lucide="star" class="is-filled"></i>
+                            </div>
+
+                            <span class="packup-home-review-category">
+                                GETAWAYS
+                            </span>
+                        </div>
+
+                        <h3>My weekend travel essential.</h3>
+
+                        <p>
+                            I wanted something versatile for short
+                            getaways. The style and useful storage
+                            make it a great option.
+                        </p>
+
+                        <div class="packup-home-review-meta">
+                            <strong>Weekend Traveler</strong>
+                            <span>
+                                <i data-lucide="map"></i>
+                                Short trips
+                            </span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- REVIEW 3 -->
+                <article class="packup-home-review-card">
+
+                    <img
+                        class="packup-home-review-photo"
+                        src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=180&h=180&q=85"
+                        alt="Customer portrait"
+                        loading="lazy"
+                    >
+
+                    <div class="packup-home-review-content">
+
+                        <div class="packup-home-review-card-top">
+                            <div class="packup-home-review-stars"
+                                 aria-label="4 out of 5 stars">
+                                <i data-lucide="star" class="is-filled"></i>
+                                <i data-lucide="star" class="is-filled"></i>
+                                <i data-lucide="star" class="is-filled"></i>
+                                <i data-lucide="star" class="is-filled"></i>
+                                <i data-lucide="star"></i>
+                            </div>
+
+                            <span class="packup-home-review-category">
+                                EVERYDAY
+                            </span>
+                        </div>
+
+                        <h3>Useful beyond the airport.</h3>
+
+                        <p>
+                            I like choosing a bag that works for my
+                            everyday plans too. It's all about
+                            practical design and flexibility.
+                        </p>
+
+                        <div class="packup-home-review-meta">
+                            <strong>Everyday Explorer</strong>
+                            <span>
+                                <i data-lucide="route"></i>
+                                Daily use
+                            </span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+        <!-- BOTTOM CTA -->
+        <div class="packup-home-reviews-bottom">
+
+            <div class="packup-home-reviews-bottom-copy">
+                <span class="packup-home-reviews-bottom-line"></span>
+
+                <p>
+                    <strong>Your next travel story starts here.</strong>
+                    Find the bag that fits your journey.
+                </p>
+            </div>
+
+            <a href="products.html" class="packup-home-reviews-button">
+                Find Your Travel Bag
+                <i data-lucide="arrow-up-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =====================================================
+     SECTION 8: FINAL CALL TO ACTION
+===================================================== -->
+<!-- =====================================================
+     HOME 1 - SECTION 8 : FINAL CALL TO ACTION
+===================================================== -->
+
+<section class="packup-final-cta">
+
+    <div class="packup-final-cta-container">
+
+        <!-- LEFT CONTENT -->
+        <div class="packup-final-cta-content">
+
+            <span class="packup-final-cta-eyebrow">
+                
+                <span>YOUR JOURNEY, YOUR WAY</span>
+            </span>
+
+            <h2>
+                Your Next Adventure
+                <span>Starts Here.</span>
+            </h2>
+
+            <p>
+                Get ready for your next destination with luggage
+                that suits your journey. Explore the Packup collection
+                and find a bag that helps you pack smarter and travel
+                comfortably.
+            </p>
+
+            <div class="packup-final-cta-actions">
+
+                <a href="products.html"
+                   class="packup-final-cta-primary">
+
+                    <span>Shop All Bags</span>
+
+                    <i data-lucide="arrow-up-right"></i>
+
+                </a>
+
+                <a href="contact.html"
+                   class="packup-final-cta-secondary">
+
+                    <i data-lucide="message-circle"></i>
+
+                    <span>Contact Us</span>
+
+                </a>
+
+            </div>
+
+            <div class="packup-final-cta-note">
+
+                <i data-lucide="check-circle-2"></i>
+
+                <span>
+                    Find the right bag for every journey.
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT VISUAL -->
+        <div class="packup-final-cta-visual">
+
+            <div class="packup-final-cta-orbit"></div>
+
+            <div class="packup-final-cta-circle"></div>
+
+
+            <!-- Floating Travel Tag -->
+            <div class="packup-final-cta-tag">
+
+                <i data-lucide="map-pin"></i>
+
+                <span>READY TO GO</span>
+
+            </div>
+
+
+            <!-- Main Bag Card -->
+            <div class="packup-final-cta-bag-card">
+
+                <div class="packup-final-cta-bag-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=85"
+                        alt="Travel backpack ready for your next adventure"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="packup-final-cta-bag-info">
+
+                    <div>
+                        <span>THE TRAVEL ESSENTIAL</span>
+
+                        <h3>Pack Light. Go Far.</h3>
+                    </div>
+
+                    <i data-lucide="arrow-up-right"></i>
+
+                </div>
+
+            </div>
+
+
+            <!-- Floating Destination Card -->
+            <div class="packup-final-cta-destination">
+
+                <div class="packup-final-cta-destination-icon">
+                    <i data-lucide="plane"></i>
+                </div>
+
+                <div>
+                    <span>NEXT DESTINATION</span>
+
+                    <h4>Somewhere New</h4>
+                </div>
+
+            </div>
+
+
+            <!-- Decorative Stamp -->
+            <div class="packup-final-cta-stamp">
+
+                <i data-lucide="globe-2"></i>
+
+                <span>EXPLORE MORE</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+
+        <!-- BRAND -->
+        <div class="footer-col footer-brand-col">
+
+            <div class="footer-logo">
+
+                <a
+                    href="index.html"
+                    class="logo-icon-link"
+                    aria-label="Packup Home"
+                >
+
+                    <img
+                        src="logo_light.png"
+                        data-light-logo="logo_light.png"
+                        data-dark-logo="logo_dark.png"
+                        alt="Packup Logo"
+                        class="brand-logo"
+                        id="footerLogo"
+                    >
+
+                </a>
+
+
+                <a
+                    href="index.html"
+                    class="brand-content footer-branding"
+                >
+
+                    <h2 class="brand-name">
+
+                        <span class="pack">PACK</span><span class="up">UP</span>
+
+                    </h2>
+
+                    <span class="subtitle-text">
+                        TRAVEL BEYOND LIMITS
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <p class="footer-about">
+
+                Discover thoughtfully designed luggage and travel bags
+                built for every journey. From weekend escapes to long
+                adventures, Packup helps you travel with confidence and style.
+
+            </p>
+
+
+            <!-- SOCIAL -->
+            <div class="social">
+
+                <a
+                    href="#"
+                    aria-label="Instagram"
+                    title="Instagram"
+                >
+                    <i data-lucide="instagram"></i>
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="Facebook"
+                    title="Facebook"
+                >
+                    <i data-lucide="facebook"></i>
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="Twitter"
+                    title="Twitter"
+                >
+                    <i data-lucide="twitter"></i>
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="YouTube"
+                    title="YouTube"
+                >
+                    <i data-lucide="youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QUICK LINKS -->
+        <div class="footer-col">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Products
+                    </a>
+                </li>
+
+                <li>
+                    <a href="warranty.html">
+                        Warranty &amp; Repair
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- PRODUCTS -->
+        <div class="footer-col">
+
+            <h3>
+                Our Products
+            </h3>
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="products.html">
+                        Luggage
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Travel Bags
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Backpacks
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Cabin Bags
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Travel Accessories
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- ADDITIONAL -->
+        <div class="footer-col">
+
+            <h3>
+                Additional Pages
+            </h3>
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="error.html">
+                        404 Error
+                    </a>
+                </li>
+
+                <li>
+                    <a href="soon.html">
+                        Coming Soon
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Support
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Explore Collections
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+        <div class="footer-col">
+
+            <h3>
+                Contact Us
+            </h3>
+
+            <ul class="contact">
+
+                <li>
+
+                    <span class="contact-icon">
+                        <i data-lucide="map-pin"></i>
+                    </span>
+
+                    <span>
+                        Hyderabad, Telangana, India
+                    </span>
+
+                </li>
+
+
+                <li>
+
+                    <span class="contact-icon">
+                        <i data-lucide="phone"></i>
+                    </span>
+
+                    <a href="tel:+919876543210">
+                        +91 98765 43210
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <span class="contact-icon">
+                        <i data-lucide="mail"></i>
+                    </span>
+
+                    <a href="mailto:hello@packup.com">
+                        hello@packup.com
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <span class="contact-icon">
+                        <i data-lucide="clock"></i>
+                    </span>
+
+                    <span>
+                        Mon – Sat: 9:00 AM – 7:00 PM
+                    </span>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER BOTTOM -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Packup. All Rights Reserved.
+        </p>
+
+
+        <div class="footer-bottom-links">
+
+            <a href="policy.html">
+                Privacy Policy
+            </a>
+
+            <a href="conditions.html">
+                Terms &amp; Conditions
+            </a>
+
+            <a href="cookies.html">
+                Cookies
+            </a>
+
+
+            <!-- GO TO TOP -->
+            <a
+                href="#"
+                class="top-btn"
+                aria-label="Back to top"
+                title="Back to top"
+            >
+
+                <i data-lucide="arrow-up"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+<script src="main.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

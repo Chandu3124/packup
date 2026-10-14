@@ -1,0 +1,2115 @@
+
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+        name="description"
+        content="Packup offers premium luggage, travel bags, backpacks and travel accessories designed for every journey."
+    />
+
+    <meta
+        name="keywords"
+        content="Packup, luggage, travel bags, backpacks, cabin bags, travel accessories"
+    />
+
+    <meta
+        name="author"
+        content="Packup"
+    />
+
+    <meta
+        name="theme-color"
+        content="#123f46"
+    />
+
+    <title>Packup | Travel Beyond Limits</title>
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="logo_light.png"
+    />
+
+    <link
+        rel="apple-touch-icon"
+        href="logo_light.png"
+    />
+
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"
+    />
+
+    <!-- Google Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    />
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    />
+
+    <!-- Lucide -->
+    <script
+        src="https://unpkg.com/lucide@0.542.0/dist/umd/lucide.min.js"
+        defer
+    ></script>
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="main.css"
+    />
+
+    <link
+        rel="stylesheet"
+        href="contact.css"
+    />
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-container">
+
+
+        <!-- BRAND -->
+        <div class="logo">
+
+            <a
+                href="index.html"
+                class="logo-icon-link"
+                aria-label="Packup Home"
+            >
+
+                <img
+                    src="logo_light.png"
+                    data-light-logo="logo_light.png"
+                    data-dark-logo="logo_dark.png"
+                    alt="Packup Logo"
+                    class="brand-logo"
+                    id="headerLogo"
+                >
+
+            </a>
+
+
+            <a
+                href="index.html"
+                class="brand-content"
+            >
+
+                <h1 class="brand-name">
+
+                    <span class="pack">PACK</span><span class="up">UP</span>
+
+                </h1>
+
+                <span class="subtitle-text">
+                    TRAVEL BEYOND LIMITS
+                </span>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- NAVIGATION -->
+        <nav
+            class="navbar"
+            aria-label="Primary navigation"
+        >
+
+            <ul
+                class="nav-links"
+                id="navLinks"
+            >
+
+
+                <!-- HOME -->
+                <li class="dropdown">
+
+                    <a
+                        href="index.html"
+                        class="dropdown-trigger"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+
+                        <span>Home</span>
+
+                        <i data-lucide="chevron-down"></i>
+
+                    </a>
+
+
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a href="index.html">
+                                Home 1
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="home2.html">
+                                Home 2
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- ABOUT -->
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+
+                <!-- PRODUCTS -->
+                <li>
+                    <a href="products.html">
+                        Products
+                    </a>
+                </li>
+
+
+                <!-- WARRANTY -->
+                <li>
+                    <a href="warranty.html">
+                        Warranty &amp; Repair
+                    </a>
+                </li>
+
+
+                <!-- CONTACT -->
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- MOBILE CTA -->
+            <div class="mobile-action">
+
+                <a
+                    href="contact.html#contact-form"
+                    class="header-cta"
+                >
+
+                    <i data-lucide="shopping-bag"></i>
+
+                    <span>
+                        Explore Bags
+                    </span>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+
+        <!-- HEADER CONTROLS -->
+        <div class="header-controls">
+
+
+            <!-- RTL -->
+            <button
+                type="button"
+                class="icon-btn rtl-btn"
+                id="rtlToggle"
+                title="RTL Mode"
+                aria-label="Switch to right-to-left mode"
+                aria-pressed="false"
+            >
+
+                <i data-lucide="arrow-left-right"></i>
+
+            </button>
+
+
+            <!-- DARK MODE -->
+            <button
+                type="button"
+                class="icon-btn dark-btn"
+                id="darkToggle"
+                title="Dark Mode"
+                aria-label="Switch to dark mode"
+                aria-pressed="false"
+            >
+
+                <i data-lucide="moon"></i>
+
+            </button>
+
+
+            <!-- DESKTOP CTA -->
+            <a
+                href="contact.html#contact-form"
+                class="header-cta desktop-cta"
+            >
+
+                <i data-lucide="shopping-bag"></i>
+
+                <span>
+                    Explore Bags
+                </span>
+
+            </a>
+
+
+            <!-- MOBILE MENU -->
+            <button
+                type="button"
+                class="icon-btn menu-btn"
+                id="menuToggle"
+                title="Open Menu"
+                aria-label="Open menu"
+                aria-expanded="false"
+                aria-controls="navLinks"
+            >
+
+                <i data-lucide="menu"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+<main>
+
+    <!-- Page-specific content goes here -->
+<!-- =====================================================
+     PACKUP CONTACT HERO SECTION
+===================================================== -->
+
+<section class="packup-contact-hero" id="contact-hero">
+
+    <div class="packup-contact-hero-container">
+
+        <!-- LEFT CONTENT -->
+
+        <div class="packup-contact-hero-content">
+
+            <span class="packup-contact-hero-eyebrow">
+                CONTACT US
+            </span>
+
+            <h1 class="packup-contact-hero-heading">
+                We're Here to Help
+                <span>You Pack Up</span>
+            </h1>
+
+            <p class="packup-contact-hero-description">
+                Have a question about a product, need help choosing
+                luggage, or want to learn more about warranty and
+                repair options? Get in touch with Packup. We're here
+                to help you find the information you need.
+            </p>
+
+            <!-- BUTTONS -->
+
+            <div class="packup-contact-hero-actions">
+
+                <a
+                    href="#contact-form"
+                    class="packup-contact-hero-button packup-contact-hero-primary"
+                >
+                    <span>Send an Enquiry</span>
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+
+                <a
+                    href="#store-visit"
+                    class="packup-contact-hero-button packup-contact-hero-secondary"
+                >
+                    <span>Visit Our Store</span>
+                    <i data-lucide="map-pin"></i>
+                </a>
+
+            </div>
+
+            <!-- SUPPORT HIGHLIGHTS -->
+
+            <div class="packup-contact-hero-highlights">
+
+                <div class="packup-contact-hero-highlight">
+
+                    <div class="packup-contact-hero-highlight-icon">
+                        <i data-lucide="headset"></i>
+                    </div>
+
+                    <div class="packup-contact-hero-highlight-text">
+                        <span>Friendly</span>
+                        <strong>Support</strong>
+                    </div>
+
+                </div>
+
+                <span class="packup-contact-hero-divider"></span>
+
+                <div class="packup-contact-hero-highlight">
+
+                    <div class="packup-contact-hero-highlight-icon">
+                        <i data-lucide="message-circle"></i>
+                    </div>
+
+                    <div class="packup-contact-hero-highlight-text">
+                        <span>Quick</span>
+                        <strong>Responses</strong>
+                    </div>
+
+                </div>
+
+                <span class="packup-contact-hero-divider"></span>
+
+                <div class="packup-contact-hero-highlight">
+
+                    <div class="packup-contact-hero-highlight-icon">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+
+                    <div class="packup-contact-hero-highlight-text">
+                        <span>Warranty &</span>
+                        <strong>Repair Help</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT-SIDE IMAGE DETAILS -->
+
+        <div class="packup-contact-hero-visual">
+
+            <div class="packup-contact-hero-image-note">
+
+                <div class="packup-contact-hero-note-icon">
+                    <i data-lucide="luggage"></i>
+                </div>
+
+                <div class="packup-contact-hero-note-content">
+                    <strong>Ready for Your Next Trip</strong>
+                    <span>We're here to help you prepare.</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     PACKUP CONTACT OPTIONS SECTION
+===================================================== -->
+
+<section class="packup-contact-options" id="contact-options">
+
+    <div class="packup-contact-options-container">
+
+        <!-- SECTION HEADER -->
+
+        <div class="packup-contact-options-header">
+
+            <span class="packup-contact-options-eyebrow">
+                HOW WE CAN HELP
+            </span>
+
+            <h2 class="packup-contact-options-heading">
+                How Can We <span>Help You?</span>
+            </h2>
+
+            <p class="packup-contact-options-description">
+                Choose the contact option that best matches your question.
+                Whether you're looking for product information, order
+                assistance, or after-sales support, let us know what you need.
+            </p>
+
+        </div>
+
+        <!-- CONTACT OPTION CARDS -->
+
+        <div class="packup-contact-options-grid">
+
+            <!-- PRODUCT ENQUIRIES -->
+
+            <a
+                href="contact.html?subject=product-enquiry#contact-form"
+                class="packup-contact-option-card"
+            >
+
+                <div class="packup-contact-option-top">
+
+                    <div class="packup-contact-option-icon">
+                        <i data-lucide="shopping-bag"></i>
+                    </div>
+
+                    <span class="packup-contact-option-number">
+                        01
+                    </span>
+
+                </div>
+
+                <h3>Product Enquiries</h3>
+
+                <p>
+                    Need details about bag sizes, materials, colours,
+                    features, or choosing the right luggage for your trip?
+                </p>
+
+                <div class="packup-contact-option-link">
+                    <span>Ask About Products</span>
+                    <i data-lucide="arrow-up-right"></i>
+                </div>
+
+            </a>
+
+            <!-- ORDER SUPPORT -->
+
+            <a
+                href="contact.html?subject=order-support#contact-form"
+                class="packup-contact-option-card"
+            >
+
+                <div class="packup-contact-option-top">
+
+                    <div class="packup-contact-option-icon">
+                        <i data-lucide="package-check"></i>
+                    </div>
+
+                    <span class="packup-contact-option-number">
+                        02
+                    </span>
+
+                </div>
+
+                <h3>Order Support</h3>
+
+                <p>
+                    Have a question about an existing order, delivery
+                    details, or assistance with a recent purchase?
+                </p>
+
+                <div class="packup-contact-option-link">
+                    <span>Get Order Assistance</span>
+                    <i data-lucide="arrow-up-right"></i>
+                </div>
+
+            </a>
+
+            <!-- WARRANTY & REPAIR -->
+
+            <a
+                href="warranty-repair.html"
+                class="packup-contact-option-card"
+            >
+
+                <div class="packup-contact-option-top">
+
+                    <div class="packup-contact-option-icon">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+
+                    <span class="packup-contact-option-number">
+                        03
+                    </span>
+
+                </div>
+
+                <h3>Warranty & Repair</h3>
+
+                <p>
+                    Learn about available warranty information, luggage
+                    care, repair enquiries, and after-sales support.
+                </p>
+
+                <div class="packup-contact-option-link">
+                    <span>Explore Support</span>
+                    <i data-lucide="arrow-up-right"></i>
+                </div>
+
+            </a>
+
+            <!-- STORE VISIT INFORMATION -->
+
+            <a
+                href="#store-visit"
+                class="packup-contact-option-card"
+            >
+
+                <div class="packup-contact-option-top">
+
+                    <div class="packup-contact-option-icon">
+                        <i data-lucide="map-pinned"></i>
+                    </div>
+
+                    <span class="packup-contact-option-number">
+                        04
+                    </span>
+
+                </div>
+
+                <h3>Store Visit Information</h3>
+
+                <p>
+                    Looking for store location details, opening hours,
+                    or information before planning a visit?
+                </p>
+
+                <div class="packup-contact-option-link">
+                    <span>Plan Your Visit</span>
+                    <i data-lucide="arrow-up-right"></i>
+                </div>
+
+            </a>
+
+        </div>
+
+        <!-- BOTTOM SUPPORT STRIP -->
+
+        <div class="packup-contact-options-footer">
+
+            <div class="packup-contact-options-footer-icon">
+                <i data-lucide="message-square"></i>
+            </div>
+
+            <div class="packup-contact-options-footer-content">
+
+                <strong>Not sure which option to choose?</strong>
+
+                <span>
+                    Send us your question and we'll help you find the right
+                    information.
+                </span>
+
+            </div>
+
+            <a href="#contact-form" class="packup-contact-options-footer-link">
+                Contact Us
+                <i data-lucide="arrow-up-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     PACKUP CONTACT FORM SECTION
+===================================================== -->
+
+<section class="packup-contact-form-section" id="contact-form">
+
+    <div class="packup-contact-form-container">
+
+        <!-- LEFT IMAGE PANEL -->
+
+        <div class="packup-contact-form-visual">
+
+            <div class="packup-contact-form-visual-overlay"></div>
+
+            <div class="packup-contact-form-visual-content">
+
+                <span class="packup-contact-form-eyebrow">
+                    WE'RE HERE TO HELP
+                </span>
+
+                <h2>
+                    Every Journey
+                    <span>Starts with Support.</span>
+                </h2>
+
+                <p>
+                    Tell us what you need. Whether it's choosing the right
+                    bag or getting help with an existing purchase, we're
+                    ready to point you in the right direction.
+                </p>
+
+                <div class="packup-contact-form-benefits">
+
+                    <div class="packup-contact-form-benefit">
+
+                        <span class="packup-contact-form-benefit-icon">
+                            <i data-lucide="message-circle"></i>
+                        </span>
+
+                        <div>
+                            <strong>Personal Assistance</strong>
+                            <span>Get help with your enquiry.</span>
+                        </div>
+
+                    </div>
+
+                    <div class="packup-contact-form-benefit">
+
+                        <span class="packup-contact-form-benefit-icon">
+                            <i data-lucide="package-search"></i>
+                        </span>
+
+                        <div>
+                            <strong>Product Guidance</strong>
+                            <span>Get information about bags and luggage.</span>
+                        </div>
+
+                    </div>
+
+                    <div class="packup-contact-form-benefit">
+
+                        <span class="packup-contact-form-benefit-icon">
+                            <i data-lucide="shield-check"></i>
+                        </span>
+
+                        <div>
+                            <strong>After-Sales Support</strong>
+                            <span>Ask about warranty and repair options.</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="packup-contact-form-visual-note">
+                    <i data-lucide="luggage"></i>
+                    <span>Your next journey matters to us.</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT FORM PANEL -->
+
+        <div class="packup-contact-form-panel">
+
+            <div class="packup-contact-form-header">
+
+                <span class="packup-contact-form-panel-eyebrow">
+                    CONTACT PACKUP
+                </span>
+
+                <h2>
+                    Send Us a <span>Message</span>
+                </h2>
+
+                <p>
+                    Share a few details about your enquiry so we can
+                    understand how to assist you. Please provide accurate
+                    contact information and include any relevant product
+                    or order details.
+                </p>
+
+            </div>
+
+            <form
+                class="packup-contact-form"
+                id="packupEnquiryForm"
+                novalidate
+            >
+
+                <!-- NAME + EMAIL -->
+
+                <div class="packup-contact-form-row">
+
+                    <div class="packup-contact-form-field">
+
+                        <label for="packupFullName">
+                            Full Name <span>*</span>
+                        </label>
+
+                        <div class="packup-contact-form-input-wrap">
+                            <i data-lucide="user-round"></i>
+
+                            <input
+                                type="text"
+                                id="packupFullName"
+                                name="fullName"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                required
+                            >
+                        </div>
+
+                        <small class="packup-contact-form-error"></small>
+
+                    </div>
+
+                    <div class="packup-contact-form-field">
+
+                        <label for="packupEmail">
+                            Email Address <span>*</span>
+                        </label>
+
+                        <div class="packup-contact-form-input-wrap">
+                            <i data-lucide="mail"></i>
+
+                            <input
+                                type="email"
+                                id="packupEmail"
+                                name="email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+
+                        <small class="packup-contact-form-error"></small>
+
+                    </div>
+
+                </div>
+
+                <!-- PHONE + ENQUIRY TYPE -->
+
+                <div class="packup-contact-form-row">
+
+                    <div class="packup-contact-form-field">
+
+                        <label for="packupPhone">
+                            Phone Number
+                            <span class="packup-contact-form-optional">
+                                (Optional)
+                            </span>
+                        </label>
+
+                        <div class="packup-contact-form-input-wrap">
+                            <i data-lucide="phone"></i>
+
+                            <input
+                                type="tel"
+                                id="packupPhone"
+                                name="phone"
+                                placeholder="Enter phone number"
+                                autocomplete="tel"
+                            >
+                        </div>
+
+                        <small class="packup-contact-form-error"></small>
+
+                    </div>
+
+                    <div class="packup-contact-form-field">
+
+                        <label for="packupEnquiryType">
+                            Enquiry Type <span>*</span>
+                        </label>
+
+                        <div class="packup-contact-form-input-wrap">
+                            <i data-lucide="list-filter"></i>
+
+                            <select
+                                id="packupEnquiryType"
+                                name="enquiryType"
+                                required
+                            >
+                                <option value="" selected disabled>
+                                    Select enquiry type
+                                </option>
+
+                                <option value="product">
+                                    Product Enquiry
+                                </option>
+
+                                <option value="order">
+                                    Order Support
+                                </option>
+
+                                <option value="warranty">
+                                    Warranty & Repair
+                                </option>
+
+                                <option value="store">
+                                    Store Visit Information
+                                </option>
+
+                                <option value="other">
+                                    Other
+                                </option>
+                            </select>
+
+                            <i
+                                data-lucide="chevron-down"
+                                class="packup-contact-form-select-arrow"
+                            ></i>
+                        </div>
+
+                        <small class="packup-contact-form-error"></small>
+
+                    </div>
+
+                </div>
+
+                <!-- SUBJECT -->
+
+                <div class="packup-contact-form-field">
+
+                    <label for="packupSubject">
+                        Subject <span>*</span>
+                    </label>
+
+                    <div class="packup-contact-form-input-wrap">
+                        <i data-lucide="text"></i>
+
+                        <input
+                            type="text"
+                            id="packupSubject"
+                            name="subject"
+                            placeholder="What is your enquiry about?"
+                            required
+                        >
+                    </div>
+
+                    <small class="packup-contact-form-error"></small>
+
+                </div>
+
+                <!-- MESSAGE -->
+
+                <div class="packup-contact-form-field">
+
+                    <div class="packup-contact-form-message-label">
+
+                        <label for="packupMessage">
+                            Message <span>*</span>
+                        </label>
+
+                        <span id="packupMessageCount">
+                            0 / 1000
+                        </span>
+
+                    </div>
+
+                    <div class="packup-contact-form-textarea-wrap">
+                        <i data-lucide="message-square-text"></i>
+
+                        <textarea
+                            id="packupMessage"
+                            name="message"
+                            rows="4"
+                            maxlength="1000"
+                            placeholder="Tell us how we can help..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <small class="packup-contact-form-error"></small>
+
+                </div>
+
+                <!-- PRIVACY NOTE -->
+
+                <div class="packup-contact-form-privacy">
+                    <i data-lucide="lock-keyhole"></i>
+
+                    <span>
+                        Please provide only the information relevant to
+                        your enquiry.
+                    </span>
+                </div>
+
+                <!-- SUBMIT -->
+
+                <button
+                    type="submit"
+                    class="packup-contact-form-submit"
+                    id="packupSubmitButton"
+                >
+                    <span>Submit Enquiry</span>
+                    <i data-lucide="arrow-up-right"></i>
+                </button>
+
+                <!-- STATUS MESSAGE -->
+
+                <div
+                    class="packup-contact-form-status"
+                    id="packupFormStatus"
+                    role="status"
+                    aria-live="polite"
+                    hidden
+                ></div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     PACKUP - VISIT OUR STORE
+===================================================== -->
+
+<section class="packup-store-section" id="store-visit">
+
+    <div class="packup-store-container">
+
+        <!-- LEFT SIDE: STORE CONTENT -->
+
+        <div class="packup-store-details">
+
+            <div class="packup-store-details-header">
+
+                <span class="packup-store-details-eyebrow">
+                    VISIT PACKUP
+                </span>
+
+                <h2>
+                    See Your Travel
+                    <span>Essentials in Person</span>
+                </h2>
+
+                <p>
+                    Prefer to explore luggage before choosing? Visit our
+                    store, if a physical location is available, to learn
+                    more about product styles, sizes, and features.
+                </p>
+
+            </div>
+
+            <!-- STORE NAME -->
+
+            <div class="packup-store-info-card">
+
+                <div class="packup-store-info-icon">
+                    <i data-lucide="store"></i>
+                </div>
+
+                <div class="packup-store-info-content">
+
+                    <span class="packup-store-info-label">
+                        STORE NAME
+                    </span>
+
+                    <h3>Packup</h3>
+
+                    <p>Official Packup Store</p>
+
+                </div>
+
+            </div>
+
+            <!-- FULL ADDRESS -->
+
+            <div class="packup-store-info-card">
+
+                <div class="packup-store-info-icon">
+                    <i data-lucide="map-pin"></i>
+                </div>
+
+                <div class="packup-store-info-content">
+
+                    <span class="packup-store-info-label">
+                        FULL ADDRESS
+                    </span>
+
+                    <h3>Hyderabad</h3>
+
+                    <p>Street, Area, City, State, PIN Code</p>
+
+                </div>
+
+            </div>
+
+            <!-- LANDMARK -->
+
+            <div class="packup-store-info-card">
+
+                <div class="packup-store-info-icon">
+                    <i data-lucide="navigation"></i>
+                </div>
+
+                <div class="packup-store-info-content">
+
+                    <span class="packup-store-info-label">
+                        NEARBY LANDMARK
+                    </span>
+
+                    <h3>Near by Charminar</h3>
+
+                    <p>A nearby landmark to help you locate the store.</p>
+
+                </div>
+
+            </div>
+
+            <!-- DIRECTIONS -->
+
+            <div class="packup-store-directions">
+
+                <div class="packup-store-directions-icon">
+                    <i data-lucide="route"></i>
+                </div>
+
+                <div class="packup-store-directions-content">
+
+                    <h3>Planning Your Route?</h3>
+
+                    <p>
+                        Use the directions option to plan your visit
+                        once the verified store address is available.
+                    </p>
+
+                </div>
+
+                <a
+                    href="#store-visit"
+                    class="packup-store-directions-button"
+                    id="packupStoreDirections"
+                >
+                    <span>Get Directions</span>
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+
+            </div>
+
+            <!-- IMPORTANT NOTE -->
+
+            <div class="packup-store-note">
+
+                <i data-lucide="info"></i>
+
+                <p>
+                    Actual store details must be added before publishing.
+                    If Packup operates online only, replace this section
+                    with the available customer support information.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE: STORE IMAGE -->
+
+        <div class="packup-store-visual">
+
+            <img
+                src="https://images.openai.com/static-rsc-4/_O5TRcff6Xd_bXYSzG-XmvRjYTfITD4lWnKzvZDAkVVCJSV93e1CbrVapk7oh3f_cvwcOUolNefSM_Dz53evXgkWZxafaXKsNeSgY_Wr_4t3gCXeNi6JKaB0Br9mbYSWbZ465nMEoVLSjCLOh96J7A-EEqaDkYSTAgaVjCgXjfV77fAlTRk3f8v5TpAIxEBS?purpose=fullsize"
+                alt="Retail store interior"
+                class="packup-store-image"
+            >
+
+            <div class="packup-store-image-overlay"></div>
+
+            <div class="packup-store-visual-content">
+
+                <span class="packup-store-visual-eyebrow">
+                    YOUR TRAVEL DESTINATION
+                </span>
+
+                <h3>
+                    Explore.
+                    <span>Compare.</span>
+                    Choose.
+                </h3>
+
+                <p>
+                    Discover travel essentials, explore different styles,
+                    and find the right bag for your next journey.
+                </p>
+
+                <div class="packup-store-image-note">
+
+                    <i data-lucide="shopping-bag"></i>
+
+                    <span>
+                        Find the right bag for every journey.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     SECTION 5 — HOURS AND SERVICES
+===================================================== -->
+
+<section class="packup-hours-section" id="hours-services">
+
+    <div class="packup-hours-container">
+
+        <!-- SECTION HEADER -->
+        <div class="packup-hours-header">
+
+            <span class="packup-hours-eyebrow">
+                <span class="packup-hours-eyebrow-line"></span>
+                HOURS & SERVICES
+            </span>
+
+            <h2 class="packup-hours-heading">
+                Plan Your
+                <span>Visit</span>
+            </h2>
+
+            <p class="packup-hours-description">
+                Check our latest business hours and available services
+                before visiting. Our contact information can help you
+                plan your visit or decide whether to send an enquiry online.
+            </p>
+
+        </div>
+
+
+        <!-- MAIN CONTENT -->
+        <div class="packup-hours-layout">
+
+            <!-- LEFT: OPENING HOURS -->
+            <div class="packup-hours-schedule-card">
+
+                <div class="packup-hours-card-header">
+
+                    <div class="packup-hours-main-icon">
+                        <i data-lucide="clock-3"></i>
+                    </div>
+
+                    <div>
+                        <span class="packup-hours-small-label">
+                            STORE TIMINGS
+                        </span>
+
+                        <h3>Opening Hours</h3>
+
+                        <p>
+                            Weekly schedule
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="packup-hours-status">
+
+                    <span class="packup-hours-status-dot"></span>
+
+                    <span>
+                        Check confirmed hours before visiting
+                    </span>
+
+                </div>
+
+
+                <!-- WEEKLY SCHEDULE -->
+                <div class="packup-hours-weekly">
+
+                    <div class="packup-hours-weekly-heading">
+                        <i data-lucide="calendar-days"></i>
+                        <h4>Weekly Schedule</h4>
+                    </div>
+
+
+                    <div class="packup-hours-day">
+                        <span>Monday</span>
+                        <span class="packup-hours-time">
+                            <span class="packup-hours-placeholder">
+                                Add hours
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="packup-hours-day">
+                        <span>Tuesday</span>
+                        <span class="packup-hours-time">
+                            <span class="packup-hours-placeholder">
+                                Add hours
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="packup-hours-day">
+                        <span>Wednesday</span>
+                        <span class="packup-hours-time">
+                            <span class="packup-hours-placeholder">
+                                Add hours
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="packup-hours-day">
+                        <span>Thursday</span>
+                        <span class="packup-hours-time">
+                            <span class="packup-hours-placeholder">
+                                Add hours
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="packup-hours-day">
+                        <span>Friday</span>
+                        <span class="packup-hours-time">
+                            <span class="packup-hours-placeholder">
+                                Add hours
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="packup-hours-day">
+                        <span>Saturday</span>
+                        <span class="packup-hours-time">
+                            <span class="packup-hours-placeholder">
+                                Add hours
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="packup-hours-day packup-hours-day-last">
+                        <span>Sunday</span>
+                        <span class="packup-hours-time">
+                            <span class="packup-hours-placeholder">
+                                Confirm schedule
+                            </span>
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="packup-hours-schedule-note">
+
+                    <i data-lucide="info"></i>
+
+                    <p>
+                        Please confirm the latest store timings before
+                        planning your visit.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT: AVAILABLE SERVICES -->
+            <div class="packup-hours-services">
+
+                <div class="packup-hours-services-header">
+
+                    <span class="packup-hours-small-label">
+                        HOW WE CAN HELP
+                    </span>
+
+                    <h3>
+                        Services Available
+                        <span>For Your Journey</span>
+                    </h3>
+
+                    <p>
+                        Choose the type of assistance that best matches
+                        your question.
+                    </p>
+
+                </div>
+
+
+                <!-- SERVICE 1 -->
+                <a
+                    href="contact.html?subject=product-enquiry"
+                    class="packup-hours-service-card"
+                >
+
+                    <div class="packup-hours-service-icon">
+                        <i data-lucide="shopping-bag"></i>
+                    </div>
+
+                    <div class="packup-hours-service-content">
+
+                        <h4>Product Enquiries</h4>
+
+                        <p>
+                            Ask about bag styles, sizes, features,
+                            and product availability.
+                        </p>
+
+                    </div>
+
+                    <i
+                        data-lucide="arrow-up-right"
+                        class="packup-hours-service-arrow"
+                    ></i>
+
+                </a>
+
+
+                <!-- SERVICE 2 -->
+                <a
+                    href="contact.html?subject=order-assistance"
+                    class="packup-hours-service-card"
+                >
+
+                    <div class="packup-hours-service-icon">
+                        <i data-lucide="package-check"></i>
+                    </div>
+
+                    <div class="packup-hours-service-content">
+
+                        <h4>Order Assistance</h4>
+
+                        <p>
+                            Get in touch regarding order-related
+                            questions and updates.
+                        </p>
+
+                    </div>
+
+                    <i
+                        data-lucide="arrow-up-right"
+                        class="packup-hours-service-arrow"
+                    ></i>
+
+                </a>
+
+
+                <!-- SERVICE 3 -->
+                <a
+                    href="warranty-repair.html"
+                    class="packup-hours-service-card"
+                >
+
+                    <div class="packup-hours-service-icon">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+
+                    <div class="packup-hours-service-content">
+
+                        <h4>Warranty & Repair</h4>
+
+                        <p>
+                            Review available product support,
+                            care guidance, and repair information.
+                        </p>
+
+                    </div>
+
+                    <i
+                        data-lucide="arrow-up-right"
+                        class="packup-hours-service-arrow"
+                    ></i>
+
+                </a>
+
+
+                <!-- CONTACT STRIP -->
+                <div class="packup-hours-contact-strip">
+
+                    <div class="packup-hours-contact-icon">
+                        <i data-lucide="message-circle"></i>
+                    </div>
+
+                    <div class="packup-hours-contact-content">
+
+                        <h4>Need more information?</h4>
+
+                        <p>
+                            Send us an enquiry before visiting.
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="contact.html"
+                        class="packup-hours-contact-link"
+                        aria-label="Contact Packup"
+                    >
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     SECTION 6 — LOCATION AND DIRECTIONS
+     CONTENT LEFT | LARGE MAP RIGHT
+===================================================== -->
+<section class="packup-location-section" id="location-directions">
+
+    <div class="packup-location-container">
+
+        <!-- SECTION HEADER -->
+        <div class="packup-location-header">
+
+            <span class="packup-location-eyebrow">
+                <span class="packup-location-eyebrow-line"></span>
+                FIND US
+            </span>
+
+            <h2 class="packup-location-heading">
+                Find Your Way
+                <span>to Packup</span>
+            </h2>
+
+            <p class="packup-location-description">
+                Use the store location and directions to plan your visit.
+                Check the route before leaving and contact us if you need
+                clarification about the location.
+            </p>
+
+        </div>
+
+
+        <!-- MAIN LAYOUT -->
+        <div class="packup-location-layout">
+
+            <!-- LEFT: LOCATION DETAILS -->
+            <div class="packup-location-details">
+
+                <span class="packup-location-details-eyebrow">
+                    VISIT PACKUP
+                </span>
+
+                <h3 class="packup-location-details-heading">
+                    Your Next
+                    <span>Journey Starts Here.</span>
+                </h3>
+
+                <p class="packup-location-details-description">
+                    Planning to explore our travel bags in person?
+                    Keep the store address and nearby landmark handy
+                    to make your visit easier.
+                </p>
+
+
+                <!-- STORE ADDRESS -->
+                <div class="packup-location-info">
+
+                    <div class="packup-location-info-icon">
+                        <i data-lucide="map-pin"></i>
+                    </div>
+
+                    <div class="packup-location-info-content">
+
+                        <span>STORE ADDRESS</span>
+
+                        <h4>Packup Store</h4>
+
+                        <p>Hyderabad</p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LANDMARK -->
+                <div class="packup-location-info">
+
+                    <div class="packup-location-info-icon">
+                        <i data-lucide="landmark"></i>
+                    </div>
+
+                    <div class="packup-location-info-content">
+
+                        <span>NEARBY LANDMARK</span>
+
+                        <h4>Charminar</h4>
+
+                        <p>Near Charminar, Hyderabad</p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- VISIT TIP -->
+                <div class="packup-location-tip">
+
+                    <i data-lucide="info"></i>
+
+                    <p>
+                        Check the address and route before leaving.
+                        Contact us if you need help finding the store.
+                    </p>
+
+                </div>
+
+
+                <!-- ACTION BUTTONS -->
+                <div class="packup-location-actions">
+
+                    <a
+                        href="contact.html"
+                        class="packup-location-button packup-location-button-primary"
+                    >
+                        <span>Contact Us</span>
+                        <i data-lucide="headset"></i>
+                    </a>
+
+                    <a
+                        href="https://www.google.com/maps/dir/?api=1&destination=Charminar%2C+Hyderabad"
+                        class="packup-location-button packup-location-button-secondary"
+                        id="packup-location-directions"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <span>Get Directions</span>
+                        <i data-lucide="navigation"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT: GOOGLE MAP CARD -->
+            <div class="packup-location-map-panel">
+
+                <!-- MAP HEADER -->
+                <div class="packup-location-map-top">
+
+                    <div class="packup-location-map-icon">
+                        <i data-lucide="map"></i>
+                    </div>
+
+                    <div>
+
+                        <span class="packup-location-map-label">
+                            STORE LOCATION
+                        </span>
+
+                        <h3>Find Us on the Map</h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- GOOGLE MAP -->
+                <div class="packup-location-map-placeholder">
+
+                    <iframe
+                        class="packup-location-google-map"
+                        src="https://maps.google.com/maps?q=Charminar%2C%20Hyderabad%2C%20India&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                        title="Packup location near Charminar, Hyderabad"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen
+                    ></iframe>
+
+                </div>
+
+
+                <!-- MAP FOOTER -->
+                <div class="packup-location-map-footer">
+
+                    <i data-lucide="navigation"></i>
+
+                    <p>
+                        Explore the map and plan your route to the
+                        Charminar area in Hyderabad.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =====================================================
+     SECTION 7 — FINAL CONTACT CTA
+===================================================== -->
+<!-- =====================================================
+     CONTACT PAGE — FINAL CTA
+===================================================== -->
+
+<section class="packup-contact-cta">
+
+    <div class="packup-contact-cta-container">
+
+        <!-- TOP LABEL -->
+
+        <div class="packup-contact-cta-eyebrow">
+            <span class="packup-contact-cta-eyebrow-line"></span>
+        
+            <span>YOUR NEXT ADVENTURE AWAITS</span>
+        </div>
+
+
+        <!-- MAIN CTA CONTENT -->
+
+        <div class="packup-contact-cta-main">
+
+            <!-- HEADING -->
+
+            <div class="packup-contact-cta-heading">
+
+                <h2>
+                    Your Next Journey
+                    <span>Starts with the Right Choice.</span>
+                </h2>
+
+            </div>
+
+
+            <!-- DESCRIPTION -->
+
+            <div class="packup-contact-cta-description">
+
+                <p>
+                    From choosing your first suitcase to finding a
+                    travel bag for your next adventure, Packup is
+                    ready to help you explore the available options.
+                    Reach out whenever you need more information.
+                </p>
+
+            </div>
+
+
+            <!-- BUTTONS -->
+
+            <div class="packup-contact-cta-actions">
+
+                <a
+                    href="contact.html"
+                    class="packup-contact-cta-primary"
+                >
+                    <span>Contact Us</span>
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+
+                <a
+                    href="products.html"
+                    class="packup-contact-cta-secondary"
+                >
+                    <i data-lucide="shopping-bag"></i>
+                    <span>Shop All Bags</span>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOTTOM STRIP -->
+
+        <div class="packup-contact-cta-bottom">
+
+            <div class="packup-contact-cta-bottom-left">
+                <i data-lucide="luggage"></i>
+                <span>PACKUP TRAVEL ESSENTIALS</span>
+            </div>
+
+            <span class="packup-contact-cta-bottom-message">
+                Find your fit. Pack your dreams. Go further.
+            </span>
+
+            <div class="packup-contact-cta-bottom-number">
+                <span>YOUR NEXT CHAPTER</span>
+                <i data-lucide="move-up-right"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+
+        <!-- BRAND -->
+        <div class="footer-col footer-brand-col">
+
+            <div class="footer-logo">
+
+                <a
+                    href="index.html"
+                    class="logo-icon-link"
+                    aria-label="Packup Home"
+                >
+
+                    <img
+                        src="logo_light.png"
+                        data-light-logo="logo_light.png"
+                        data-dark-logo="logo_dark.png"
+                        alt="Packup Logo"
+                        class="brand-logo"
+                        id="footerLogo"
+                    >
+
+                </a>
+
+
+                <a
+                    href="index.html"
+                    class="brand-content footer-branding"
+                >
+
+                    <h2 class="brand-name">
+
+                        <span class="pack">PACK</span><span class="up">UP</span>
+
+                    </h2>
+
+                    <span class="subtitle-text">
+                        TRAVEL BEYOND LIMITS
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <p class="footer-about">
+
+                Discover thoughtfully designed luggage and travel bags
+                built for every journey. From weekend escapes to long
+                adventures, Packup helps you travel with confidence and style.
+
+            </p>
+
+
+            <!-- SOCIAL -->
+            <div class="social">
+
+                <a
+                    href="#"
+                    aria-label="Instagram"
+                    title="Instagram"
+                >
+                    <i data-lucide="instagram"></i>
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="Facebook"
+                    title="Facebook"
+                >
+                    <i data-lucide="facebook"></i>
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="Twitter"
+                    title="Twitter"
+                >
+                    <i data-lucide="twitter"></i>
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="YouTube"
+                    title="YouTube"
+                >
+                    <i data-lucide="youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QUICK LINKS -->
+        <div class="footer-col">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Products
+                    </a>
+                </li>
+
+                <li>
+                    <a href="warranty.html">
+                        Warranty &amp; Repair
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- PRODUCTS -->
+        <div class="footer-col">
+
+            <h3>
+                Our Products
+            </h3>
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="products.html">
+                        Luggage
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Travel Bags
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Backpacks
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Cabin Bags
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Travel Accessories
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- ADDITIONAL -->
+        <div class="footer-col">
+
+            <h3>
+                Additional Pages
+            </h3>
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="error.html">
+                        404 Error
+                    </a>
+                </li>
+
+                <li>
+                    <a href="soon.html">
+                        Coming Soon
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Support
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Explore Collections
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+        <div class="footer-col">
+
+            <h3>
+                Contact Us
+            </h3>
+
+            <ul class="contact">
+
+                <li>
+
+                    <span class="contact-icon">
+                        <i data-lucide="map-pin"></i>
+                    </span>
+
+                    <span>
+                        Hyderabad, Telangana, India
+                    </span>
+
+                </li>
+
+
+                <li>
+
+                    <span class="contact-icon">
+                        <i data-lucide="phone"></i>
+                    </span>
+
+                    <a href="tel:+919876543210">
+                        +91 98765 43210
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <span class="contact-icon">
+                        <i data-lucide="mail"></i>
+                    </span>
+
+                    <a href="mailto:hello@packup.com">
+                        hello@packup.com
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <span class="contact-icon">
+                        <i data-lucide="clock"></i>
+                    </span>
+
+                    <span>
+                        Mon – Sat: 9:00 AM – 7:00 PM
+                    </span>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER BOTTOM -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Packup. All Rights Reserved.
+        </p>
+
+
+        <div class="footer-bottom-links">
+
+            <a href="policy.html">
+                Privacy Policy
+            </a>
+
+            <a href="conditions.html">
+                Terms &amp; Conditions
+            </a>
+
+            <a href="cookies.html">
+                Cookies
+            </a>
+
+
+            <!-- GO TO TOP -->
+            <a
+                href="#"
+                class="top-btn"
+                aria-label="Back to top"
+                title="Back to top"
+            >
+
+                <i data-lucide="arrow-up"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+<script src="main.js"></script>
+<script src="contact.js"></script>
+</body>
+</html>

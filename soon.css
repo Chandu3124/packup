@@ -1,0 +1,1246 @@
+/* =========================================================
+   PACKUP - COMING SOON PAGE
+   Uses variables and header styles from main.css
+========================================================= */
+
+
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+body.coming-soon-page-body {
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    min-height: 0;
+    margin: 0;
+    padding-top: 0 !important;
+    overflow: hidden;
+
+
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--content-font);
+}
+
+
+
+.coming-soon-page,
+.coming-soon-page * {
+    box-sizing: border-box;
+}
+
+
+
+
+/* =========================================================
+   TOP RIGHT TOGGLES - HEADER ICON BUTTON STYLE
+========================================================= */
+
+
+
+.coming-soon-controls {
+    position: fixed;
+    top: 20px;
+    right: 28px;
+
+
+    z-index: 1000;
+
+
+    display: flex;
+    align-items: center;
+
+
+    gap: 9px;
+
+
+    direction: ltr;
+}
+
+
+
+html[dir="rtl"] .coming-soon-controls {
+    right: auto;
+    left: 28px;
+}
+
+
+
+
+/* =========================================================
+   FULL SCREEN CANVAS - NO PAGE SCROLL
+========================================================= */
+
+
+
+.coming-soon-page {
+    position: relative;
+
+
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+
+
+    padding: 24px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    overflow: hidden;
+    isolation: isolate;
+
+
+    background:
+        radial-gradient(
+            circle at 12% 18%,
+            rgba(7, 159, 154, 0.09),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 88% 82%,
+            rgba(11, 55, 104, 0.08),
+            transparent 32%
+        ),
+        var(--bg);
+
+
+    color: var(--text);
+}
+
+
+
+.coming-soon-section {
+    width: 100%;
+    max-width: 800px;
+    max-height: 100%;
+
+
+    margin: 0 auto;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* =========================================================
+   CENTER CARD
+========================================================= */
+
+
+
+.coming-soon-card {
+    position: relative;
+    isolation: isolate;
+
+
+    width: 100%;
+    max-width: 740px;
+    max-height: 100%;
+
+
+    padding: 38px 46px 28px;
+
+
+    overflow: hidden;
+    text-align: center;
+
+
+    background: var(--card-bg);
+
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow);
+
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+
+
+/* =========================================================
+   DECORATIVE SHAPES
+========================================================= */
+
+
+
+.coming-soon-decoration {
+    position: absolute;
+    z-index: -1;
+
+
+    display: block;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+
+
+.coming-soon-decoration-one {
+    width: 200px;
+    height: 200px;
+
+
+    top: -108px;
+    right: -80px;
+
+
+    background: rgba(7, 159, 154, 0.09);
+}
+
+
+
+.coming-soon-decoration-two {
+    width: 170px;
+    height: 170px;
+
+
+    bottom: -100px;
+    left: -75px;
+
+
+    background: rgba(11, 55, 104, 0.07);
+}
+
+
+
+
+/* =========================================================
+   BRAND - EXACT HEADER STYLE, TOP CENTER
+========================================================= */
+
+
+
+.coming-soon-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    margin: 0 auto 18px;
+
+
+    direction: ltr;
+}
+
+
+
+.coming-soon-logo {
+    display: flex;
+    align-items: center;
+
+
+    gap: 8px;
+
+
+    min-width: max-content;
+
+
+    direction: ltr;
+}
+
+
+
+.coming-soon-brand-logo {
+    width: 90px;
+    height: 90px;
+
+
+    display: block;
+
+
+    object-fit: contain;
+    flex-shrink: 0;
+
+
+    transition: transform var(--transition);
+}
+
+
+
+.coming-soon-logo:hover .coming-soon-brand-logo {
+    transform: scale(1.04);
+}
+
+
+
+.coming-soon-logo .brand-content {
+    width: fit-content;
+
+
+    display: flex;
+    flex-direction: column;
+
+
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+
+.coming-soon-logo .brand-name {
+    margin: 0;
+
+
+    display: flex;
+    align-items: center;
+
+
+    font-family: var(--font-family);
+    font-size: 30px;
+    font-weight: 800;
+
+
+    line-height: 0.9;
+    letter-spacing: -0.7px;
+
+
+    white-space: nowrap;
+}
+
+
+
+.coming-soon-logo .brand-name .pack {
+    color: var(--primary);
+}
+
+
+
+.coming-soon-logo .brand-name .up {
+    color: var(--secondary);
+}
+
+
+
+.coming-soon-logo .subtitle-text {
+    margin-top: 6px;
+
+
+    color: var(--primary);
+
+
+    font-family: var(--font-family);
+    font-size: 9px;
+    font-weight: 800;
+
+
+    line-height: 1;
+    letter-spacing: 1.1px;
+
+
+    white-space: nowrap;
+    opacity: 1;
+}
+
+
+
+body.dark-mode .coming-soon-logo .brand-name .pack,
+body.dark-mode .coming-soon-logo .subtitle-text {
+    color: #5B9BFF;
+}
+
+
+
+
+/* =========================================================
+   COMING SOON ICON
+========================================================= */
+
+
+
+.coming-soon-icon {
+    width: 74px;
+    height: 74px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    margin: 0 auto;
+
+
+    border: 1px solid color-mix(
+        in srgb,
+        var(--secondary) 35%,
+        transparent
+    );
+
+
+    border-radius: var(--radius-round);
+
+
+    background: color-mix(
+        in srgb,
+        var(--secondary) 10%,
+        transparent
+    );
+
+
+    color: var(--secondary);
+}
+
+
+
+.coming-soon-icon svg {
+    width: 34px;
+    height: 34px;
+
+
+    stroke-width: 2;
+}
+
+
+
+
+/* =========================================================
+   COMING SOON CONTENT
+========================================================= */
+
+
+
+.coming-soon-content {
+    max-width: 490px;
+    margin: 20px auto 0;
+}
+
+
+
+.coming-soon-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+
+    gap: 8px;
+    margin-bottom: 10px;
+
+
+    color: var(--secondary);
+
+
+    font-family: var(--content-font);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+}
+
+
+
+.coming-soon-label svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+
+.coming-soon-content h1 {
+    margin: 0 0 10px;
+
+
+    color: var(--heading);
+
+
+    font-family: var(--font-family);
+    font-size: clamp(30px, 3.5vw, 38px);
+    font-weight: 800;
+
+
+    line-height: 1.2;
+    letter-spacing: -0.7px;
+}
+
+
+
+.coming-soon-content p {
+    max-width: 440px;
+    margin: 0 auto;
+
+
+    color: var(--text-light);
+
+
+    font-family: var(--content-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+
+
+
+/* =========================================================
+   ACTION BUTTONS - HEADER CTA RADIUS
+========================================================= */
+
+
+
+.coming-soon-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    gap: 14px;
+    margin-top: 26px;
+}
+
+
+
+.coming-soon-btn {
+    min-width: 155px;
+    min-height: 47px;
+
+
+    padding: 12px 20px;
+
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+
+    gap: 9px;
+
+
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+
+
+    font-family: var(--content-font);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.3;
+
+
+    text-decoration: none;
+    cursor: pointer;
+
+
+    transition:
+        color 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+
+.coming-soon-btn svg {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+}
+
+
+
+.coming-soon-btn-primary {
+    background: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+    border-color: var(--btn-primary-bg);
+}
+
+
+
+.coming-soon-btn-primary:hover {
+    background: var(--btn-secondary-bg);
+    color: var(--btn-secondary-text);
+    border-color: var(--btn-secondary-bg);
+
+
+    transform: translateY(-2px);
+}
+
+
+
+.coming-soon-btn-secondary {
+    background: transparent;
+    color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+
+
+.coming-soon-btn-secondary:hover {
+    background: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+    border-color: var(--btn-primary-bg);
+
+
+    transform: translateY(-2px);
+}
+
+
+
+.coming-soon-btn:focus-visible {
+    outline: 3px solid var(--secondary);
+    outline-offset: 3px;
+}
+
+
+
+
+/* =========================================================
+   BOTTOM BRANDING
+========================================================= */
+
+
+
+.coming-soon-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    gap: 13px;
+    margin-top: 29px;
+}
+
+
+
+.coming-soon-bottom p {
+    margin: 0;
+
+
+    color: var(--text-muted);
+
+
+    font-family: var(--font-family);
+    font-size: 10px;
+    font-weight: 800;
+
+
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+
+
+
+.coming-soon-bottom-line {
+    width: 30px;
+    height: 1px;
+
+
+    flex-shrink: 0;
+
+
+    background: var(--border);
+}
+
+
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+
+
+body.dark-mode .coming-soon-page {
+    background:
+        radial-gradient(
+            circle at 12% 18%,
+            rgba(7, 159, 154, 0.11),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 88% 82%,
+            rgba(91, 155, 255, 0.10),
+            transparent 32%
+        ),
+        var(--bg);
+}
+
+
+
+body.dark-mode .coming-soon-decoration-two {
+    background: rgba(91, 155, 255, 0.09);
+}
+
+
+
+
+/* =========================================================
+   RTL - REVERSE FULL CONTENT
+========================================================= */
+
+
+
+html[dir="rtl"] .coming-soon-page {
+    direction: rtl;
+}
+
+
+
+html[dir="rtl"] .coming-soon-card {
+    direction: rtl;
+}
+
+
+
+html[dir="rtl"] .coming-soon-content {
+    direction: rtl;
+}
+
+
+
+html[dir="rtl"] .coming-soon-actions {
+    flex-direction: row-reverse;
+}
+
+
+
+html[dir="rtl"] .coming-soon-bottom {
+    flex-direction: row-reverse;
+}
+
+
+
+html[dir="rtl"] .coming-soon-label {
+    letter-spacing: 0.3px;
+}
+
+
+
+html[dir="rtl"] .coming-soon-bottom p {
+    letter-spacing: 0.5px;
+}
+
+
+
+html[dir="rtl"] .coming-soon-brand {
+    direction: rtl;
+}
+
+
+
+html[dir="rtl"] .coming-soon-logo {
+    direction: rtl;
+}
+
+
+
+html[dir="rtl"] .coming-soon-logo .brand-name,
+html[dir="rtl"] .coming-soon-logo .subtitle-text {
+    direction: ltr;
+
+
+    unicode-bidi: isolate;
+    text-align: left;
+}
+
+
+
+html[dir="rtl"] .coming-soon-logo .brand-name .pack,
+html[dir="rtl"] .coming-soon-logo .brand-name .up {
+    unicode-bidi: isolate;
+}
+
+
+
+
+/* =========================================================
+   SHORT DESKTOP / LAPTOP HEIGHT
+========================================================= */
+
+
+
+@media (max-height: 760px) and (min-width: 601px) {
+
+
+    .coming-soon-card {
+        padding: 25px 38px 20px;
+    }
+
+
+
+    .coming-soon-brand {
+        margin-bottom: 10px;
+    }
+
+
+
+    .coming-soon-brand-logo {
+        width: 70px;
+        height: 70px;
+    }
+
+
+
+    .coming-soon-logo {
+        gap: 7px;
+    }
+
+
+
+    .coming-soon-logo .brand-name {
+        font-size: 25px;
+    }
+
+
+
+    .coming-soon-logo .subtitle-text {
+        margin-top: 5px;
+        font-size: 7.5px;
+    }
+
+
+
+    .coming-soon-icon {
+        width: 62px;
+        height: 62px;
+    }
+
+
+
+    .coming-soon-icon svg {
+        width: 28px;
+        height: 28px;
+    }
+
+
+
+    .coming-soon-content {
+        margin-top: 12px;
+    }
+
+
+
+    .coming-soon-content h1 {
+        font-size: 31px;
+        margin-bottom: 7px;
+    }
+
+
+
+    .coming-soon-content p {
+        font-size: 13px;
+    }
+
+
+
+    .coming-soon-actions {
+        margin-top: 18px;
+    }
+
+
+
+    .coming-soon-btn {
+        min-height: 43px;
+    }
+
+
+
+    .coming-soon-bottom {
+        margin-top: 19px;
+    }
+}
+
+
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+
+
+@media (max-width: 768px) {
+
+
+    .coming-soon-controls {
+        top: 14px;
+        right: 16px;
+        gap: 8px;
+    }
+
+
+
+    html[dir="rtl"] .coming-soon-controls {
+        right: auto;
+        left: 16px;
+    }
+
+
+
+    .coming-soon-page {
+        padding: 18px;
+    }
+
+
+
+    .coming-soon-card {
+        padding: 30px 28px 23px;
+    }
+
+
+
+    .coming-soon-content h1 {
+        font-size: 32px;
+    }
+}
+
+
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+
+
+@media (max-width: 480px) {
+
+
+    .coming-soon-controls {
+        top: 11px;
+        right: 12px;
+        gap: 7px;
+    }
+
+
+
+    html[dir="rtl"] .coming-soon-controls {
+        right: auto;
+        left: 12px;
+    }
+
+
+
+    .coming-soon-page {
+        padding: 13px;
+    }
+
+
+
+    .coming-soon-card {
+        padding: 25px 19px 20px;
+        border-radius: var(--radius-lg);
+    }
+
+
+
+    .coming-soon-brand {
+        margin-bottom: 13px;
+    }
+
+
+
+    .coming-soon-brand-logo {
+        width: 58px;
+        height: 58px;
+    }
+
+
+
+    .coming-soon-logo {
+        gap: 6px;
+    }
+
+
+
+    .coming-soon-logo .brand-name {
+        font-size: 25px;
+    }
+
+
+
+    .coming-soon-logo .subtitle-text {
+        margin-top: 4px;
+        font-size: 7.5px;
+        letter-spacing: 0.6px;
+    }
+
+
+
+    .coming-soon-icon {
+        width: 58px;
+        height: 58px;
+    }
+
+
+
+    .coming-soon-icon svg {
+        width: 26px;
+        height: 26px;
+    }
+
+
+
+    .coming-soon-content {
+        margin-top: 13px;
+    }
+
+
+
+    .coming-soon-label {
+        margin-bottom: 8px;
+        font-size: 10px;
+        letter-spacing: 1.2px;
+    }
+
+
+
+    .coming-soon-content h1 {
+        margin-bottom: 8px;
+        font-size: clamp(26px, 7vw, 31px);
+    }
+
+
+
+    .coming-soon-content p {
+        font-size: 13px;
+        line-height: 1.65;
+    }
+
+
+
+    .coming-soon-actions {
+        gap: 10px;
+        margin-top: 21px;
+    }
+
+
+
+    .coming-soon-btn {
+        min-width: 135px;
+        min-height: 44px;
+
+
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+
+
+    .coming-soon-bottom {
+        gap: 9px;
+        margin-top: 23px;
+    }
+
+
+
+    .coming-soon-bottom-line {
+        width: 19px;
+    }
+
+
+
+    .coming-soon-bottom p {
+        font-size: 8px;
+        letter-spacing: 0.8px;
+    }
+}
+
+
+
+
+/* =========================================================
+   SMALL MOBILE - KEEP CONTENT ON SCREEN
+========================================================= */
+
+
+
+@media (max-width: 480px) and (max-height: 720px) {
+
+
+    .coming-soon-card {
+        padding: 17px 17px 14px;
+    }
+
+
+
+    .coming-soon-brand {
+        margin-bottom: 7px;
+    }
+
+
+
+    .coming-soon-brand-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+
+
+    .coming-soon-logo {
+        gap: 6px;
+    }
+
+
+
+    .coming-soon-logo .brand-name {
+        font-size: 19px;
+        letter-spacing: -0.3px;
+    }
+
+
+
+    .coming-soon-logo .subtitle-text {
+        margin-top: 3px;
+        font-size: 6.5px;
+        letter-spacing: 0.45px;
+    }
+
+
+
+    .coming-soon-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+
+
+    .coming-soon-icon svg {
+        width: 22px;
+        height: 22px;
+    }
+
+
+
+    .coming-soon-content {
+        margin-top: 8px;
+    }
+
+
+
+    .coming-soon-label {
+        margin-bottom: 5px;
+        font-size: 9px;
+    }
+
+
+
+    .coming-soon-content h1 {
+        margin-bottom: 5px;
+        font-size: 24px;
+    }
+
+
+
+    .coming-soon-content p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+
+
+    .coming-soon-actions {
+        gap: 8px;
+        margin-top: 13px;
+    }
+
+
+
+    .coming-soon-btn {
+        min-height: 38px;
+
+
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+
+
+    .coming-soon-bottom {
+        margin-top: 13px;
+    }
+
+
+
+    .coming-soon-bottom p {
+        font-size: 7px;
+    }
+}
+
+
+
+
+/* =========================================================
+   VERY NARROW MOBILE
+========================================================= */
+
+
+
+@media (max-width: 360px) {
+
+
+    .coming-soon-page {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+
+
+    .coming-soon-card {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+
+
+    .coming-soon-content h1 {
+        font-size: 22px;
+    }
+
+
+
+    .coming-soon-content p {
+        font-size: 10px;
+    }
+
+
+
+    .coming-soon-bottom {
+        gap: 6px;
+    }
+
+
+
+    .coming-soon-bottom-line {
+        width: 12px;
+    }
+}
+
+
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+
+
+@media (prefers-reduced-motion: reduce) {
+
+
+    .coming-soon-card,
+    .coming-soon-btn,
+    .coming-soon-brand-logo {
+        transition: none;
+    }
+
+
+
+    .coming-soon-btn:hover,
+    .coming-soon-logo:hover .coming-soon-brand-logo {
+        transform: none;
+    }
+}

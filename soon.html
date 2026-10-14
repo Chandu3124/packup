@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+        name="theme-color"
+        content="#0B3768"
+    />
+
+    <title>
+        Coming Soon | Packup
+    </title>
+
+    <meta
+        name="description"
+        content="Something exciting is on the way. Packup is getting ready for its next adventure."
+    />
+
+
+    <!-- Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    />
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    />
+
+
+    <!-- Existing shared styles -->
+    <link
+        rel="stylesheet"
+        href="main.css"
+    />
+
+    <!-- Coming Soon page styles -->
+    <link
+        rel="stylesheet"
+        href="soon.css"
+    />
+
+
+    <!-- Lucide icons -->
+    <script
+        src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"
+        defer
+    ></script>
+
+
+    <!-- Existing shared functionality -->
+    <script
+        src="main.js"
+        defer
+    ></script>
+
+    <!-- Coming Soon page functionality -->
+    <script
+        src="soon.js"
+        defer
+    ></script>
+
+</head>
+
+
+<body class="coming-soon-page-body">
+
+
+    <!-- =========================================
+         TOP RIGHT TOGGLES
+    ========================================== -->
+
+    <div class="coming-soon-controls">
+
+        <button
+            type="button"
+            class="icon-btn"
+            id="rtlToggle"
+            title="RTL Mode"
+            aria-label="Switch to right-to-left mode"
+            aria-pressed="false"
+        >
+
+            <i data-lucide="arrow-left-right"></i>
+
+        </button>
+
+
+        <button
+            type="button"
+            class="icon-btn"
+            id="darkToggle"
+            title="Dark Mode"
+            aria-label="Switch to dark mode"
+            aria-pressed="false"
+        >
+
+            <i data-lucide="moon"></i>
+
+        </button>
+
+    </div>
+
+
+
+    <!-- =========================================
+         MAIN COMING SOON PAGE
+    ========================================== -->
+
+    <main class="coming-soon-page">
+
+        <section
+            class="coming-soon-section"
+            aria-labelledby="coming-soon-title"
+        >
+
+            <div class="coming-soon-card">
+
+                <span
+                    class="coming-soon-decoration coming-soon-decoration-one"
+                    aria-hidden="true"
+                ></span>
+
+                <span
+                    class="coming-soon-decoration coming-soon-decoration-two"
+                    aria-hidden="true"
+                ></span>
+
+
+                <!-- Exact header brand - top center -->
+                <div class="coming-soon-brand">
+
+                    <a
+                        href="index.html"
+                        class="logo coming-soon-logo"
+                        aria-label="Packup Home"
+                    >
+
+                        <img
+                            src="logo_light.png"
+                            data-light-logo="logo_light.png"
+                            data-dark-logo="logo_dark.png"
+                            alt="Packup Logo"
+                            class="brand-logo coming-soon-brand-logo"
+                        >
+
+                        <span class="brand-content">
+
+                            <span class="brand-name">
+
+                                <span class="pack">PACK</span><span class="up">UP</span>
+
+                            </span>
+
+                            <span class="subtitle-text">
+                                TRAVEL BEYOND LIMITS
+                            </span>
+
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- Coming soon icon -->
+                <div class="coming-soon-icon">
+
+                    <i data-lucide="rocket"></i>
+
+                </div>
+
+
+                <!-- Coming soon content -->
+                <div class="coming-soon-content">
+
+                    <span class="coming-soon-label">
+
+                        <i
+                            data-lucide="sparkles"
+                            aria-hidden="true"
+                        ></i>
+
+                        SOMETHING EXCITING IS COMING
+
+                    </span>
+
+
+                    <h1 id="coming-soon-title">
+                        We're Getting Ready
+                    </h1>
+
+
+                    <p>
+                        Our new experience is almost ready.
+                        Stay tuned for something amazing from Packup.
+                    </p>
+
+                </div>
+
+
+                <!-- Action buttons -->
+                <div class="coming-soon-actions">
+
+                    <a
+                        href="index.html"
+                        class="coming-soon-btn coming-soon-btn-primary"
+                    >
+
+                        <i
+                            data-lucide="house"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Go Home
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="contact.html"
+                        class="coming-soon-btn coming-soon-btn-secondary"
+                    >
+
+                        <i
+                            data-lucide="headset"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Contact Us
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- Bottom label -->
+                <div class="coming-soon-bottom">
+
+                    <span
+                        class="coming-soon-bottom-line"
+                        aria-hidden="true"
+                    ></span>
+
+                    <p>
+                        YOUR JOURNEY STARTS HERE
+                    </p>
+
+                    <span
+                        class="coming-soon-bottom-line"
+                        aria-hidden="true"
+                    ></span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

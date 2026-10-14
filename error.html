@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+
+<head>
+
+
+    <meta charset="UTF-8" />
+
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+
+
+    <meta
+        name="theme-color"
+        content="#0B3768"
+    />
+
+
+    <title>
+        404 - Page Not Found | Packup
+    </title>
+
+
+    <meta
+        name="description"
+        content="Page not found. Return to Packup and continue your next adventure."
+    />
+
+
+
+    <!-- Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    />
+
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    />
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    />
+
+
+
+    <!-- Existing shared styles -->
+    <link
+        rel="stylesheet"
+        href="main.css"
+    />
+
+
+    <!-- 404 page styles -->
+    <link
+        rel="stylesheet"
+        href="Error.css"
+    />
+
+
+
+    <!-- Lucide icons -->
+    <script
+        src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"
+        defer
+    ></script>
+
+
+
+    <!-- Existing shared functionality -->
+    <script
+        src="main.js"
+        defer
+    ></script>
+
+
+    <!-- 404 page functionality -->
+    <script
+        src="Error.js"
+        defer
+    ></script>
+
+
+</head>
+
+
+
+<body class="error-page-body">
+
+
+
+    <!-- =========================================
+         TOP RIGHT TOGGLES
+    ========================================== -->
+
+
+    <div class="error-page-controls">
+
+
+        <button
+            type="button"
+            class="icon-btn"
+            id="rtlToggle"
+            title="RTL Mode"
+            aria-label="Switch to right-to-left mode"
+            aria-pressed="false"
+        >
+
+
+            <i data-lucide="arrow-left-right"></i>
+
+
+        </button>
+
+
+
+        <button
+            type="button"
+            class="icon-btn"
+            id="darkToggle"
+            title="Dark Mode"
+            aria-label="Switch to dark mode"
+            aria-pressed="false"
+        >
+
+
+            <i data-lucide="moon"></i>
+
+
+        </button>
+
+
+    </div>
+
+
+
+
+    <!-- =========================================
+         MAIN 404 PAGE
+    ========================================== -->
+
+
+    <main class="error-page">
+
+
+        <section
+            class="error-section"
+            aria-labelledby="error-title"
+        >
+
+
+            <div class="error-card">
+
+
+                <span
+                    class="error-decoration error-decoration-one"
+                    aria-hidden="true"
+                ></span>
+
+
+                <span
+                    class="error-decoration error-decoration-two"
+                    aria-hidden="true"
+                ></span>
+
+
+
+                <!-- Exact header brand - top center -->
+                <div class="error-brand">
+
+
+                    <a
+                        href="index.html"
+                        class="logo error-logo"
+                        aria-label="Packup Home"
+                    >
+
+
+                        <img
+                            src="logo_light.png"
+                            data-light-logo="logo_light.png"
+                            data-dark-logo="logo_dark.png"
+                            alt="Packup Logo"
+                            class="brand-logo error-brand-logo"
+                        >
+
+
+                        <span class="brand-content">
+
+
+                            <span class="brand-name">
+
+
+                                <span class="pack">PACK</span><span class="up">UP</span>
+
+
+                            </span>
+
+
+                            <span class="subtitle-text">
+                                TRAVEL BEYOND LIMITS
+                            </span>
+
+
+                        </span>
+
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- Error number -->
+                <div
+                    class="error-number"
+                    aria-label="404"
+                >
+
+
+                    <span>4</span>
+                    <span class="error-zero">0</span>
+                    <span>4</span>
+
+
+                </div>
+
+
+
+                <!-- Error message -->
+                <div class="error-content">
+
+
+                    <span class="error-label">
+
+
+                        <i
+                            data-lucide="compass"
+                            aria-hidden="true"
+                        ></i>
+
+
+                        LOST YOUR WAY?
+
+
+                    </span>
+
+
+
+                    <h1 id="error-title">
+                        Page Not Found
+                    </h1>
+
+
+
+                    <p>
+                        This page seems to have gone off track.
+                        Let's get you back to your next adventure.
+                    </p>
+
+
+                </div>
+
+
+
+                <!-- Action buttons -->
+                <div class="error-actions">
+
+
+                    <a
+                        href="index.html"
+                        class="error-btn error-btn-primary"
+                    >
+
+
+                        <i
+                            data-lucide="house"
+                            aria-hidden="true"
+                        ></i>
+
+
+                        <span>
+                            Go Home
+                        </span>
+
+
+                    </a>
+
+
+
+                    <a
+                        href="contact.html"
+                        class="error-btn error-btn-secondary"
+                    >
+
+
+                        <i
+                            data-lucide="headset"
+                            aria-hidden="true"
+                        ></i>
+
+
+                        <span>
+                            Contact Us
+                        </span>
+
+
+                    </a>
+
+
+                </div>
+
+
+
+                <!-- Bottom label -->
+                <div class="error-bottom">
+
+
+                    <span
+                        class="error-bottom-line"
+                        aria-hidden="true"
+                    ></span>
+
+
+                    <p>
+                        YOUR JOURNEY STARTS HERE
+                    </p>
+
+
+                    <span
+                        class="error-bottom-line"
+                        aria-hidden="true"
+                    ></span>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+</body>
+
+
+</html>
